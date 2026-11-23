@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,6 +7,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour
 {
+    public event Action<Vector2, float> AttackContact;
+
     private static readonly int Run = Animator.StringToHash("run");
     private static readonly int VelocityY = Animator.StringToHash("velocityY");
     private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
@@ -134,6 +137,11 @@ public class Player : MonoBehaviour
         comboStep = step;
         attackBuffered = false;
         animator.Play(AttackStates[step - 1], 0, 0f);
+    }
+
+    private void OnAttackContact()
+    {
+        AttackContact?.Invoke(bodyCollider.bounds.center, spriteRenderer.flipX ? -1f : 1f);
     }
 
     private void FinishAttackIfReady()
