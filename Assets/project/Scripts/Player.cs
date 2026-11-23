@@ -1,151 +1,176 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour
 {
+    private static readonly int Run = Animator.StringToHash("run");
+    private static readonly int VelocityY = Animator.StringToHash("velocityY");
+    private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
+    private static readonly int IdleState = Animator.StringToHash("Base Layer.Ide");
+    private static readonly int RunState = Animator.StringToHash("Base Layer.run");
+    private static readonly int JumpStartState = Animator.StringToHash("Base Layer.jump-start");
+    private static readonly int JumpFallState = Animator.StringToHash("Base Layer.jump-fall");
+    private static readonly int[] AttackStates =
+    {
+        Animator.StringToHash("Base Layer.attack1"),
+        Animator.StringToHash("Base Layer.attack2"),
+        Animator.StringToHash("Base Layer.attack3")
+    };
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private LayerMask groundLayers = Physics2D.DefaultRaycastLayers;
+    [SerializeField] private float respawnHeight = -6f;
 
-    private Rigidbody2D rb;
-    private Collider2D col;
+    private readonly List<ContactPoint2D> groundContacts = new List<ContactPoint2D>();
+    private ContactFilter2D groundFilter;
+    private Rigidbody2D body;
+    private BoxCollider2D bodyCollider;
     private SpriteRenderer spriteRenderer;
-    public Animator animator;
+    private Animator animator;
+    private Vector2 spawnPosition;
+    private float moveDirection;
     private bool isGrounded;
-    private int jumpsRemaining;
-
-    // --- Combo Attack ---
-    private int comboStep = 0;        // đang ở đòn nào (0 = không đánh)
-    private bool attackBuffered = false; // người chơi đã bấm trong lúc đang đánh chưa
+    private bool jumpRequested;
+    private bool airJumpAvailable = true;
+    private int comboStep;
+    private bool attackBuffered;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        col = GetComponent<Collider2D>();
+        body = GetComponent<Rigidbody2D>();
+        bodyCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
-        // Giữ nhân vật không bị xoay tròn khi va chạm
-        rb.freezeRotation = true;
-        jumpsRemaining = 2; // tối đa 2 lần nhảy
+        spawnPosition = body.position;
+        body.freezeRotation = true;
+        groundFilter.SetLayerMask(groundLayers);
     }
 
     private void Update()
     {
         Keyboard keyboard = Keyboard.current;
-        if (keyboard == null)
-            return;
-
-        // 1. Di chuyển trái / phải: A/Left = -1, D/Right = 1
-        float moveDirection = 0f;
-        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
-            moveDirection -= 1f;
-        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
-            moveDirection += 1f;
-
-        // Cập nhật vận tốc di chuyển ngang
-        rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
-
-        // 3. Tấn công
-        if (keyboard.zKey.wasPressedThisFrame)
-            HandleAttackInput();
-
-        // Cập nhật animation theo tốc độ di chuyển
-        animator.SetFloat("run", Mathf.Abs(moveDirection));
-        animator.SetFloat("velocityY", rb.linearVelocity.y);
-        animator.SetBool("isGrounded", isGrounded);
-
-        // Lật mặt Sprite theo hướng di chuyển
-        if (moveDirection < 0 && spriteRenderer != null)
-            spriteRenderer.flipX = true;
-        else if (moveDirection > 0 && spriteRenderer != null)
-            spriteRenderer.flipX = false;
-
-        // 2. Nhảy bằng phím SPACE (hoặc phím W / phím Mũi tên Lên)
-        bool jumpPressed = keyboard.spaceKey.wasPressedThisFrame;
-        if (jumpPressed && jumpsRemaining > 0)
+        moveDirection = 0f;
+        if (keyboard != null)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            jumpsRemaining--;
-            isGrounded = false;
+            if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
+                moveDirection -= 1f;
+            if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
+                moveDirection += 1f;
+
+            jumpRequested |= keyboard.spaceKey.wasPressedThisFrame
+                || keyboard.wKey.wasPressedThisFrame || keyboard.upArrowKey.wasPressedThisFrame;
+        }
+
+        if (moveDirection != 0f)
+            spriteRenderer.flipX = moveDirection < 0f;
+
+        UpdateAnimationParameters();
+        FinishAttackIfReady();
+
+        if (keyboard != null && keyboard.zKey.wasPressedThisFrame)
+        {
+            if (comboStep == 0)
+                PlayAttack(1);
+            else if (comboStep < AttackStates.Length)
+                attackBuffered = true;
         }
     }
 
-    // Kiểm tra chạm đất kết hợp 2 cách để đảm bảo 100% nhận diện được sàn
-    private bool CanJump()
+    private void FixedUpdate()
     {
-        if (isGrounded) return true;
-
-        if (col != null)
+        if (body.position.y < respawnHeight)
         {
-            // Quét nhẹ Collider xuống dưới 0.1 đơn vị (bỏ qua chính Collider của Player)
-            RaycastHit2D[] hits = new RaycastHit2D[5];
-            int hitCount = col.Cast(Vector2.down, hits, 0.1f);
-            for (int i = 0; i < hitCount; i++)
-            {
-                if (hits[i].collider != null && hits[i].collider.gameObject != gameObject && !hits[i].collider.isTrigger)
-                {
-                    return true;
-                }
-            }
+            Respawn();
+            return;
         }
+
+        Vector2 velocity = body.linearVelocity;
+        isGrounded = velocity.y <= 0.01f && HasGroundContact();
+        if (isGrounded)
+            airJumpAvailable = true;
+
+        if (jumpRequested && (isGrounded || airJumpAvailable))
+        {
+            if (!isGrounded)
+                airJumpAvailable = false;
+
+            velocity.y = jumpForce;
+            isGrounded = false;
+            if (comboStep == 0)
+                animator.Play(JumpStartState, 0, 0f);
+        }
+
+        jumpRequested = false;
+        velocity.x = moveDirection * moveSpeed;
+        body.linearVelocity = velocity;
+    }
+
+    private bool HasGroundContact()
+    {
+        bodyCollider.GetContacts(groundFilter, groundContacts);
+        foreach (ContactPoint2D contact in groundContacts)
+        {
+            if (contact.normal.y > 0.5f)
+                return true;
+        }
+
         return false;
     }
 
-    // Nhận diện va chạm vật lý trực tiếp với mặt đất/bục sàn
-    private void OnCollisionStay2D(Collision2D collision)
+    private void UpdateAnimationParameters()
     {
-        foreach (ContactPoint2D contact in collision.contacts)
-        {
-            // Vector pháp tuyến hướng lên trên (mặt đất ở dưới chân)
-            if (contact.normal.y > 0.5f)
-            {
-                isGrounded = true;
-                jumpsRemaining = 2; // hoàn trả lượt nhảy khi chạm đất
-                return;
-            }
-        }
+        animator.SetFloat(Run, Mathf.Abs(moveDirection));
+        animator.SetFloat(VelocityY, body.linearVelocity.y);
+        animator.SetBool(IsGrounded, isGrounded);
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void PlayAttack(int step)
     {
-        isGrounded = false;
+        comboStep = step;
+        attackBuffered = false;
+        animator.Play(AttackStates[step - 1], 0, 0f);
     }
 
-    // --- Combo Attack ---
-
-    private void HandleAttackInput()
+    private void FinishAttackIfReady()
     {
         if (comboStep == 0)
+            return;
+
+        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+        if (state.fullPathHash != AttackStates[comboStep - 1] || state.normalizedTime < 1f)
+            return;
+
+        if (attackBuffered)
         {
-            // Chưa đánh → bắt đầu đòn 1
-            comboStep = 1;
-            animator.SetInteger("attackIndex", 1);
+            PlayAttack(comboStep + 1);
+            return;
         }
-        else
-        {
-            // Đang đánh → lưu buffer để đánh đòn tiếp theo
-            attackBuffered = true;
-        }
+
+        comboStep = 0;
+        int locomotionState = body.linearVelocity.y > 0f ? JumpStartState : JumpFallState;
+        if (isGrounded)
+            locomotionState = moveDirection == 0f ? IdleState : RunState;
+
+        animator.Play(locomotionState, 0, 0f);
     }
 
-    // Hàm này gọi bằng Animation Event ở cuối mỗi clip attack
-    public void OnAttackEnd()
+    private void Respawn()
     {
-        if (attackBuffered && comboStep < 3)
-        {
-            // Còn buffer và chưa đến đòn cuối → đánh tiếp
-            comboStep++;
-            attackBuffered = false;
-            animator.SetInteger("attackIndex", comboStep);
-        }
-        else
-        {
-            // Hết combo hoặc không bấm tiếp → reset
-            comboStep = 0;
-            attackBuffered = false;
-            animator.SetInteger("attackIndex", 0);
-        }
+        body.position = spawnPosition;
+        body.linearVelocity = Vector2.zero;
+        moveDirection = 0f;
+        isGrounded = false;
+        jumpRequested = false;
+        airJumpAvailable = true;
+        comboStep = 0;
+        attackBuffered = false;
+        spriteRenderer.flipX = false;
+        UpdateAnimationParameters();
+        animator.Play(IdleState, 0, 0f);
     }
 }
