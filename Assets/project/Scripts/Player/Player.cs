@@ -28,6 +28,12 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayers = Physics2D.DefaultRaycastLayers;
     [SerializeField] private float respawnHeight = -6f;
 
+    [Header("Health")]
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private HealthBar healthBar;
+    private float currentHealth;
+    private bool isRespawning;
+
     private readonly List<ContactPoint2D> groundContacts = new List<ContactPoint2D>();
     private ContactFilter2D groundFilter;
     private Rigidbody2D body;
@@ -54,10 +60,16 @@ public class Player : MonoBehaviour
         body.freezeRotation = true;
         spriteRenderer.flipX = false;
         groundFilter.SetLayerMask(groundLayers);
+        currentHealth = maxHealth;
+        if (healthBar != null)
+            healthBar.UpdateHealth(currentHealth, maxHealth);
     }
 
     private void Update()
     {
+        if (isRespawning)
+            return;
+
         Keyboard keyboard = Keyboard.current;
         moveDirection = 0f;
         if (keyboard != null)
@@ -77,7 +89,11 @@ public class Player : MonoBehaviour
         UpdateAnimationParameters();
         FinishAttackIfReady();
 
-        if (keyboard != null && keyboard.zKey.wasPressedThisFrame)
+        Mouse mouse = Mouse.current;
+        bool attackPressed = (mouse != null && mouse.leftButton.wasPressedThisFrame)
+            || (keyboard != null && keyboard.zKey.wasPressedThisFrame);
+
+        if (attackPressed)
         {
             if (comboStep == 0)
                 PlayAttack(1);
@@ -88,9 +104,12 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isRespawning)
+            return;
+
         if (body.position.y < respawnHeight)
         {
-            Respawn();
+            StartRespawn();
             return;
         }
 
@@ -187,8 +206,39 @@ public class Player : MonoBehaviour
         animator.Play(locomotionState, 0, 0f);
     }
 
-    private void Respawn()
+    public void TakeDamage(float damage)
     {
+        if (isRespawning)
+            return;
+
+        currentHealth = Mathf.Max(0f, currentHealth - damage);
+        if (healthBar != null)
+            healthBar.UpdateHealth(currentHealth, maxHealth);
+
+        if (currentHealth <= 0f)
+            StartRespawn();
+    }
+
+    private void StartRespawn()
+    {
+        if (isRespawning)
+            return;
+
+        StartCoroutine(RespawnRoutine());
+    }
+
+    private System.Collections.IEnumerator RespawnRoutine()
+    {
+        isRespawning = true;
+        currentHealth = 0f;
+        if (healthBar != null)
+            healthBar.UpdateHealth(0f, maxHealth);
+
+        body.linearVelocity = Vector2.zero;
+
+        // Chờ 0.5 giây để người chơi thấy thanh máu về 0
+        yield return new WaitForSeconds(0.5f);
+
         body.position = spawnPosition;
         body.linearVelocity = Vector2.zero;
         moveDirection = 0f;
@@ -200,7 +250,12 @@ public class Player : MonoBehaviour
         activeAttackStateHash = 0;
         attackBuffered = false;
         spriteRenderer.flipX = false;
+        currentHealth = maxHealth;
+        if (healthBar != null)
+            healthBar.UpdateHealth(currentHealth, maxHealth);
         UpdateAnimationParameters();
         animator.Play(IdleRightState, 0, 0f);
+
+        isRespawning = false;
     }
 }
