@@ -1,0 +1,270 @@
+{
+  "width": 64,
+  "height": 64,
+  "anchor": [
+    32,
+    57
+  ],
+  "groundPixelY": 56,
+  "sampling": "nearest",
+  "directions": {
+    "LEFT": {
+      "IDLE": {
+        "loop": true,
+        "frames": [
+          {
+            "file": "LEFT/IDLE/00.png",
+            "durationMs": 330
+          },
+          {
+            "file": "LEFT/IDLE/01.png",
+            "durationMs": 250
+          },
+          {
+            "file": "LEFT/IDLE/02.png",
+            "durationMs": 340
+          },
+          {
+            "file": "LEFT/IDLE/03.png",
+            "durationMs": 260
+          }
+        ]
+      },
+      "WALK": {
+        "loop": true,
+        "frames": [
+          {
+            "file": "LEFT/WALK/00.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "contact"
+          },
+          {
+            "file": "LEFT/WALK/01.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "toe-off"
+          },
+          {
+            "file": "LEFT/WALK/02.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "passing"
+          },
+          {
+            "file": "LEFT/WALK/03.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "forward swing"
+          },
+          {
+            "file": "LEFT/WALK/04.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "contact"
+          },
+          {
+            "file": "LEFT/WALK/05.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "toe-off"
+          },
+          {
+            "file": "LEFT/WALK/06.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "passing"
+          },
+          {
+            "file": "LEFT/WALK/07.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "forward swing"
+          }
+        ]
+      },
+      "ATTACK": {
+        "loop": false,
+        "frames": [
+          {
+            "file": "LEFT/ATTACK/00.png",
+            "durationMs": 80,
+            "phase": "wind-up"
+          },
+          {
+            "file": "LEFT/ATTACK/01.png",
+            "durationMs": 105,
+            "phase": "wind-up"
+          },
+          {
+            "file": "LEFT/ATTACK/02.png",
+            "durationMs": 140,
+            "phase": "wind-up"
+          },
+          {
+            "file": "LEFT/ATTACK/03.png",
+            "durationMs": 55,
+            "phase": "cut"
+          },
+          {
+            "file": "LEFT/ATTACK/04.png",
+            "durationMs": 90,
+            "phase": "cut"
+          },
+          {
+            "file": "LEFT/ATTACK/05.png",
+            "durationMs": 95,
+            "phase": "recovery"
+          },
+          {
+            "file": "LEFT/ATTACK/06.png",
+            "durationMs": 100,
+            "phase": "recovery"
+          },
+          {
+            "file": "LEFT/ATTACK/07.png",
+            "durationMs": 125,
+            "phase": "recovery"
+          }
+        ]
+      }
+    },
+    "RIGHT": {
+      "IDLE": {
+        "loop": true,
+        "frames": [
+          {
+            "file": "RIGHT/IDLE/00.png",
+            "durationMs": 330
+          },
+          {
+            "file": "RIGHT/IDLE/01.png",
+            "durationMs": 250
+          },
+          {
+            "file": "RIGHT/IDLE/02.png",
+            "durationMs": 340
+          },
+          {
+            "file": "RIGHT/IDLE/03.png",
+            "durationMs": 260
+          }
+        ]
+      },
+      "WALK": {
+        "loop": true,
+        "frames": [
+          {
+            "file": "RIGHT/WALK/00.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "contact"
+          },
+          {
+            "file": "RIGHT/WALK/01.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "toe-off"
+          },
+          {
+            "file": "RIGHT/WALK/02.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "passing"
+          },
+          {
+            "file": "RIGHT/WALK/03.png",
+            "durationMs": 100,
+            "planted": "left",
+            "otherFoot": "right",
+            "phase": "forward swing"
+          },
+          {
+            "file": "RIGHT/WALK/04.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "contact"
+          },
+          {
+            "file": "RIGHT/WALK/05.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "toe-off"
+          },
+          {
+            "file": "RIGHT/WALK/06.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "passing"
+          },
+          {
+            "file": "RIGHT/WALK/07.png",
+            "durationMs": 100,
+            "planted": "right",
+            "otherFoot": "left",
+            "phase": "forward swing"
+          }
+        ]
+      },
+      "ATTACK": {
+        "loop": false,
+        "frames": [
+          {
+            "file": "RIGHT/ATTACK/00.png",
+            "durationMs": 80,
+            "phase": "wind-up"
+          },
+          {
+            "file": "RIGHT/ATTACK/01.png",
+            "durationMs": 105,
+            "phase": "wind-up"
+          },
+          {
+            "file": "RIGHT/ATTACK/02.png",
+            "durationMs": 140,
+            "phase": "wind-up"
+          },
+          {
+            "file": "RIGHT/ATTACK/03.png",
+            "durationMs": 55,
+            "phase": "cut"
+          },
+          {
+            "file": "RIGHT/ATTACK/04.png",
+            "durationMs": 90,
+            "phase": "cut"
+          },
+          {
+            "file": "RIGHT/ATTACK/05.png",
+            "durationMs": 95,
+            "phase": "recovery"
+          },
+          {
+            "file": "RIGHT/ATTACK/06.png",
+            "durationMs": 100,
+            "phase": "recovery"
+          },
+          {
+            "file": "RIGHT/ATTACK/07.png",
+            "durationMs": 125,
+            "phase": "recovery"
+          }
+        ]
+      }
+    }
+  }
+}

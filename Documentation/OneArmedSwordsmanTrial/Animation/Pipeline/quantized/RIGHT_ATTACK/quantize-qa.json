@@ -1,0 +1,229 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.117822,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../dedup/RIGHT_ATTACK/00.png",
+      "sha256": "3f7c8117996a21ec66ebd17e59186db7a841e59a17b63a21657efb84e8ba1494",
+      "bytes": 6757
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/01.png",
+      "sha256": "69038ecd205a9395cc97e96754a79875791195f13bddb681cf4097877d07137a",
+      "bytes": 6418
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/02.png",
+      "sha256": "656f10d8bf9b539b4362db2138fee3cc54d66b5d23cb7c024e158fca1ffc742a",
+      "bytes": 6920
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/03.png",
+      "sha256": "e873ba0658ceecd151fb3e69bf36755c49b621bab7dfe1a37262f83597ceb2f8",
+      "bytes": 7169
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/04.png",
+      "sha256": "769724fe4efbaed0b20c76bfe34af2d716ebfff1f2045feeb7770e9cc8243e89",
+      "bytes": 7382
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/05.png",
+      "sha256": "b153e637b638762c63d195f5b9b7bd8beb1331d1e3e88a9d5fb2e0a9d8a5a71b",
+      "bytes": 9115
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/06.png",
+      "sha256": "62319b897fc363aea057771ae801e1b31f96f9cfd670aa42fe98d17ce839254d",
+      "bytes": 6142
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/07.png",
+      "sha256": "c6c963c8f25a457ec432d5109d2a3d3c85b355797c8e7d0f32b8cf5b0b358d7d",
+      "bytes": 6096
+    },
+    {
+      "path": "../../dedup/RIGHT_ATTACK/08.png",
+      "sha256": "4d5d6301609f0c5b884b97c651be1788de1ec826de995dada00d0c6fd87ca8ac",
+      "bytes": 6394
+    },
+    {
+      "path": "../../../../Pipeline/03-palette/palette.json",
+      "sha256": "767b6ca47c1747cadffc57d392d61f3c1741921a29b54d00f80bd574b892ceb6",
+      "bytes": 1387
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "17dfc53d4c4c8eda81e39f4b1057c7491ff043e10bedd6d73036c57b148ebc10",
+      "bytes": 6731
+    },
+    {
+      "path": "01.png",
+      "sha256": "53f177f8ec3ad28550de6616d65b96c1a48c3a9bc1b9f98ca8e2f4b789d5caa0",
+      "bytes": 6372
+    },
+    {
+      "path": "02.png",
+      "sha256": "bae5930000380c2feb73d200492bb01182e357e288f4c05357c4de0830214837",
+      "bytes": 6885
+    },
+    {
+      "path": "03.png",
+      "sha256": "0dbeeeaaf5b64f45ac145b6043367c6f9f88a5e090bc09aa53354d37913b2f96",
+      "bytes": 7142
+    },
+    {
+      "path": "04.png",
+      "sha256": "8f157e3349c80aee4d79609e087cabc191f8d92bdfbf52de7128abecbabbcfa3",
+      "bytes": 7145
+    },
+    {
+      "path": "05.png",
+      "sha256": "e643290c5b698f09bf9da27ba43ca11ccffa7230ecca6681ee06f09e1af02334",
+      "bytes": 8377
+    },
+    {
+      "path": "06.png",
+      "sha256": "3e789664ff158f2727aa23b60676de323ceb1951b1cd8f835fc77e2057883b99",
+      "bytes": 6071
+    },
+    {
+      "path": "07.png",
+      "sha256": "06bfc285bae6b6460788dd2d41ee460e7668d0a3533c11f2aad252c80edabc48",
+      "bytes": 6082
+    },
+    {
+      "path": "08.png",
+      "sha256": "956add19e09873aceb0ac8179e48b8f11815181f6f66713d7cf1912395f62b0b",
+      "bytes": 6387
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "oneshot",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 8,
+      "idx_flip": 0.760213,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.460165
+    },
+    "per_frame_nearest": {
+      "pairs": 8,
+      "idx_flip": 0.760213,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.460165
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 6
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 9
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 9
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 8
+    },
+    {
+      "file": "04.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 10
+    },
+    {
+      "file": "05.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 15
+    },
+    {
+      "file": "06.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 12
+    },
+    {
+      "file": "07.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 11
+    },
+    {
+      "file": "08.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 6
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.117822,
+    "worst_p95_delta_e": 0.117822,
+    "off_palette_px": 830
+  }
+}

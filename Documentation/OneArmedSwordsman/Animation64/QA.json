@@ -1,0 +1,1967 @@
+{
+  "adjacentPairs": {
+    "LEFT/IDLE": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 238
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 339
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 311
+      },
+      {
+        "pair": [
+          3,
+          0
+        ],
+        "differentPixels": 257
+      }
+    ],
+    "LEFT/WALK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 515
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 638
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 453
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 707
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 503
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 664
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 472
+      },
+      {
+        "pair": [
+          7,
+          0
+        ],
+        "differentPixels": 681
+      }
+    ],
+    "LEFT/ATTACK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 722
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 673
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 914
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 988
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 478
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 772
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 693
+      }
+    ],
+    "RIGHT/IDLE": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 355
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 256
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 355
+      },
+      {
+        "pair": [
+          3,
+          0
+        ],
+        "differentPixels": 264
+      }
+    ],
+    "RIGHT/WALK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 549
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 670
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 486
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 690
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 576
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 680
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 544
+      },
+      {
+        "pair": [
+          7,
+          0
+        ],
+        "differentPixels": 690
+      }
+    ],
+    "RIGHT/ATTACK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 612
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 756
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 957
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 983
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 539
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 796
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 741
+      }
+    ]
+  },
+  "frames": {
+    "LEFT/IDLE/00.png": {
+      "opaqueBoundsExclusive": [
+        14,
+        20,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        35,
+        33
+      ],
+      "rightShoulder": [
+        27,
+        33
+      ],
+      "leftHand": [
+        19,
+        31
+      ],
+      "leftElbow": [
+        26.6645026,
+        35.116479
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        19.0,
+        56.0
+      ],
+      "nearKnee": [
+        28.1565355,
+        47.1433071
+      ],
+      "farKnee": [
+        30.6697425,
+        50.9931802
+      ]
+    },
+    "LEFT/IDLE/01.png": {
+      "opaqueBoundsExclusive": [
+        14,
+        19,
+        47,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        35,
+        32
+      ],
+      "rightShoulder": [
+        27,
+        32
+      ],
+      "leftHand": [
+        19,
+        31
+      ],
+      "leftElbow": [
+        26.8510307,
+        34.7485086
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        19.0,
+        56.0
+      ],
+      "nearKnee": [
+        28.1565355,
+        47.1433071
+      ],
+      "farKnee": [
+        30.6697425,
+        50.9931802
+      ]
+    },
+    "LEFT/IDLE/02.png": {
+      "opaqueBoundsExclusive": [
+        14,
+        18,
+        47,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        31
+      ],
+      "rightShoulder": [
+        26,
+        31
+      ],
+      "leftHand": [
+        19,
+        31
+      ],
+      "leftElbow": [
+        26.5576667,
+        35.3094866
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        19.0,
+        56.0
+      ],
+      "nearKnee": [
+        28.6015796,
+        46.8021054
+      ],
+      "farKnee": [
+        31.0171718,
+        49.9999816
+      ]
+    },
+    "LEFT/IDLE/03.png": {
+      "opaqueBoundsExclusive": [
+        14,
+        19,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        32
+      ],
+      "rightShoulder": [
+        26,
+        32
+      ],
+      "leftHand": [
+        19,
+        31
+      ],
+      "leftElbow": [
+        26.2726846,
+        35.7747313
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        19.0,
+        56.0
+      ],
+      "nearKnee": [
+        28.1565355,
+        47.1433071
+      ],
+      "farKnee": [
+        30.6697425,
+        50.9931802
+      ]
+    },
+    "LEFT/WALK/00.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        20,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        33
+      ],
+      "rightShoulder": [
+        26,
+        33
+      ],
+      "leftHand": [
+        22,
+        36
+      ],
+      "leftElbow": [
+        29.5345343,
+        40.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -4,
+      "swordTip": [
+        46.9391013,
+        34.2560882
+      ],
+      "nearKnee": [
+        26.2946744,
+        46.1512687
+      ],
+      "farKnee": [
+        29.4684444,
+        51.982321
+      ]
+    },
+    "LEFT/WALK/01.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        21,
+        46,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 54
+      },
+      "leftShoulder": [
+        33,
+        34
+      ],
+      "rightShoulder": [
+        25,
+        34
+      ],
+      "leftHand": [
+        21,
+        37
+      ],
+      "leftElbow": [
+        28.5345343,
+        41.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -2,
+      "swordTip": [
+        45.9847707,
+        36.1275126
+      ],
+      "nearKnee": [
+        26.1236313,
+        45.4010056
+      ],
+      "farKnee": [
+        32.3132049,
+        51.6582689
+      ]
+    },
+    "LEFT/WALK/02.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        19,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 51
+      },
+      "leftShoulder": [
+        34,
+        32
+      ],
+      "rightShoulder": [
+        26,
+        32
+      ],
+      "leftHand": [
+        22,
+        35
+      ],
+      "leftElbow": [
+        29.5345343,
+        39.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -6,
+      "swordTip": [
+        46.8630474,
+        32.3867884
+      ],
+      "nearKnee": [
+        27.0656447,
+        45.9893254
+      ],
+      "farKnee": [
+        25.0495678,
+        48.2843632
+      ]
+    },
+    "LEFT/WALK/03.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        18,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 52
+      },
+      "leftShoulder": [
+        33,
+        31
+      ],
+      "rightShoulder": [
+        25,
+        31
+      ],
+      "leftHand": [
+        21,
+        34
+      ],
+      "leftElbow": [
+        28.5345343,
+        38.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -5,
+      "swordTip": [
+        45.9048675,
+        31.8211064
+      ],
+      "nearKnee": [
+        27.9924697,
+        47.2829518
+      ],
+      "farKnee": [
+        22.0151712,
+        41.5075473
+      ]
+    },
+    "LEFT/WALK/04.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        20,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        33
+      ],
+      "rightShoulder": [
+        26,
+        33
+      ],
+      "leftHand": [
+        22,
+        36
+      ],
+      "leftElbow": [
+        29.5345343,
+        40.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -4,
+      "swordTip": [
+        46.9391013,
+        34.2560882
+      ],
+      "nearKnee": [
+        29.735043,
+        50.768319
+      ],
+      "farKnee": [
+        22.1236313,
+        45.4010056
+      ]
+    },
+    "LEFT/WALK/05.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        21,
+        47,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 54,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        34
+      ],
+      "rightShoulder": [
+        26,
+        34
+      ],
+      "leftHand": [
+        22,
+        37
+      ],
+      "leftElbow": [
+        29.5345343,
+        41.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -1,
+      "swordTip": [
+        46.9961924,
+        36.5636898
+      ],
+      "nearKnee": [
+        32.34433,
+        51.8267973
+      ],
+      "farKnee": [
+        22.2341063,
+        45.9211702
+      ]
+    },
+    "LEFT/WALK/06.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        19,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 50,
+        "far": 56
+      },
+      "leftShoulder": [
+        33,
+        32
+      ],
+      "rightShoulder": [
+        25,
+        32
+      ],
+      "leftHand": [
+        21,
+        35
+      ],
+      "leftElbow": [
+        28.5345343,
+        39.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -5,
+      "swordTip": [
+        45.9048675,
+        32.8211064
+      ],
+      "nearKnee": [
+        26.2553278,
+        39.9949933
+      ],
+      "farKnee": [
+        23.9924697,
+        47.2829518
+      ]
+    },
+    "LEFT/WALK/07.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        18,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 52,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        31
+      ],
+      "rightShoulder": [
+        26,
+        31
+      ],
+      "leftHand": [
+        22,
+        34
+      ],
+      "leftElbow": [
+        29.5345343,
+        38.3498038
+      ],
+      "rightHand": null,
+      "swordAngle": -6,
+      "swordTip": [
+        46.8630474,
+        31.3867884
+      ],
+      "nearKnee": [
+        26.0698801,
+        40.9449176
+      ],
+      "farKnee": [
+        26.4392098,
+        49.1638519
+      ]
+    },
+    "LEFT/ATTACK/00.png": {
+      "opaqueBoundsExclusive": [
+        5,
+        20,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        35,
+        33
+      ],
+      "rightShoulder": [
+        27,
+        33
+      ],
+      "leftHand": [
+        24,
+        34
+      ],
+      "leftElbow": [
+        30.1807101,
+        40.1228116
+      ],
+      "rightHand": null,
+      "swordAngle": 137,
+      "swordTip": [
+        5.7161575,
+        51.049959
+      ],
+      "nearKnee": [
+        27.656918,
+        46.1747672
+      ],
+      "farKnee": [
+        30.6697425,
+        50.9931802
+      ]
+    },
+    "LEFT/ATTACK/01.png": {
+      "opaqueBoundsExclusive": [
+        22,
+        20,
+        56,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        36,
+        33
+      ],
+      "rightShoulder": [
+        28,
+        33
+      ],
+      "leftHand": [
+        31,
+        27
+      ],
+      "leftElbow": [
+        27.6420082,
+        35.0258265
+      ],
+      "rightHand": null,
+      "swordAngle": -10,
+      "swordTip": [
+        55.6201938,
+        22.6587956
+      ],
+      "nearKnee": [
+        28.4225246,
+        45.5655147
+      ],
+      "farKnee": [
+        31.6697425,
+        50.9931802
+      ]
+    },
+    "LEFT/ATTACK/02.png": {
+      "opaqueBoundsExclusive": [
+        22,
+        2,
+        52,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        32
+      ],
+      "rightShoulder": [
+        29,
+        32
+      ],
+      "leftHand": [
+        34,
+        22
+      ],
+      "leftElbow": [
+        28.9177123,
+        29.0611863
+      ],
+      "rightHand": null,
+      "swordAngle": -52,
+      "swordTip": [
+        49.3915369,
+        2.2997312
+      ],
+      "nearKnee": [
+        28.3765882,
+        45.4256117
+      ],
+      "farKnee": [
+        32.6757374,
+        50.9714101
+      ]
+    },
+    "LEFT/ATTACK/03.png": {
+      "opaqueBoundsExclusive": [
+        13,
+        4,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        33
+      ],
+      "rightShoulder": [
+        26,
+        33
+      ],
+      "leftHand": [
+        26,
+        27
+      ],
+      "leftElbow": [
+        34.3040915,
+        24.4053779
+      ],
+      "rightHand": null,
+      "swordAngle": -115,
+      "swordTip": [
+        15.4345435,
+        4.3423053
+      ],
+      "nearKnee": [
+        27.1391981,
+        45.4858648
+      ],
+      "farKnee": [
+        32.4858648,
+        51.8608019
+      ]
+    },
+    "LEFT/ATTACK/04.png": {
+      "opaqueBoundsExclusive": [
+        4,
+        24,
+        46,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        30,
+        37
+      ],
+      "rightShoulder": [
+        22,
+        37
+      ],
+      "leftHand": [
+        27,
+        39
+      ],
+      "leftElbow": [
+        33.3906033,
+        44.9034049
+      ],
+      "rightHand": null,
+      "swordAngle": 153,
+      "swordTip": [
+        4.7248369,
+        50.3497625
+      ],
+      "nearKnee": [
+        26.0188968,
+        46.5495373
+      ],
+      "farKnee": [
+        33.4037831,
+        53.2397694
+      ]
+    },
+    "LEFT/ATTACK/05.png": {
+      "opaqueBoundsExclusive": [
+        5,
+        25,
+        46,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        31,
+        38
+      ],
+      "rightShoulder": [
+        23,
+        38
+      ],
+      "leftHand": [
+        26,
+        42
+      ],
+      "leftElbow": [
+        33.6247386,
+        46.1896732
+      ],
+      "rightHand": null,
+      "swordAngle": 147,
+      "swordTip": [
+        5.0332358,
+        55.6159759
+      ],
+      "nearKnee": [
+        26.0188968,
+        46.5495373
+      ],
+      "farKnee": [
+        33.4037831,
+        53.2397694
+      ]
+    },
+    "LEFT/ATTACK/06.png": {
+      "opaqueBoundsExclusive": [
+        6,
+        22,
+        47,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        33,
+        35
+      ],
+      "rightShoulder": [
+        25,
+        35
+      ],
+      "leftHand": [
+        25,
+        37
+      ],
+      "leftElbow": [
+        30.9458968,
+        43.3510874
+      ],
+      "rightHand": null,
+      "swordAngle": 139,
+      "swordTip": [
+        6.1322605,
+        53.4014757
+      ],
+      "nearKnee": [
+        27.1391981,
+        45.4858648
+      ],
+      "farKnee": [
+        32.4858648,
+        51.8608019
+      ]
+    },
+    "LEFT/ATTACK/07.png": {
+      "opaqueBoundsExclusive": [
+        6,
+        20,
+        47,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        33
+      ],
+      "rightShoulder": [
+        26,
+        33
+      ],
+      "leftHand": [
+        22,
+        33
+      ],
+      "leftElbow": [
+        28.0720833,
+        39.2305541
+      ],
+      "rightHand": null,
+      "swordAngle": 125,
+      "swordTip": [
+        7.6605891,
+        53.4788011
+      ],
+      "nearKnee": [
+        27.5129269,
+        45.8184634
+      ],
+      "farKnee": [
+        30.6697425,
+        50.9931802
+      ]
+    },
+    "RIGHT/IDLE/00.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        20,
+        52,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        36,
+        32
+      ],
+      "rightShoulder": [
+        27,
+        34
+      ],
+      "leftHand": [
+        46,
+        31
+      ],
+      "leftElbow": [
+        41.614905,
+        38.5140496
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        46.0,
+        56.0
+      ],
+      "nearKnee": [
+        34.9818606,
+        48.312
+      ],
+      "farKnee": [
+        39.8434645,
+        47.1433071
+      ]
+    },
+    "RIGHT/IDLE/01.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        19,
+        52,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        36,
+        31
+      ],
+      "rightShoulder": [
+        27,
+        33
+      ],
+      "leftHand": [
+        46,
+        31
+      ],
+      "leftElbow": [
+        40.9135,
+        38.0581526
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        46.0,
+        56.0
+      ],
+      "nearKnee": [
+        34.5271648,
+        47.7836364
+      ],
+      "farKnee": [
+        39.3984204,
+        46.8021054
+      ]
+    },
+    "RIGHT/IDLE/02.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        18,
+        52,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        30
+      ],
+      "rightShoulder": [
+        28,
+        32
+      ],
+      "leftHand": [
+        46,
+        31
+      ],
+      "leftElbow": [
+        40.5911883,
+        37.8143053
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        46.0,
+        56.0
+      ],
+      "nearKnee": [
+        34.5271648,
+        47.7836364
+      ],
+      "farKnee": [
+        39.3984204,
+        46.8021054
+      ]
+    },
+    "RIGHT/IDLE/03.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        19,
+        52,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        31
+      ],
+      "rightShoulder": [
+        28,
+        33
+      ],
+      "leftHand": [
+        46,
+        31
+      ],
+      "leftElbow": [
+        41.4038889,
+        38.3868642
+      ],
+      "rightHand": null,
+      "swordAngle": 90,
+      "swordTip": [
+        46.0,
+        56.0
+      ],
+      "nearKnee": [
+        34.9818606,
+        48.312
+      ],
+      "farKnee": [
+        39.8434645,
+        47.1433071
+      ]
+    },
+    "RIGHT/WALK/00.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        20,
+        49,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        32
+      ],
+      "rightShoulder": [
+        28,
+        34
+      ],
+      "leftHand": [
+        42,
+        35
+      ],
+      "leftElbow": [
+        35.1834275,
+        40.4059541
+      ],
+      "rightHand": null,
+      "swordAngle": 188,
+      "swordTip": [
+        17.2432983,
+        31.5206725
+      ],
+      "nearKnee": [
+        34.264957,
+        50.768319
+      ],
+      "farKnee": [
+        41.8675556,
+        45.449679
+      ]
+    },
+    "RIGHT/WALK/01.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        21,
+        49,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 54,
+        "far": 56
+      },
+      "leftShoulder": [
+        38,
+        33
+      ],
+      "rightShoulder": [
+        29,
+        35
+      ],
+      "leftHand": [
+        43,
+        36
+      ],
+      "leftElbow": [
+        36.1834275,
+        41.4059541
+      ],
+      "rightHand": null,
+      "swordAngle": 186,
+      "swordTip": [
+        18.1369526,
+        33.3867884
+      ],
+      "nearKnee": [
+        30.5690384,
+        51.9797365
+      ],
+      "farKnee": [
+        41.6517148,
+        46.3347934
+      ]
+    },
+    "RIGHT/WALK/02.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        19,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 50,
+        "far": 56
+      },
+      "leftShoulder": [
+        38,
+        31
+      ],
+      "rightShoulder": [
+        29,
+        33
+      ],
+      "leftHand": [
+        42,
+        34
+      ],
+      "leftElbow": [
+        34.894083,
+        39.0195561
+      ],
+      "rightHand": null,
+      "swordAngle": 190,
+      "swordTip": [
+        17.3798062,
+        29.6587956
+      ],
+      "nearKnee": [
+        37.5678034,
+        44.5939067
+      ],
+      "farKnee": [
+        39.5271648,
+        47.7836364
+      ]
+    },
+    "RIGHT/WALK/03.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        18,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 52,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        30
+      ],
+      "rightShoulder": [
+        28,
+        32
+      ],
+      "leftHand": [
+        42,
+        33
+      ],
+      "leftElbow": [
+        35.1834275,
+        38.4059541
+      ],
+      "rightHand": null,
+      "swordAngle": 189,
+      "swordTip": [
+        17.3077915,
+        29.0891384
+      ],
+      "nearKnee": [
+        37.9216253,
+        40.8829269
+      ],
+      "farKnee": [
+        36.7521655,
+        49.5116965
+      ]
+    },
+    "RIGHT/WALK/04.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        20,
+        50,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        38,
+        32
+      ],
+      "rightShoulder": [
+        29,
+        34
+      ],
+      "leftHand": [
+        43,
+        35
+      ],
+      "leftElbow": [
+        36.1834275,
+        40.4059541
+      ],
+      "rightHand": null,
+      "swordAngle": 187,
+      "swordTip": [
+        18.1863462,
+        31.9532664
+      ],
+      "nearKnee": [
+        37.4514,
+        46.9114667
+      ],
+      "farKnee": [
+        33.5320928,
+        51.9863047
+      ]
+    },
+    "RIGHT/WALK/05.png": {
+      "opaqueBoundsExclusive": [
+        14,
+        21,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 54
+      },
+      "leftShoulder": [
+        37,
+        33
+      ],
+      "rightShoulder": [
+        28,
+        35
+      ],
+      "leftHand": [
+        42,
+        36
+      ],
+      "leftElbow": [
+        35.1834275,
+        41.4059541
+      ],
+      "rightHand": null,
+      "swordAngle": 185,
+      "swordTip": [
+        17.0951325,
+        33.8211064
+      ],
+      "nearKnee": [
+        37.8763687,
+        45.4010056
+      ],
+      "farKnee": [
+        30.8656232,
+        51.3604132
+      ]
+    },
+    "RIGHT/WALK/06.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        19,
+        48,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 52
+      },
+      "leftShoulder": [
+        38,
+        31
+      ],
+      "rightShoulder": [
+        29,
+        33
+      ],
+      "leftHand": [
+        42,
+        34
+      ],
+      "leftElbow": [
+        34.894083,
+        39.0195561
+      ],
+      "rightHand": null,
+      "swordAngle": 189,
+      "swordTip": [
+        17.3077915,
+        30.0891384
+      ],
+      "nearKnee": [
+        36.9343553,
+        45.9893254
+      ],
+      "farKnee": [
+        37.3118836,
+        49.282268
+      ]
+    },
+    "RIGHT/WALK/07.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        18,
+        47,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 53
+      },
+      "leftShoulder": [
+        37,
+        30
+      ],
+      "rightShoulder": [
+        28,
+        32
+      ],
+      "leftHand": [
+        41,
+        33
+      ],
+      "leftElbow": [
+        33.894083,
+        38.0195561
+      ],
+      "rightHand": null,
+      "swordAngle": 191,
+      "swordTip": [
+        16.4593204,
+        28.2297751
+      ],
+      "nearKnee": [
+        35.5271648,
+        47.7836364
+      ],
+      "farKnee": [
+        41.9862812,
+        42.4683091
+      ]
+    },
+    "RIGHT/ATTACK/00.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        20,
+        61,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        36,
+        32
+      ],
+      "rightShoulder": [
+        27,
+        34
+      ],
+      "leftHand": [
+        42,
+        34
+      ],
+      "leftElbow": [
+        36.324542,
+        40.5938741
+      ],
+      "rightHand": null,
+      "swordAngle": 42,
+      "swordTip": [
+        60.5786206,
+        50.7282652
+      ],
+      "nearKnee": [
+        34.4005338,
+        48.9020534
+      ],
+      "farKnee": [
+        40.1330581,
+        46.6220826
+      ]
+    },
+    "RIGHT/ATTACK/01.png": {
+      "opaqueBoundsExclusive": [
+        11,
+        19,
+        46,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        35,
+        32
+      ],
+      "rightShoulder": [
+        26,
+        34
+      ],
+      "leftHand": [
+        36,
+        27
+      ],
+      "leftElbow": [
+        43.5703993,
+        31.2870799
+      ],
+      "rightHand": null,
+      "swordAngle": 191,
+      "swordTip": [
+        11.4593204,
+        22.2297751
+      ],
+      "nearKnee": [
+        33.7234645,
+        49.4566929
+      ],
+      "farKnee": [
+        40.1330581,
+        46.6220826
+      ]
+    },
+    "RIGHT/ATTACK/02.png": {
+      "opaqueBoundsExclusive": [
+        11,
+        3,
+        45,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        34,
+        30
+      ],
+      "rightShoulder": [
+        25,
+        32
+      ],
+      "leftHand": [
+        33,
+        22
+      ],
+      "leftElbow": [
+        41.1068913,
+        25.1572636
+      ],
+      "rightHand": null,
+      "swordAngle": 229,
+      "swordTip": [
+        16.5985243,
+        3.1322605
+      ],
+      "nearKnee": [
+        32.961315,
+        49.9503945
+      ],
+      "farKnee": [
+        40.343082,
+        46.1747672
+      ]
+    },
+    "RIGHT/ATTACK/03.png": {
+      "opaqueBoundsExclusive": [
+        15,
+        5,
+        53,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        32
+      ],
+      "rightShoulder": [
+        28,
+        34
+      ],
+      "leftHand": [
+        38,
+        27
+      ],
+      "leftElbow": [
+        29.3630622,
+        28.0456124
+      ],
+      "rightHand": null,
+      "swordAngle": 302,
+      "swordTip": [
+        51.2479816,
+        5.7987976
+      ],
+      "nearKnee": [
+        32.4715541,
+        51.6086412
+      ],
+      "farKnee": [
+        41.7658937,
+        45.9211702
+      ]
+    },
+    "RIGHT/ATTACK/04.png": {
+      "opaqueBoundsExclusive": [
+        17,
+        23,
+        58,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        41,
+        35
+      ],
+      "rightShoulder": [
+        32,
+        37
+      ],
+      "leftHand": [
+        36,
+        39
+      ],
+      "leftElbow": [
+        33.586237,
+        30.6415463
+      ],
+      "rightHand": null,
+      "swordAngle": 31,
+      "swordTip": [
+        57.4291825,
+        51.8759519
+      ],
+      "nearKnee": [
+        30.5357009,
+        53.9865153
+      ],
+      "farKnee": [
+        42.9774708,
+        45.4000334
+      ]
+    },
+    "RIGHT/ATTACK/05.png": {
+      "opaqueBoundsExclusive": [
+        17,
+        25,
+        59,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        40,
+        37
+      ],
+      "rightShoulder": [
+        31,
+        39
+      ],
+      "leftHand": [
+        37,
+        42
+      ],
+      "leftElbow": [
+        31.5940459,
+        35.1834275
+      ],
+      "rightHand": null,
+      "swordAngle": 32,
+      "swordTip": [
+        58.2012024,
+        55.2479816
+      ],
+      "nearKnee": [
+        30.5357009,
+        53.9865153
+      ],
+      "farKnee": [
+        42.9774708,
+        45.4000334
+      ]
+    },
+    "RIGHT/ATTACK/06.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        22,
+        60,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        38,
+        34
+      ],
+      "rightShoulder": [
+        29,
+        36
+      ],
+      "leftHand": [
+        40,
+        37
+      ],
+      "leftElbow": [
+        31.8304412,
+        39.9913725
+      ],
+      "rightHand": null,
+      "swordAngle": 39,
+      "swordTip": [
+        59.428649,
+        52.7330098
+      ],
+      "nearKnee": [
+        32.4715541,
+        51.6086412
+      ],
+      "farKnee": [
+        41.8333385,
+        45.624441
+      ]
+    },
+    "RIGHT/ATTACK/07.png": {
+      "opaqueBoundsExclusive": [
+        16,
+        20,
+        58,
+        57
+      ],
+      "renderedLegBottomY": {
+        "near": 56,
+        "far": 56
+      },
+      "leftShoulder": [
+        37,
+        32
+      ],
+      "rightShoulder": [
+        28,
+        34
+      ],
+      "leftHand": [
+        43,
+        33
+      ],
+      "leftElbow": [
+        38.5286585,
+        40.4630493
+      ],
+      "rightHand": null,
+      "swordAngle": 56,
+      "swordTip": [
+        56.9798226,
+        53.7259393
+      ],
+      "nearKnee": [
+        34.4005338,
+        48.9020534
+      ],
+      "farKnee": [
+        40.343082,
+        46.1747672
+      ]
+    }
+  },
+  "weaponLengthGripToTip": 25,
+  "bladeWidth": 8,
+  "totalWeaponLength": 30
+}

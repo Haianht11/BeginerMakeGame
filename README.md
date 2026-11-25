@@ -6,7 +6,7 @@ anh chào các em
 
 Mở `Assets/Scenes/DungeonDemo.unity` và bấm **Play**. Đây là một phòng thử đi ngang với tường đá xanh lạnh, xích treo, lồng sắt và bốn cụm nến PixelFX cháy lập lòe dọc lối đi. [Ảnh xem trước](Documentation/DungeonDemo/Preview.jpg)
 
-Dùng `A` / `D` hoặc phím mũi tên để sang bên phải. Đứng gần hình nhân, quay mặt về phía nó rồi bấm `Z`. Hình nhân chớp màu, rung và phát tia lửa khi đòn đánh chạm. Bấm `Z` trong từng đòn để thử cả combo ba đòn. Dùng `Space`, `W` hoặc `↑` để nhảy và bấm lần nữa trên không để nhảy đôi.
+Dùng `A` / `D` hoặc phím mũi tên để sang bên phải. Đứng gần Goblin Warrior, quay mặt về phía nó rồi bấm `Z`. Goblin giật lùi, chớp màu và phát tia lửa khi đòn đánh chạm. Bấm `Z` trong từng đòn để thử cả combo ba đòn. Dùng `Space`, `W` hoặc `↑` để nhảy và bấm lần nữa trên không để nhảy đôi.
 
 Agent Sprite Forge và PixelFX nằm trong `.agents/skills` của project. Agent Sprite Forge cung cấp các skill cho map và sprite. Hiệu ứng `impacts/hit-spark` của PixelFX đã được xuất thành sprite sheet để Unity dùng trực tiếp. [Agent Sprite Forge](https://github.com/0x0funky/agent-sprite-forge) · [PixelFX](https://github.com/patch-gg/pixelfx)
 

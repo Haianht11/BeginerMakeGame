@@ -1,0 +1,10 @@
+{
+  "artSource": "host_image",
+  "generation": "Codex ImageGen cutout atlases drawn from the original reference",
+  "animation": "independent key poses and rigid cutout composition at native game resolution",
+  "reference": "../../SourceSheet.png",
+  "partsSha256": {
+    "LEFT": "ddc1c57ed4b30a94052bf1b013a80a1804a1f5350ee7daa3f1104e5a42e86f60",
+    "RIGHT": "dce936d3aa66bee083465d2392d5c0a008477270d0a361be36e12207ef12a6bf"
+  }
+}

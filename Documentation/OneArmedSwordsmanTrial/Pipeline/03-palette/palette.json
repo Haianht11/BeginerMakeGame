@@ -1,0 +1,105 @@
+{
+  "schema": "generate2dsprite.palette.v1",
+  "name": "one_armed_swordsman_trial",
+  "colors": [
+    {
+      "hex": "#000000"
+    },
+    {
+      "hex": "#020205"
+    },
+    {
+      "hex": "#08070c"
+    },
+    {
+      "hex": "#0d0c12"
+    },
+    {
+      "hex": "#101118"
+    },
+    {
+      "hex": "#17161c"
+    },
+    {
+      "hex": "#1e1d22"
+    },
+    {
+      "hex": "#21242b"
+    },
+    {
+      "hex": "#352521"
+    },
+    {
+      "hex": "#272b34"
+    },
+    {
+      "hex": "#2d323b"
+    },
+    {
+      "hex": "#47322b"
+    },
+    {
+      "hex": "#343940"
+    },
+    {
+      "hex": "#3c424b"
+    },
+    {
+      "hex": "#593f34"
+    },
+    {
+      "hex": "#4a4d53"
+    },
+    {
+      "hex": "#57595c"
+    },
+    {
+      "hex": "#7f5445"
+    },
+    {
+      "hex": "#61676b"
+    },
+    {
+      "hex": "#6a747c"
+    },
+    {
+      "hex": "#9e6853"
+    },
+    {
+      "hex": "#78828b"
+    },
+    {
+      "hex": "#958471"
+    },
+    {
+      "hex": "#ba7c62"
+    },
+    {
+      "hex": "#939fa7"
+    },
+    {
+      "hex": "#d39070"
+    },
+    {
+      "hex": "#b0a189"
+    },
+    {
+      "hex": "#a2adb3"
+    },
+    {
+      "hex": "#e7a57e"
+    },
+    {
+      "hex": "#bebdb0"
+    },
+    {
+      "hex": "#f6b489"
+    },
+    {
+      "hex": "#dbd6c0"
+    }
+  ],
+  "transparent_index": 255,
+  "locked": false,
+  "source": "palette_tool build: OKLab k-means++ of 8 image(s), 32 colours, seed 0"
+}

@@ -1,0 +1,196 @@
+{
+  "schema": "generate2dsprite.master.v1",
+  "tool": {
+    "name": "master_still",
+    "version": "0.6.0"
+  },
+  "created": "2026-11-23T09:22:44.473Z",
+  "name": "one_armed_swordsman",
+  "subject": "a young one-armed dark fantasy swordsman, full body",
+  "identity_recap": "young one-armed dark fantasy swordsman, full body (compact proportions, swept spiky charcoal-black hair, warm skin, stern brows, small diagonal nose scar, riveted charcoal segmented plate armor with worn bronze edges, layered waist plates, brown leather belt and square buckle, heavy iron boots, torn ash-gray scarf, tattered black cloak, anatomical left arm ending at a pale linen-wrapped upper-arm cuff, and a single intact right hand carrying a wide point-down steel greatsword with a dark fuller and bronze crossguard)",
+  "facing": "front",
+  "view": "eye-level, near-frontal orthographic sprite view",
+  "finish": "pixel",
+  "class": "hero",
+  "framing": {
+    "canvas": [
+      1024,
+      1024
+    ],
+    "subject_height_px": 788,
+    "top_margin_px": 138,
+    "lead_px": 0,
+    "preset": "hero",
+    "subject_bbox": [
+      261,
+      138,
+      763,
+      926
+    ],
+    "anchor": [
+      503.0,
+      926.0
+    ],
+    "opaque_area_px": 251867,
+    "width_limited": false
+  },
+  "key": "#FF00FF",
+  "files": {
+    "master": {
+      "path": "master.png",
+      "sha256": "aa8a9ef30bcbf2f6ca446097429141ea078ada34ed915ae1b65390748649ae00",
+      "bytes": 390234,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "cutout": {
+      "path": "master_rgba.png",
+      "sha256": "64c9fadd103eb84411e5a0cbbf06d7c545e8cb522c06126a530a41aa8078d52d",
+      "bytes": 455656,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "source": {
+      "path": "source.png",
+      "sha256": "e070f8f280381bc1882a630865e043f144686f4bcccd1cb5df416766e2b43ff2",
+      "bytes": 889596,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    "spec": {
+      "path": "spec.json",
+      "sha256": "598cd457c98e8af403858520c2c71b2f4794dd8d9362d56d6b380fb0cce8e94d",
+      "bytes": 2095
+    },
+    "prompt": {
+      "path": "prompt.txt",
+      "sha256": "10ecda4fc527a660c808e6d3514380301a6b985205d23f1c42af891a1970dd63",
+      "bytes": 2134
+    }
+  },
+  "references": [
+    {
+      "role": "identity",
+      "path": "../SourceSheet.png",
+      "sha256": "50af9b771728c4f4273eddad429aa6b35903b0ade5168fc671550ed973e2dde3",
+      "bytes": 1348618,
+      "what": "original lineup and upper-left neutral standing pose"
+    },
+    {
+      "role": "style",
+      "path": "../Animation128/Source/RIGHT.png",
+      "sha256": "dce936d3aa66bee083465d2392d5c0a008477270d0a361be36e12207ef12a6bf",
+      "bytes": 920108,
+      "what": "cutout atlas of the same character, used for armor, sword and cloth details"
+    },
+    {
+      "role": "style",
+      "path": "../Animation128/Source/LEFT.png",
+      "sha256": "ddc1c57ed4b30a94052bf1b013a80a1804a1f5350ee7daa3f1104e5a42e86f60",
+      "bytes": 882414,
+      "what": "complementary cutout atlas used to confirm the asymmetric arm design"
+    }
+  ],
+  "transform": {
+    "mapping": "master = scale * source + offset (continuous pixel coordinates: pixel i spans [i, i + 1))",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_subject_bbox": [
+      250,
+      32,
+      986,
+      1187
+    ],
+    "crop_box": [
+      244,
+      26,
+      992,
+      1193
+    ],
+    "crop_margin_px": 6,
+    "scale": 0.6822510822510822,
+    "offset": [
+      90.3688311688312,
+      116.16796536796537
+    ],
+    "canvas": [
+      1024,
+      1024
+    ],
+    "resampler": "lanczos",
+    "premultiplied": true,
+    "alpha_floor_px": 5370,
+    "subject_parts": 1,
+    "ignored_parts": 26,
+    "ignored_px": 30,
+    "source_touches": [],
+    "key_rgb": [
+      255,
+      0,
+      255
+    ]
+  },
+  "route": "host-image_gen",
+  "provenance": {
+    "command": "external",
+    "run": null,
+    "take": null,
+    "source_name": "exec-f3e206f2-0d00-4e1f-bc61-5f7fdd2cc3a0.png",
+    "source_sha256": "e070f8f280381bc1882a630865e043f144686f4bcccd1cb5df416766e2b43ff2",
+    "media": null,
+    "media_cli_source": null,
+    "edit": null
+  },
+  "matte": {
+    "requested": "soft",
+    "key_estimate": {
+      "key": [
+        255.0,
+        0.0,
+        255.0
+      ],
+      "source": "native_alpha",
+      "valid": false,
+      "ring_share": 0.0,
+      "coverage": 0.0,
+      "distance_from_declared": 0.0
+    },
+    "quality": "native_alpha",
+    "qa": {
+      "key": [
+        255.0,
+        0.0,
+        255.0
+      ],
+      "opaque_key_px": 0,
+      "outer_ring_spill_fraction": 0.009666159491631613,
+      "semitransparent_fraction": 0.9971297666375484,
+      "enclosed_key_pockets": 0,
+      "key_hued_px": 0,
+      "visible_px": 560930,
+      "outer_ring_px": 11173,
+      "thresholds": {
+        "key_tolerance": 48.0,
+        "spill_threshold": 20.0,
+        "min_pocket_area": 16,
+        "opaque_alpha": 128,
+        "spill_hue_balance": 0.5
+      },
+      "method": "forge_matte.matte_qa v1: straight-colour key distance and dominance on the keyed image; two-channel keys count spill only where the key channels are balanced"
+    },
+    "key_choice": {
+      "status": "ok",
+      "overlap_share": 0.0,
+      "rule": "reject a key when more than 0.5% of subject pixels have key dominance >= 40; first acceptable candidate wins"
+    }
+  },
+  "warnings": []
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "generate2dsprite.master_spec.v1",
+  "name": "one_armed_swordsman",
+  "subject": "a young one-armed dark fantasy swordsman, full body",
+  "identity": "compact proportions, swept spiky charcoal-black hair, warm skin, stern brows, small diagonal nose scar, riveted charcoal segmented plate armor with worn bronze edges, layered waist plates, brown leather belt and square buckle, heavy iron boots, torn ash-gray scarf, tattered black cloak, anatomical left arm ending at a pale linen-wrapped upper-arm cuff, and a single intact right hand carrying a wide point-down steel greatsword with a dark fuller and bronze crossguard",
+  "pose": "standing at rest, near head-on, both boots planted and the right hand holding the greatsword tip-down at his side",
+  "recap": "young one-armed dark fantasy swordsman, full body (compact proportions, swept spiky charcoal-black hair, warm skin, stern brows, small diagonal nose scar, riveted charcoal segmented plate armor with worn bronze edges, layered waist plates, brown leather belt and square buckle, heavy iron boots, torn ash-gray scarf, tattered black cloak, anatomical left arm ending at a pale linen-wrapped upper-arm cuff, and a single intact right hand carrying a wide point-down steel greatsword with a dark fuller and bronze crossguard)",
+  "facing": "front",
+  "facing_parts": null,
+  "view": "eye-level, near-frontal orthographic sprite view",
+  "class": "hero",
+  "finish": "pixel",
+  "key": "#FF00FF",
+  "genre": null,
+  "pronoun": "he",
+  "identity_ref": {
+    "path": "../SourceSheet.png",
+    "sha256": "50af9b771728c4f4273eddad429aa6b35903b0ade5168fc671550ed973e2dde3",
+    "what": "original lineup and upper-left neutral standing pose"
+  },
+  "style_ref": {
+    "path": "../Animation128/Source/RIGHT.png",
+    "sha256": "dce936d3aa66bee083465d2392d5c0a008477270d0a361be36e12207ef12a6bf",
+    "what": "cutout atlas of the same character, used for armor, sword and cloth details",
+    "do_not_copy": ""
+  },
+  "allowed_text": null,
+  "extra_bans": [],
+  "opaque_parts": null,
+  "extra": null
+}

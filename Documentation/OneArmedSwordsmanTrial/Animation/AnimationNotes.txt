@@ -1,0 +1,165 @@
+ONE-ARMED SWORDSMAN TRIAL - ANIMATION PROVENANCE, PROMPTS, MEASUREMENTS & QA RECORD
+=======================================================================================
+
+1. ROUTE & PROVENANCE
+---------------------
+- Side Masters (`Animation/Masters/`):
+  - Art Source: `host_image` (Antigravity `image-generator` / `gemini-3.1-flash-image`), prepared by `@master-prep` onto `160x160` RGBA canvases anchored at `(80, 144)` (ground pixel `y=143`), quantized to the locked 32-color `Pipeline/03-palette/palette.json` (`--alpha-threshold 128 --orphans 0`).
+  - `Animation/Masters/master_left_160.png`: from `Animation/RawMasters/raw_master_left.png` (`965x715` RGBA, derived from `Pipeline/cutout_02_fixed.png`; `native_alpha` `matte_qa`: `opaque_key_px=0`, `outer_ring_spill_fraction=0.0`, `enclosed_key_pockets=0`, `key_hued_px=0`). Normalized bbox `(8, 46)..(139, 143)`, `32/32` locked colors, `partial_alpha_px=0`, `output_off_palette_px=0`.
+  - `Animation/Masters/master_right_160.png`: from `Animation/RawMasters/raw_master_right.jpg` (`1024x1024` RGB `#FF00FF` magenta; `forge_matte.key_still(quality="soft")` `matte_qa`: `opaque_key_px=0`, `outer_ring_spill_fraction=0.0`, `enclosed_key_pockets=0`, `key_hued_px=0`). Normalized bbox `(49, 47)..(131, 143)`, `31/32` locked colors, `partial_alpha_px=0`, `output_off_palette_px=0`.
+  - Master Apply QA (`Animation/Pipeline/masters-palettized-20261125_120239/apply-qa.json`): `status="pass"`, `output_off_palette_px=0`, `output_partial_alpha_px=0`, `max_delta_e=0.06134` (`skipped`, no gate).
+- Raw Animation Clips (`Animation/Raw/<DIR>/<ACTION>/frame_*.png`):
+  - Art Source: PixelLab MCP `animate_image_pixminimax` (`view="side"`, `no_background=True`, `first_frame_url` + `last_frame_url` pinned to `master_right_160.png` with `direction="east"` or `master_left_160.png` with `direction="west"`).
+  - Generated and accepted on first pass (`6` PixelLab generations total, `0` retakes needed).
+- Post-Processing & Packaging (`@anim-packager`):
+  - Wrap-frame deduplication (into `Animation/Pipeline/dedup/<DIR>_<ACTION>/`):
+    - `LEFT_IDLE`: 5 raw (`frame_00..04`) -> dropped `frame_04` (`mae_rgba=0.6444` vs `frame_00`) -> `4` frames (`00..03`).
+    - `RIGHT_IDLE`: 5 raw (`frame_00..04`) -> dropped `frame_04` (`mae_rgba=0.8359` vs `frame_00`) -> `4` frames (`00..03`).
+    - `LEFT_WALK`: 9 raw (`frame_00..08`) -> dropped `frame_08` (`mae_rgba=0.8323` vs `frame_00`) -> `8` frames (`00..07`).
+    - `RIGHT_WALK`: 9 raw (`frame_00..08`) -> dropped `frame_08` (`mae_rgba=0.6787` vs `frame_00`) -> `8` frames (`00..07`).
+    - `LEFT_ATTACK`: 9 raw (`frame_00..08`) -> `frame_08` not an exact duplicate (`mae_rgba=0.7062`, `exact_equal=false`) -> kept `9` frames (`00..08`) for oneshot recovery; `hitFrame=5`.
+    - `RIGHT_ATTACK`: 9 raw (`frame_00..08`) -> `frame_08` not an exact duplicate (`mae_rgba=0.6451`, `exact_equal=false`) -> kept `9` frames (`00..08`) for oneshot recovery; `hitFrame=5`.
+  - Grounding check: all 6 clips already grounded at `y=143` (with natural `142..144` stride bob on `LEFT_WALK` and low cleave arc to `y=149` on `LEFT_ATTACK/05` while boots stay at `y=142..143`); global shift `[0, 0]` for all 6 clips, zero per-frame cropping, zero horizontal flipping, `0` edge touches across all frames.
+  - Temporal Palette Quantization: `palette_tool.py quantize-seq` locked to `Documentation/OneArmedSwordsmanTrial/Pipeline/03-palette/palette.json` (`--alpha-threshold 128 --orphans 0 --margin 4e-4`, `--loop-policy cycle` for `IDLE`/`WALK`, `--loop-policy oneshot` for `ATTACK`).
+
+2. PIXELLAB JOB IDS, SEEDS & GENERATION COST
+---------------------------------------------
+- Generation count / cost summary: `6` PixelLab `animate_image_pixminimax` generations total, `0` retakes needed (exact credit/USD amount not printed in MCP tool output).
+- `RIGHT_IDLE`:  `job_id=f0d29f9c-8bae-40a6-97c0-ca50e76e02bc` | `direction="east"` | `seed=101` | `1` gen (`5` raw frames -> `4` final)
+- `LEFT_IDLE`:   `job_id=d0d9c616-e442-49e4-94ca-7a629eb6fd44` | `direction="west"` | `seed=102` | `1` gen (`5` raw frames -> `4` final)
+- `RIGHT_WALK`:  `job_id=fe8adc01-e52c-4b1d-a979-560c9733423e` | `direction="east"` | `seed=103` | `1` gen (`9` raw frames -> `8` final)
+- `LEFT_WALK`:   `job_id=4e6614a4-b651-4e5f-ad7a-9491079789bf` | `direction="west"` | `seed=104` | `1` gen (`9` raw frames -> `8` final)
+- `RIGHT_ATTACK`:`job_id=37bd7bc7-010f-4d97-b54a-086946d7a819` | `direction="east"` | `seed=105` | `1` gen (`9` raw frames -> `9` final)
+- `LEFT_ATTACK`: `job_id=95e195ed-5d42-43f3-aecf-11dec6c470f7` | `direction="west"` | `seed=106` | `1` gen (`9` raw frames -> `9` final)
+
+3. EXACT PROMPTS (`animate_image_pixminimax`)
+---------------------------------------------
+Shared Parameters: `view="side"`, `no_background=True`, `first_frame_url` + `last_frame_url` pinned to `master_right_160.png` (`RIGHT`) / `master_left_160.png` (`LEFT`).
+
+- `RIGHT` `subject_description`:
+  "compact pixel-art one-armed dark-fantasy swordsman in charcoal armor with tattered black cape and gray scarf, holding a massive broad dark-steel slab greatsword one-handed in his right hand"
+- `RIGHT` `initial_pose`:
+  "standing in combat-ready side profile facing right, near right arm holding the massive greatsword diagonally forward-down, left arm missing"
+- `LEFT` `subject_description`:
+  "compact pixel-art one-armed dark-fantasy swordsman in charcoal armor with tattered black cape and gray scarf, short bandaged left upper-arm stump in foreground, far right arm holding a massive broad dark-steel slab greatsword"
+- `LEFT` `initial_pose`:
+  "standing in combat-ready side profile facing left, near bandaged left upper-arm stump visibly empty in foreground, far right arm holding the massive greatsword diagonally forward-down"
+
+Motion `description` per clip:
+- `RIGHT_IDLE`:
+  "subtle idle breathing loop in place; gentle chest rise and fall, tattered black cape and gray scarf softly rippling in the breeze, feet planted firmly on ground, near right arm holding the massive slab greatsword steadily at constant full size, strictly one-armed with no second hand"
+- `LEFT_IDLE`:
+  "subtle idle breathing loop in place; gentle chest rise and fall, tattered black cape and gray scarf softly rippling in the breeze, feet planted firmly, near bandaged left upper-arm stump staying completely empty with no forearm or hand, far right arm holding the massive slab greatsword steadily at constant full size"
+- `RIGHT_WALK`:
+  "seamless looping heavy warrior walk cycle in place facing right; near right leg and far left leg alternate clear forward and back strides with natural weight bob, tattered black cape flowing behind to the left, near right arm carrying the massive slab greatsword forward-down with steady heavy momentum, greatsword keeps constant full massive length and width on every frame, strictly one-armed with no second hand"
+- `LEFT_WALK`:
+  "seamless looping heavy warrior walk cycle in place facing left; near left leg and far right leg alternate clear forward and back strides with natural weight bob, tattered black cape flowing behind to the right, near bandaged left upper-arm stump staying visibly empty with no forearm or hand, far right arm carrying the massive slab greatsword forward-down with steady heavy momentum, greatsword keeps constant full massive length and width on every frame"
+- `RIGHT_ATTACK`:
+  "powerful one-handed heavy greatsword overhead cleave facing right and recovering to start pose; near right arm heaves the massive broad slab greatsword up and back overhead in a heavy wind-up, then slams it down-forward to the right in a sweeping cleave arc as the cape whips with momentum, followed by heavy follow-through and clean recovery to starting guard stance; strictly one-armed with no left arm or second hand, greatsword stays the same massive full length and width throughout every frame"
+- `LEFT_ATTACK`:
+  "powerful one-handed heavy greatsword overhead cleave facing left and recovering to start pose; far right arm heaves the massive broad slab greatsword up and back over his far shoulder in a heavy wind-up, then slams it down-forward to the left in a sweeping cleave arc as the cape whips with momentum, followed by heavy follow-through and clean recovery to starting guard stance; near bandaged left upper-arm stump stays clearly empty with no forearm or hand throughout, greatsword stays the same massive full length and width throughout every frame"
+
+4. EXPORT SPECIFICATIONS
+------------------------
+- Final Frames (`160x160` 8-bit RGBA, binary alpha, locked <= 32 colors, `off_palette_px=0`, `partial_alpha_px=0`, `edge_touch_px=0`):
+  - `LEFT/IDLE/00..03.png` (4f), `LEFT/WALK/00..07.png` (8f), `LEFT/ATTACK/00..08.png` (9f)
+  - `RIGHT/IDLE/00..03.png` (4f), `RIGHT/WALK/00..07.png` (8f), `RIGHT/ATTACK/00..08.png` (9f)
+- Horizontal RGBA Strips (`Animation/Strips/`):
+  - `LEFT_IDLE.png` (`640x160`), `LEFT_WALK.png` (`1280x160`), `LEFT_ATTACK.png` (`1440x160`)
+  - `RIGHT_IDLE.png` (`640x160`), `RIGHT_WALK.png` (`1280x160`), `RIGHT_ATTACK.png` (`1440x160`)
+- 2x Nearest GIFs (`Animation/Gifs/`, `320x320` over `#2b2e3b`):
+  - `IDLE`: `220ms` per frame (loop)
+  - `WALK`: `105ms` per frame (loop)
+  - `ATTACK`: `[110, 100, 100, 110, 115, 65, 95, 105, 110]` ms (oneshot, `hitFrame=5`)
+- Combined Previews & Metadata:
+  - `Animation/Showcase.gif`: `996x716` 2x nearest 2-row x 3-col animated GIF (`LEFT IDLE / WALK / ATTACK` top, `RIGHT IDLE / WALK / ATTACK` bottom)
+  - `Animation/PreviewSheet.png`: `1596x1138` 1x labeled contact sheet on `#2b2e3b`
+  - `Animation/PreviewLightDark.png`: `1464x792` stacked key-frame sheet on `#d9dde6` light (top) and `#1b1d26` dark (bottom)
+  - `Animation/Animations.json`: `frameSize: [160, 160]`, `anchor: [80, 144]`, `groundPixelY: 143`, `sampling: "nearest"`, `directions: {LEFT, RIGHT}`
+
+5. GREATSWORD MEASUREMENTS (MASTERS & SAMPLE QUANTIZED FRAMES)
+--------------------------------------------------------------
+Note: On `LEFT` resting poses, the hilt/grip extends ~18 px above the crossguard behind the forearm, so full pommel-to-tip is ~73–84 px (`55–66 px` exposed blade guard-to-tip). On `RIGHT` resting poses, the grip-to-tip span is ~70–76 px (`~90 px` pommel-to-tip).
+- `Masters/master_left_160.png`: `72.8 px` pommel-to-tip (`54.6 px` exposed blade `(49,104)..(8,140)`, `14.4–15.9 px` blade width)
+- `Masters/master_right_160.png`: `74.3 px` grip-to-tip / `90.0 px` pommel-to-tip (`76.2 px` bridged blade+grip `(131,139)..(65,101)`, `15.8–20.3 px` bridged width)
+- `LEFT/IDLE/00.png`: `blade_len=54.6px` (`(49,104)..(8,140)`), `blade_w=15.8px` (~`72.8 px` pommel-to-tip)
+- `LEFT/IDLE/02.png`: `blade_len=65.3px` (`(58,98)..(8,140)`), `blade_w=14.4px`
+- `LEFT/WALK/00.png`: `blade_len=54.6px` (`(49,104)..(8,140)`), `blade_w=15.8px`
+- `LEFT/WALK/03.png`: `blade_len=65.2px` (`(63,97)..(14,140)`), `blade_w=13.5px`
+- `LEFT/WALK/06.png`: `blade_len=66.4px` (`(65,99)..(12,139)`), `blade_w=14.3px`
+- `LEFT/ATTACK/00.png`: `blade_len=54.6px` (`(49,104)..(8,140)`), `blade_w=15.8px`
+- `LEFT/ATTACK/02.png`: `blade_len=44.8px` (`(88,20)..(60,55)` foreshortened upward lift)
+- `LEFT/ATTACK/04.png`: `blade_len=70.7px` (`(114,24)..(50,54)` overhead wind-up)
+- `LEFT/ATTACK/05.png`: `blade_len=128.6px` (`(41,22)..(21,149)` full sweeping cleave arc)
+- `RIGHT/IDLE/00.png`: `blade_len=76.2px` (`(131,139)..(65,101)`), `blade_w=20.3px`
+- `RIGHT/IDLE/02.png`: `blade_len=69.1px` (`(131,138)..(72,102)`), `blade_w=19.8px`
+- `RIGHT/WALK/00.png`: `blade_len=76.2px` (`(131,139)..(65,101)`), `blade_w=20.3px`
+- `RIGHT/WALK/03.png`: `blade_len=69.6px` (`(132,137)..(73,100)`), `blade_w=18.9px`
+- `RIGHT/WALK/06.png`: `blade_len=69.6px` (`(130,137)..(71,100)`), `blade_w=18.4px`
+- `RIGHT/ATTACK/00.png`: `blade_len=76.2px` (`(131,139)..(65,101)`), `blade_w=20.3px`
+- `RIGHT/ATTACK/02.png`: `blade_len=63.2px` (`(45,16)..(57,78)` vertical lift), `blade_w=16.0px`
+- `RIGHT/ATTACK/04.png`: `blade_len=81.3px` (`(80,73)..(13,27)` overhead wind-up), `blade_w=17.3px`
+- `RIGHT/ATTACK/05.png`: `blade_len=134.3px` (`(85,18)..(134,143)` full sweeping cleave arc)
+
+6. VERBATIM QA CHECKS & WARN/FAIL LINES (`quantize-qa.json`)
+------------------------------------------------------------
+All 6 `Animation/Pipeline/quantized/<DIR>_<ACTION>/quantize-qa.json` envelopes returned `"status": "pass"` with ZERO `"warn"` checks and ZERO `"fail"` checks (`0` WARN, `0` FAIL across all 6 clips).
+
+Verbatim checks, totals, and flip metrics per clip:
+
+[LEFT_IDLE] (`Animation/Pipeline/quantized/LEFT_IDLE/quantize-qa.json`, `status: "pass"`, `loop_policy: "cycle"`):
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.0, "threshold": null}
+Totals: {"max_delta_e": 0.0, "worst_p95_delta_e": 0.0, "off_palette_px": 0}
+Flips: {"hysteresis": {"pairs": 4, "idx_flip": 0.316431, "noise_flip": 0.0, "alpha_flip": 0.080421}, "per_frame_nearest": {"pairs": 4, "idx_flip": 0.316431, "noise_flip": 0.0, "alpha_flip": 0.080421}, "noise_flip_reduction": null}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+[LEFT_WALK] (`Animation/Pipeline/quantized/LEFT_WALK/quantize-qa.json`, `status: "pass"`, `loop_policy: "cycle"`):
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.0, "threshold": null}
+Totals: {"max_delta_e": 0.0, "worst_p95_delta_e": 0.0, "off_palette_px": 0}
+Flips: {"hysteresis": {"pairs": 8, "idx_flip": 0.728216, "noise_flip": 0.0, "alpha_flip": 0.197824}, "per_frame_nearest": {"pairs": 8, "idx_flip": 0.728216, "noise_flip": 0.0, "alpha_flip": 0.197824}, "noise_flip_reduction": null}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+[LEFT_ATTACK] (`Animation/Pipeline/quantized/LEFT_ATTACK/quantize-qa.json`, `status: "pass"`, `loop_policy: "oneshot"`):
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.049439, "threshold": null}
+Totals: {"max_delta_e": 0.049439, "worst_p95_delta_e": 0.0, "off_palette_px": 333}
+Flips: {"hysteresis": {"pairs": 8, "idx_flip": 0.699421, "noise_flip": 0.0, "alpha_flip": 0.454502}, "per_frame_nearest": {"pairs": 8, "idx_flip": 0.699467, "noise_flip": 0.0, "alpha_flip": 0.454502}, "noise_flip_reduction": null}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+[RIGHT_IDLE] (`Animation/Pipeline/quantized/RIGHT_IDLE/quantize-qa.json`, `status: "pass"`, `loop_policy: "cycle"`):
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.0, "threshold": null}
+Totals: {"max_delta_e": 0.0, "worst_p95_delta_e": 0.0, "off_palette_px": 0}
+Flips: {"hysteresis": {"pairs": 4, "idx_flip": 0.391494, "noise_flip": 0.0, "alpha_flip": 0.04405}, "per_frame_nearest": {"pairs": 4, "idx_flip": 0.391494, "noise_flip": 0.0, "alpha_flip": 0.04405}, "noise_flip_reduction": null}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+[RIGHT_WALK] (`Animation/Pipeline/quantized/RIGHT_WALK/quantize-qa.json`, `status: "pass"`, `loop_policy: "cycle"`):
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.0, "threshold": null}
+Totals: {"max_delta_e": 0.0, "worst_p95_delta_e": 0.0, "off_palette_px": 0}
+Flips: {"hysteresis": {"pairs": 8, "idx_flip": 0.598067, "noise_flip": 0.0, "alpha_flip": 0.15891}, "per_frame_nearest": {"pairs": 8, "idx_flip": 0.598067, "noise_flip": 0.0, "alpha_flip": 0.15891}, "noise_flip_reduction": null}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+[RIGHT_ATTACK] (`Animation/Pipeline/quantized/RIGHT_ATTACK/quantize-qa.json`, `status: "pass"`, `loop_policy: "oneshot"`):
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.117822, "threshold": null}
+Totals: {"max_delta_e": 0.117822, "worst_p95_delta_e": 0.117822, "off_palette_px": 830}
+Flips: {"hysteresis": {"pairs": 8, "idx_flip": 0.760213, "noise_flip": 0.0, "alpha_flip": 0.460165}, "per_frame_nearest": {"pairs": 8, "idx_flip": 0.760213, "noise_flip": 0.0, "alpha_flip": 0.460165}, "noise_flip_reduction": null}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+7. DELIVERED FRAME VERIFICATION (`LEFT/*` & `RIGHT/*`)
+------------------------------------------------------
+- `LEFT/IDLE`:   4 frames (`00..03.png`), `160x160` RGBA, max `32/32` colors, `off_palette=0`, `partial_alpha=0`, `edge_touch=0`
+- `LEFT/WALK`:   8 frames (`00..07.png`), `160x160` RGBA, max `32/32` colors, `off_palette=0`, `partial_alpha=0`, `edge_touch=0`
+- `LEFT/ATTACK`: 9 frames (`00..08.png`), `160x160` RGBA, max `32/32` colors, `off_palette=0`, `partial_alpha=0`, `edge_touch=0`
+- `RIGHT/IDLE`:  4 frames (`00..03.png`), `160x160` RGBA, max `31/32` colors, `off_palette=0`, `partial_alpha=0`, `edge_touch=0`
+- `RIGHT/WALK`:  8 frames (`00..07.png`), `160x160` RGBA, max `31/32` colors, `off_palette=0`, `partial_alpha=0`, `edge_touch=0`
+- `RIGHT/ATTACK`:9 frames (`00..08.png`), `160x160` RGBA, max `31/32` colors, `off_palette=0`, `partial_alpha=0`, `edge_touch=0`

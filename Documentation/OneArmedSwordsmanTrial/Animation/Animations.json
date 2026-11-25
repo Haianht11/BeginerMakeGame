@@ -1,0 +1,162 @@
+{
+  "frameSize": [
+    160,
+    160
+  ],
+  "anchor": [
+    80,
+    144
+  ],
+  "groundPixelY": 143,
+  "sampling": "nearest",
+  "directions": {
+    "LEFT": {
+      "IDLE": {
+        "frames": [
+          "LEFT/IDLE/00.png",
+          "LEFT/IDLE/01.png",
+          "LEFT/IDLE/02.png",
+          "LEFT/IDLE/03.png"
+        ],
+        "strip": "Strips/LEFT_IDLE.png",
+        "gif": "Gifs/LEFT_IDLE.gif",
+        "durationMs": [
+          220,
+          220,
+          220,
+          220
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "WALK": {
+        "frames": [
+          "LEFT/WALK/00.png",
+          "LEFT/WALK/01.png",
+          "LEFT/WALK/02.png",
+          "LEFT/WALK/03.png",
+          "LEFT/WALK/04.png",
+          "LEFT/WALK/05.png",
+          "LEFT/WALK/06.png",
+          "LEFT/WALK/07.png"
+        ],
+        "strip": "Strips/LEFT_WALK.png",
+        "gif": "Gifs/LEFT_WALK.gif",
+        "durationMs": [
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "ATTACK": {
+        "frames": [
+          "LEFT/ATTACK/00.png",
+          "LEFT/ATTACK/01.png",
+          "LEFT/ATTACK/02.png",
+          "LEFT/ATTACK/03.png",
+          "LEFT/ATTACK/04.png",
+          "LEFT/ATTACK/05.png",
+          "LEFT/ATTACK/06.png",
+          "LEFT/ATTACK/07.png",
+          "LEFT/ATTACK/08.png"
+        ],
+        "strip": "Strips/LEFT_ATTACK.png",
+        "gif": "Gifs/LEFT_ATTACK.gif",
+        "durationMs": [
+          110,
+          100,
+          100,
+          110,
+          115,
+          65,
+          95,
+          105,
+          110
+        ],
+        "loop": false,
+        "hitFrame": 5
+      }
+    },
+    "RIGHT": {
+      "IDLE": {
+        "frames": [
+          "RIGHT/IDLE/00.png",
+          "RIGHT/IDLE/01.png",
+          "RIGHT/IDLE/02.png",
+          "RIGHT/IDLE/03.png"
+        ],
+        "strip": "Strips/RIGHT_IDLE.png",
+        "gif": "Gifs/RIGHT_IDLE.gif",
+        "durationMs": [
+          220,
+          220,
+          220,
+          220
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "WALK": {
+        "frames": [
+          "RIGHT/WALK/00.png",
+          "RIGHT/WALK/01.png",
+          "RIGHT/WALK/02.png",
+          "RIGHT/WALK/03.png",
+          "RIGHT/WALK/04.png",
+          "RIGHT/WALK/05.png",
+          "RIGHT/WALK/06.png",
+          "RIGHT/WALK/07.png"
+        ],
+        "strip": "Strips/RIGHT_WALK.png",
+        "gif": "Gifs/RIGHT_WALK.gif",
+        "durationMs": [
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "ATTACK": {
+        "frames": [
+          "RIGHT/ATTACK/00.png",
+          "RIGHT/ATTACK/01.png",
+          "RIGHT/ATTACK/02.png",
+          "RIGHT/ATTACK/03.png",
+          "RIGHT/ATTACK/04.png",
+          "RIGHT/ATTACK/05.png",
+          "RIGHT/ATTACK/06.png",
+          "RIGHT/ATTACK/07.png",
+          "RIGHT/ATTACK/08.png"
+        ],
+        "strip": "Strips/RIGHT_ATTACK.png",
+        "gif": "Gifs/RIGHT_ATTACK.gif",
+        "durationMs": [
+          110,
+          100,
+          100,
+          110,
+          115,
+          65,
+          95,
+          105,
+          110
+        ],
+        "loop": false,
+        "hitFrame": 5
+      }
+    }
+  }
+}

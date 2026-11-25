@@ -12,16 +12,15 @@ public class Player : MonoBehaviour
     private static readonly int Run = Animator.StringToHash("run");
     private static readonly int VelocityY = Animator.StringToHash("velocityY");
     private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
-    private static readonly int IdleState = Animator.StringToHash("Base Layer.Ide");
-    private static readonly int RunState = Animator.StringToHash("Base Layer.run");
-    private static readonly int JumpStartState = Animator.StringToHash("Base Layer.jump-start");
-    private static readonly int JumpFallState = Animator.StringToHash("Base Layer.jump-fall");
-    private static readonly int[] AttackStates =
-    {
-        Animator.StringToHash("Base Layer.attack1"),
-        Animator.StringToHash("Base Layer.attack2"),
-        Animator.StringToHash("Base Layer.attack3")
-    };
+    private static readonly int Facing = Animator.StringToHash("facing");
+    private static readonly int IdleRightState = Animator.StringToHash("Base Layer.IdleRight");
+    private static readonly int IdleLeftState = Animator.StringToHash("Base Layer.IdleLeft");
+    private static readonly int WalkRightState = Animator.StringToHash("Base Layer.WalkRight");
+    private static readonly int WalkLeftState = Animator.StringToHash("Base Layer.WalkLeft");
+    private static readonly int JumpRightState = Animator.StringToHash("Base Layer.JumpRight");
+    private static readonly int JumpLeftState = Animator.StringToHash("Base Layer.JumpLeft");
+    private static readonly int AttackRightState = Animator.StringToHash("Base Layer.AttackRight");
+    private static readonly int AttackLeftState = Animator.StringToHash("Base Layer.AttackLeft");
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 6f;
@@ -37,10 +36,12 @@ public class Player : MonoBehaviour
     private Animator animator;
     private Vector2 spawnPosition;
     private float moveDirection;
+    private float facingDirection = 1f;
     private bool isGrounded;
     private bool jumpRequested;
     private bool airJumpAvailable = true;
     private int comboStep;
+    private int activeAttackStateHash;
     private bool attackBuffered;
 
     private void Awake()
@@ -51,6 +52,7 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         spawnPosition = body.position;
         body.freezeRotation = true;
+        spriteRenderer.flipX = false;
         groundFilter.SetLayerMask(groundLayers);
     }
 
@@ -69,8 +71,8 @@ public class Player : MonoBehaviour
                 || keyboard.wKey.wasPressedThisFrame || keyboard.upArrowKey.wasPressedThisFrame;
         }
 
-        if (moveDirection != 0f)
-            spriteRenderer.flipX = moveDirection < 0f;
+        if (comboStep == 0 && moveDirection != 0f)
+            facingDirection = moveDirection < 0f ? -1f : 1f;
 
         UpdateAnimationParameters();
         FinishAttackIfReady();
@@ -79,7 +81,7 @@ public class Player : MonoBehaviour
         {
             if (comboStep == 0)
                 PlayAttack(1);
-            else if (comboStep < AttackStates.Length)
+            else
                 attackBuffered = true;
         }
     }
@@ -105,7 +107,7 @@ public class Player : MonoBehaviour
             velocity.y = jumpForce;
             isGrounded = false;
             if (comboStep == 0)
-                animator.Play(JumpStartState, 0, 0f);
+                animator.Play(facingDirection < 0f ? JumpLeftState : JumpRightState, 0, 0f);
         }
 
         jumpRequested = false;
@@ -130,18 +132,26 @@ public class Player : MonoBehaviour
         animator.SetFloat(Run, Mathf.Abs(moveDirection));
         animator.SetFloat(VelocityY, body.linearVelocity.y);
         animator.SetBool(IsGrounded, isGrounded);
+        animator.SetFloat(Facing, facingDirection);
     }
 
     private void PlayAttack(int step)
     {
+        if (moveDirection != 0f)
+        {
+            facingDirection = moveDirection < 0f ? -1f : 1f;
+            animator.SetFloat(Facing, facingDirection);
+        }
+
         comboStep = step;
         attackBuffered = false;
-        animator.Play(AttackStates[step - 1], 0, 0f);
+        activeAttackStateHash = facingDirection < 0f ? AttackLeftState : AttackRightState;
+        animator.Play(activeAttackStateHash, 0, 0f);
     }
 
     private void OnAttackContact()
     {
-        AttackContact?.Invoke(bodyCollider.bounds.center, spriteRenderer.flipX ? -1f : 1f);
+        AttackContact?.Invoke(bodyCollider.bounds.center, facingDirection);
     }
 
     private void FinishAttackIfReady()
@@ -150,19 +160,29 @@ public class Player : MonoBehaviour
             return;
 
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
-        if (state.fullPathHash != AttackStates[comboStep - 1] || state.normalizedTime < 1f)
+        if (state.fullPathHash != activeAttackStateHash || state.normalizedTime < 1f)
             return;
 
         if (attackBuffered)
         {
-            PlayAttack(comboStep + 1);
+            PlayAttack(1);
             return;
         }
 
         comboStep = 0;
-        int locomotionState = body.linearVelocity.y > 0f ? JumpStartState : JumpFallState;
+        activeAttackStateHash = 0;
+        if (moveDirection != 0f)
+        {
+            facingDirection = moveDirection < 0f ? -1f : 1f;
+            animator.SetFloat(Facing, facingDirection);
+        }
+
+        bool facingLeft = facingDirection < 0f;
+        int locomotionState = facingLeft ? JumpLeftState : JumpRightState;
         if (isGrounded)
-            locomotionState = moveDirection == 0f ? IdleState : RunState;
+            locomotionState = moveDirection == 0f
+                ? (facingLeft ? IdleLeftState : IdleRightState)
+                : (facingLeft ? WalkLeftState : WalkRightState);
 
         animator.Play(locomotionState, 0, 0f);
     }
@@ -172,13 +192,15 @@ public class Player : MonoBehaviour
         body.position = spawnPosition;
         body.linearVelocity = Vector2.zero;
         moveDirection = 0f;
+        facingDirection = 1f;
         isGrounded = false;
         jumpRequested = false;
         airJumpAvailable = true;
         comboStep = 0;
+        activeAttackStateHash = 0;
         attackBuffered = false;
         spriteRenderer.flipX = false;
         UpdateAnimationParameters();
-        animator.Play(IdleState, 0, 0f);
+        animator.Play(IdleRightState, 0, 0f);
     }
 }

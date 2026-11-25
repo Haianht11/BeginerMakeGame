@@ -1,0 +1,106 @@
+ONE-ARMED SWORDSMAN TRIAL - SPRITE PACK PROMPT, PROVENANCE & QA RECORD
+========================================================================
+
+1. ART SOURCE, ROUTE & PROVENANCE
+---------------------------------
+- Art Source: host_image (Antigravity `image-generator` / `gemini-3.1-flash-image`)
+- Subject: Compact ~3.5-head pixel-art one-armed dark-fantasy swordsman (2-tone cel peach skin, spiky jet-black hair, horizontal nose scar, heavy dark steel/leather gear, massive slab greatsword held in intact anatomical right hand on viewer's left, short bandaged left upper-arm stump on viewer's right).
+- Generation Takes:
+  - Outfits #1, #3, #6: sliced from 4x2 raw sheet `Pipeline/raw-sheet-take2.png` (`cutout_01.png`, `cutout_03.png`, `cutout_06.png`).
+  - Outfits #2, #4, #5, #7, #8: solo 1:1 takes (`Pipeline/raw_02.jpg`, `raw_04.jpg`, `raw_05.jpg`, `raw_07.jpg`, `raw_08.jpg`) anchored on `Pipeline/ref_master_01.png` (`cutout_02.png`, `cutout_04.png`, `cutout_05.png`, `cutout_07.png`, `cutout_08.png`).
+  - Outfit #2 Head-Left Fix (`Pipeline/cutout_02_fixed.png`, `965x715` RGBA; `cutout_02.png` kept intact):
+    Method used by @head-fixer: Python head-flip fallback (`invoke_subagent` unavailable in worker tool list) via `C:\Users\Admin\.platformio\penv\Scripts\python.exe` on `cutout_02.png`. Segmented head mask cleanly above gray scarf collar (`y=0..253`), cleared original head to `alpha=0`, horizontally mirrored head mask around `x_mid=508.0` so gaze turns from slight 3/4 right to slight 3/4 left, and filled enclosed neck/chin collar transition pixels from neighboring scarf gray/dark outline (`head_y=1..253`, `head_h=253`, chin skin bottom `y=244`).
+
+2. GENERATION BRIEF & OUTFIT SPECS
+----------------------------------
+Shared Character Identity:
+- Compact ~3.5-head pixel-art swordsman build, crisp dark outlines, 2-tone cel-shaded peach skin, spiky jet-black hair, fierce glare with horizontal nose scar.
+- Strict one-arm anatomy: anatomical right arm (viewer's left) intact and holding a massive slab greatsword; anatomical left arm (viewer's right) ends at a short bandaged upper-arm stump with no second forearm or hand.
+- Flat `#FF00FF` magenta chroma key backdrop for raw takes.
+
+8 Outfit / Pose Variants:
+1. `01-Heroic.png` (`cutout_01.png`, `243x361`, scale `98.0/361.0` -> `66x98`):
+   Front facing; upright heroic stance, greatsword planted vertically on viewer's left, tattered gray scarf with clasp, tattered dark cape, dark layered armor with crossed chest straps/daggers, belt & pouch, cuffed boots.
+2. `02-WideBattle.png` (`cutout_02_fixed.png`, `965x715`, scale `min(30.0/244.0, 120.0/965.0, 90.0/715.0)` -> `119x88`):
+   Slight 3/4 LEFT facing; wide bent-knee battle stance, greatsword angled low-left, prominent spiked diagonal leather bandolier across chest, gray scarf with clasp, tattered black cape, cuffed boots.
+3. `03-PoisedGuard.png` (`cutout_03.png`, `295x363`, scale `98.0/361.0` -> `80x99`):
+   Slight 3/4 RIGHT facing; poised guard stance, greatsword resting diagonally over right shoulder, ragged gray scarf (no full cape, short trailing cloth tail behind waist), dark armor with crossed chest straps/belt, cuffed boots.
+4. `04-FrontStride.png` (`cutout_04.png`, `939x970`, scale `min(30.0/298.0, 98.0/970.0)` -> `95x98`):
+   Front facing; forward stride pose, sleeveless charcoal tunic with leather belt and side pouches, dark trousers, cuffed boots, flowing tattered black cape, greatsword angled down-left.
+5. `05-GroundedWarrior.png` (`cutout_05.png`, `550x719`, scale `95.0/719.0` -> `73x95`):
+   Slight 3/4 LEFT facing; upright grounded warrior stance, greatsword planted vertically on viewer's left, chunky segmented shoulder pauldrons and armored leg plates, tattered gray scarf trailing right (no cape), crossed chest straps/belt, cuffed boots.
+6. `06-DynamicLunge.png` (`cutout_06.png`, `445x360`, scale `98.0/361.0` -> `121x98`):
+   Slight 3/4 RIGHT facing; dynamic forward lunge, greatsword angled upward-right across front, billowing black cape behind, armored torso/belt/pouches, bandaged right forearm grip (left stump occluded behind shoulder turn).
+7. `07-BracedStance.png` (`cutout_07.png`, `726x720`, scale `30.0/247.0` -> `88x87`):
+   Front facing; wide crouched braced battle stance, greatsword held angled low-left, dark layered armor with prominent groin guard and crossed chest straps/belt, tattered gray scarf (no cape), cuffed boots.
+8. `08-RelaxedSentinel.png` (`cutout_08.png`, `486x729`, scale `96.0/729.0` -> `64x96`):
+   Slight 3/4 LEFT facing; relaxed upright sentinel stance, right hand resting atop upright greatsword pommel on viewer's left, tattered gray scarf with clasp, vertical tattered black cape, layered dark armor with crossed straps/belt, cuffed boots.
+
+3. PROCESSING & OUTPUT SPECIFICATIONS
+-------------------------------------
+- Spill Cleanup: Applied `forge_matte.despill(mode="auto", radius=2, margin=12, key="magenta")` prior to downscaling (removed residual JPEG magenta fringe on `#5` [14,963 px] and `#7` [11,550 px]; 0 px changed on `#1, #2, #3, #4, #6, #8`) plus edge pass `mode="edge", radius=1` post-downscale.
+- Downscaling: Premultiplied-alpha Lanczos (`Image.Resampling.LANCZOS`) onto `128x128` RGBA canvases (`Pipeline/02-normalized/`), torso-centered horizontally around `x=64` (via `sheet_qc.torso_x`) and clamped strictly inside `x in [3, 124]`, `y in [3, 124]` with lowest opaque boot row (`alpha >= 128`) aligned to row `117`.
+- Source Sheet: `SourceSheet.png` (`2048x1024`, 4x2 grid of `512x512` cells on flat `#FF00FF` RGB), each cutout scaled to `4x` its normalized `128x128` size with boot baseline at cell `y=468` and horizontally clamped inside `[12, 499]`, `alpha_hygiene(mode="floor")` before compositing.
+- Shared Palette Quantization: `palette_tool.py build --colors 32 --balance --name one_armed_swordsman_trial` (32 OKLab colors, no reserved slots, seed 0) + `palette_tool.py apply --alpha-threshold 128 --orphans 0` (binary alpha `0`/`255`, 0 orphan cleanup passes).
+- Final Deliverables:
+  - `Sprites/01-Heroic.png` .. `Sprites/08-RelaxedSentinel.png` (`128x128` RGBA, <= 32 shared colors, binary alpha, baseline row `117`, 0 edge touches)
+  - `Outfits.png` (`512x256` transparent RGBA 4x2 sheet: 01..04 top row, 05..08 bottom row)
+  - `Preview.png` (`1024x512` RGB, 2x nearest-neighbor over `#2b2e3b`)
+  - `PreviewLightDark.png` (`1024x1024` RGB, 2x nearest-neighbor stacked over `#d9dde6` top and `#1b1d26` bottom)
+  - `SourceSheet.png` (`2048x1024` RGB lossless 4x2 sheet on `#FF00FF`)
+
+4. VERBATIM QA METRICS & WARN/FAIL CHECK LINES
+----------------------------------------------
+4A. `forge_matte.matte_qa(key="magenta")` on Cutouts (Raw -> Post-Despill):
+- cutout_01.png (243x361): opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=0, semitransparent_fraction=0.063447, visible_px=61500 | despill_auto_changed_px=0
+- cutout_02_fixed.png (965x715): opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=0, semitransparent_fraction=0.061485, visible_px=279517 | despill_auto_changed_px=0
+- cutout_03.png (295x363): opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=0, semitransparent_fraction=0.09633, visible_px=48562 | despill_auto_changed_px=0
+- cutout_04.png (939x970): opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=0, semitransparent_fraction=0.047576, visible_px=395806 | despill_auto_changed_px=0
+- cutout_05.png (550x719): raw opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=9, semitransparent_fraction=0.071116, visible_px=207210 | despill_auto_changed_px=14963 -> post-despill key_hued_px=0, outer_ring_spill_fraction=0.0
+- cutout_06.png (445x360): opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=0, semitransparent_fraction=0.083153, visible_px=65265 | despill_auto_changed_px=0
+- cutout_07.png (726x720): raw opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=20, semitransparent_fraction=0.07329, visible_px=212129 | despill_auto_changed_px=11550 -> post-despill key_hued_px=0, outer_ring_spill_fraction=0.0
+- cutout_08.png (486x729): opaque_key_px=0, outer_ring_spill_fraction=0.0, enclosed_key_pockets=0, key_hued_px=0, semitransparent_fraction=0.049264, visible_px=248683 | despill_auto_changed_px=0
+
+4B. `Pipeline/01-spill-qc/sheet-qc.json` (`sheet_qc.py spill`, status: `"warn"`):
+Verbatim checks:
+- {"id": "cross_cell_components", "status": "pass", "value": 0, "threshold": 0, "cells": [], "note": "solid parts crossing a cell line are cut or misassigned when the sheet is sliced"}
+- {"id": "cross_cell_visible", "status": "pass", "value": 0, "threshold": 0, "note": "the same test on the visible edge (alpha > 16)"}
+- {"id": "sheet_edge", "status": "pass", "value": 0, "threshold": 0, "note": "art touching the sheet border was cut by the image edge"}
+- {"id": "empty_cells", "status": "pass", "value": [], "threshold": [], "note": "the first 8 cells must each hold a subject"}
+- {"id": "boundary_band", "status": "pass", "value": 0, "threshold": 0, "note": "solid pixels within 10 px of a cell line; a different crop or rounding can cut them"}
+- WARN CHECK LINE (verbatim):
+  {"id": "safe_frame", "status": "warn", "value": 8, "threshold": 0, "cells": [[0, 0], [0, 1], [0, 2], [0, 3], [1, 0], [1, 1], [1, 2], [1, 3]], "note": "owned art closer than 15% of the cell to its edge; ask for more margin next time"}
+- {"id": "faint_specks", "status": "pass", "value": {"floor_px": 0, "detached_components": 0}, "threshold": 0, "note": "alpha haze and detached specks; process removes them with --alpha-hygiene both"}
+(Note: `safe_frame` warns because placing `4x` normalized sprites with boot baseline at `y=468` leaves bottom margin `43-44 px` < `15% * 512 = 76.8 px`, and wide poses `#2` and `#6` have horizontal margins `12-25 px`, while keeping `boundary_band = 0` and 0 crossings/edge cuts.)
+
+4C. `Pipeline/03-palette/palette-qa.json` (`palette_tool.py build`, status: `"pass"`):
+Verbatim checks:
+- {"id": "palette_colors", "status": "pass", "value": 32, "threshold": 32}
+- {"id": "inputs_without_samples", "status": "pass", "value": 0, "threshold": 0, "files": []}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.129376, "threshold": null}
+Totals: {"max_delta_e": 0.129376, "worst_p95_delta_e": 0.032545, "off_palette_px": 31491}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+4D. `Pipeline/04-palettized/apply-qa.json` (`palette_tool.py apply`, status: `"pass"`):
+(Note: `palette_tool.py apply` writes its QA envelope as `apply-qa.json` inside `Pipeline/04-palettized/`.)
+Verbatim checks:
+- {"id": "output_off_palette_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "output_partial_alpha_px", "status": "pass", "value": 0, "threshold": 0}
+- {"id": "max_delta_e", "status": "skipped", "value": 0.129376, "threshold": null}
+Totals: {"max_delta_e": 0.129376, "worst_p95_delta_e": 0.032545, "off_palette_px": 31491}
+WARN/FAIL checks: none (0 warn, 0 fail).
+
+4E. Final Delivered `Sprites/*.png` & Sheets Numeric Verification:
+- Shared palette across all 8 final sprites & `Outfits.png`: 32 colors (`#000000`, `#020205`, `#08070c`, `#0d0c12`, `#101118`, `#17161c`, `#1e1d22`, `#21242b`, `#352521`, `#272b34`, `#2d323b`, `#47322b`, `#343940`, `#3c424b`, `#593f34`, `#4a4d53`, `#57595c`, `#7f5445`, `#61676b`, `#6a747c`, `#9e6853`, `#78828b`, `#958471`, `#ba7c62`, `#939fa7`, `#d39070`, `#b0a189`, `#a2adb3`, `#e7a57e`, `#bebdb0`, `#f6b489`, `#dbd6c0`).
+- `01-Heroic.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(35,20)..(100,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=4450
+- `02-WideBattle.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(3,30)..(121,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=4159
+- `03-PoisedGuard.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(27,19)..(106,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=3488
+- `04-FrontStride.png`: size=128x128, unique_colors=31, partial_alpha_px=0, opaque_bbox=(16,20)..(110,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=3993
+- `05-GroundedWarrior.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(28,23)..(100,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=3546
+- `06-DynamicLunge.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(4,20)..(124,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=4700
+- `07-BracedStance.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(10,31)..(97,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=3043
+- `08-RelaxedSentinel.png`: size=128x128, unique_colors=32, partial_alpha_px=0, opaque_bbox=(27,22)..(90,117), bottom_opaque_row=117, edge_touch_px=0, opaque_px=4246
+- `Outfits.png`: size=512x256 RGBA, unique_colors=32, partial_alpha_px=0
+- `Preview.png`: size=1024x512 RGB (2x nearest over `#2b2e3b`)
+- `PreviewLightDark.png`: size=1024x1024 RGB (2x nearest over `#d9dde6` top / `#1b1d26` bottom)
+- `SourceSheet.png`: size=2048x1024 RGB (4x2 `512x512` cells over `#FF00FF`)

@@ -1,0 +1,199 @@
+{
+  "status": "pass",
+  "method": "forge_palette.build_palette (weighted k-means++ in OKLab over unique colours, reserved colours fixed, coverage skipping) then forge_palette.fit_report of every input: OKLab dE of each pixel with alpha >= the threshold to its nearest palette colour",
+  "notProven": [
+    "Visual quality of the palette: look at swatches.png and an applied frame.",
+    "Colours of pixels below the alpha threshold were not sampled or measured.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "palette_colors",
+      "status": "pass",
+      "value": 32,
+      "threshold": 32
+    },
+    {
+      "id": "inputs_without_samples",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0,
+      "files": []
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.129376,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../02-normalized/01-Heroic.png",
+      "sha256": "a9703ee5adec0f9500966e5421e0b101c6b73b17a336607cf60a04eaef8ef9f7",
+      "bytes": 14616
+    },
+    {
+      "path": "../02-normalized/02-WideBattle.png",
+      "sha256": "6bc37948b82672363ad642cd8cbf5d1610b584a06a0eb909485b5e28b24c7702",
+      "bytes": 16562
+    },
+    {
+      "path": "../02-normalized/03-PoisedGuard.png",
+      "sha256": "5feb454d443613e395f319c742ff2fa2886aa7f09bc49df95a71a2d7e99a3338",
+      "bytes": 14735
+    },
+    {
+      "path": "../02-normalized/04-FrontStride.png",
+      "sha256": "97e0fa3a13f1ee10536d7cadd72bb271bf2db94dfc964b2d8050a5ff584ecf67",
+      "bytes": 15005
+    },
+    {
+      "path": "../02-normalized/05-GroundedWarrior.png",
+      "sha256": "2214a9302b491d4c78a4ecc517a6b3e8fd04b0d01bc6bb896d0ffb77d49c1c58",
+      "bytes": 13907
+    },
+    {
+      "path": "../02-normalized/06-DynamicLunge.png",
+      "sha256": "20461652339e2e369e3618b3eb4eb02260b81b812993168d36fca7cb94cae32d",
+      "bytes": 18121
+    },
+    {
+      "path": "../02-normalized/07-BracedStance.png",
+      "sha256": "d7d10ab18cf80e3ed7dd48fef1dbcdce9965a297c0bfa4e6860e76c36a77d7b9",
+      "bytes": 13286
+    },
+    {
+      "path": "../02-normalized/08-RelaxedSentinel.png",
+      "sha256": "cb18630a28a0631f91c5b4518797ac0bdeaec15bc1ee52d1bbfe9519d53bf934",
+      "bytes": 14569
+    }
+  ],
+  "outputs": [
+    {
+      "path": "palette.json",
+      "sha256": "767b6ca47c1747cadffc57d392d61f3c1741921a29b54d00f80bd574b892ceb6",
+      "bytes": 1387
+    },
+    {
+      "path": "palette.gpl",
+      "sha256": "7d3095b76ee3269f64a937d7a443fa9187452f53d03002d567f3826ccd1a4ba8",
+      "bytes": 699
+    },
+    {
+      "path": "palette.hex",
+      "sha256": "a378ed1dd768db45f11eca9a87f0322d05ad3450ee5048c2c92aa790d11652eb",
+      "bytes": 224
+    },
+    {
+      "path": "swatches.png",
+      "sha256": "cdc4b2ba38573354d4cabb097dc12031732ebd46832d26b44b4f2121ed740b1b",
+      "bytes": 504
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "palette": {
+    "colors": 32,
+    "reserved": 0,
+    "transparent_index": 255,
+    "seed": 0
+  },
+  "fit": {
+    "../02-normalized/01-Heroic.png": {
+      "measured_px": 4450,
+      "alpha_threshold": 128,
+      "off_palette_px": 4432,
+      "partial_alpha_px": 1068,
+      "colors": 2994,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.012994,
+      "p95_delta_e": 0.028795,
+      "max_delta_e": 0.061174
+    },
+    "../02-normalized/02-WideBattle.png": {
+      "measured_px": 4159,
+      "alpha_threshold": 128,
+      "off_palette_px": 4152,
+      "partial_alpha_px": 1436,
+      "colors": 2914,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.012597,
+      "p95_delta_e": 0.027309,
+      "max_delta_e": 0.051263
+    },
+    "../02-normalized/03-PoisedGuard.png": {
+      "measured_px": 3488,
+      "alpha_threshold": 128,
+      "off_palette_px": 3470,
+      "partial_alpha_px": 1300,
+      "colors": 2873,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.014796,
+      "p95_delta_e": 0.03204,
+      "max_delta_e": 0.070823
+    },
+    "../02-normalized/04-FrontStride.png": {
+      "measured_px": 3993,
+      "alpha_threshold": 128,
+      "off_palette_px": 3949,
+      "partial_alpha_px": 1315,
+      "colors": 2419,
+      "palette_colors_used": 31,
+      "mean_delta_e": 0.012942,
+      "p95_delta_e": 0.032545,
+      "max_delta_e": 0.118881
+    },
+    "../02-normalized/05-GroundedWarrior.png": {
+      "measured_px": 3546,
+      "alpha_threshold": 128,
+      "off_palette_px": 3539,
+      "partial_alpha_px": 1458,
+      "colors": 2870,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.014934,
+      "p95_delta_e": 0.030481,
+      "max_delta_e": 0.052637
+    },
+    "../02-normalized/06-DynamicLunge.png": {
+      "measured_px": 4700,
+      "alpha_threshold": 128,
+      "off_palette_px": 4675,
+      "partial_alpha_px": 1539,
+      "colors": 3045,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.012724,
+      "p95_delta_e": 0.028036,
+      "max_delta_e": 0.129376
+    },
+    "../02-normalized/07-BracedStance.png": {
+      "measured_px": 3043,
+      "alpha_threshold": 128,
+      "off_palette_px": 3033,
+      "partial_alpha_px": 1272,
+      "colors": 2514,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.014215,
+      "p95_delta_e": 0.028635,
+      "max_delta_e": 0.053594
+    },
+    "../02-normalized/08-RelaxedSentinel.png": {
+      "measured_px": 4246,
+      "alpha_threshold": 128,
+      "off_palette_px": 4241,
+      "partial_alpha_px": 1144,
+      "colors": 3226,
+      "palette_colors_used": 32,
+      "mean_delta_e": 0.013629,
+      "p95_delta_e": 0.029209,
+      "max_delta_e": 0.052342
+    }
+  },
+  "totals": {
+    "max_delta_e": 0.129376,
+    "worst_p95_delta_e": 0.032545,
+    "off_palette_px": 31491
+  }
+}

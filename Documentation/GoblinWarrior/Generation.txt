@@ -1,0 +1,39 @@
+Goblin Warrior
+
+Reference
+Player IDLE.png, first frame, from Assets/project/art/Sprites/Player.
+Goblin Warrior, entry 001 of the supplied text file. The green skin, iron helmet,
+rusty sword and five actions come from that entry. The player's camera, pixel
+density, and 112 × 96 frame size come from the Unity project.
+
+Generation
+ImageGen (host_image), two generations. Model and cost were unavailable in the tool response.
+SourceMaster.png is the identity reference for SourceSheet.png.
+
+Runtime sheet
+448 × 384 RGBA PNG. Four columns by four rows, read left to right from the top.
+Idle (4), Run (4), Attack (4), Hurt (2), Death (2).
+The shared feet pivot is (56, 12) in Unity bottom-left coordinates, at 32 pixels
+per unit. Idle and Run loop. Attack, Hurt and Death are one-shots.
+Palette fixed to 30 colors and alpha fixed to 0 or 255. The native player is
+35 px high in the first idle frame. The goblin is 30–33 px high in its idle loop.
+
+Sheet validation
+16 distinct, occupied cells. Final sheet has zero cell crossings and zero pixels
+touching the outside boundary. The smallest ground margin is 12 px. The runtime
+spill check used a 10% safe margin to preserve the player's frame and ground
+coordinates. The raw attack blade crosses a grid line. Component ownership
+keeps the whole blade with the right pose before the runtime repack.
+Unity 6000.6.8f1 imported all 16 slices and verified their rectangles, 32 PPU,
+point filtering, shared feet pivot, sprite references, durations and loop settings.
+
+Prompt for SourceMaster.png
+Create one original Goblin Warrior enemy master sprite for a 2D side-scrolling dungeon platformer. The attached image is our existing player sprite, a pixel-style reference only. Match that exact pixel rendering language and apparent camera elevation: low-resolution hand-placed pixel clusters, 1-pixel aubergine/charcoal and near-black edge accents, compact two-to-four-tone color ramps, selective light-colored edge pixels, slate steel and muted earthy colors; no anti-aliasing and no smooth gradients, equivalent to the reference's roughly 31-by-35-pixel silhouette. Show ONE whole goblin close to center, facing RIGHT in the same side-view shallow three-quarter as the reference. It is slightly shorter and hunched, with a low battered slate-pewter iron helmet, a small exposed olive-green face and one sharp long ear, one small amber eye, muted maroon leather jerkin, ochre belt, dark boots and a short chipped rusty iron sword. Sword held naturally pointing diagonally toward the right at hip level. Both feet visible with a tiny gap or offset. Stocky little grunt with powerful silhouette and clean simple clustered pixel shapes, visually comparable body proportions and pixel density to this knight asset. Side elevation with visible ground contact at the boots, not aerial. Output exactly one pose with generous transparent padding, true transparent background, no shadow, FX, tiles, text, outline sticker, mockup, frame or extra objects. Enlarge the small deliberately low-resolution pixel art with crisp square edges only.
+
+Prompt for SourceSheet.png
+Create a game-ready 4 columns by 4 rows animation sprite sheet from the attached single original Goblin Warrior sprite. The attachment is the EXACT character identity and rendering reference: same short stocky olive face, one pointed ear and amber eye, battered pewter helmet, muted burgundy leather, ochre belt, boots and short chipped iron sword. Reproduce the identical character in all 16 separate poses, always facing RIGHT, side elevation for a side-scrolling dungeon game. Keep the same muted pixel palette, low pixel-resolution rendering, dark plum outlines, square crisp pixel clusters and head size as the reference. No gradients or high-definition detailing. Each pose occupies one cell of an invisible mathematical 4x4 grid, with minimum 10% blank margins on all sides of every cell, evenly spaced with consistent size. Each grounded sprite's boots at the same relative baseline (about 76% down the cell). Center the hips on each cell; sword can extend right for attacks. No overlap, movement trails, detached FX, shadows, displayed grid lines, labels, or text. Genuine transparent background.
+Row 1 from left to right: guard idle at normal height, breathe subtly down, breathe subtly up with sword tilting by a few pixels, return toward neutral guard while both boots stay planted. Four separate poses.
+Row 2 from left to right: run RIGHT in place with torso leaning forward, clear left-foot-forward stride, first passing pose, right-foot-forward stride, second passing pose. Alternate the two boots with one close leg and one shaded far leg. Sword still held forward and down.
+Row 3 from left to right: rightward single sword slash. Raise sword back by shoulder (wind-up); lunge into the cut with sword reaching far forward to the RIGHT (contact); sword points low-right while the body follows through; recover to standing guard. Keep hands on one sword. Keep weapon entirely inside cell.
+Row 4 from left to right: hurt recoils backwards to the left while facing RIGHT (both boots still touching floor); hurt returns to a bent stance (same palette, face and sword visible); death drops to one knee; death lies on its side at floor level with the same identifiable helmet and limbs and lowered sword. Keep the last pose visibly horizontal. No blood and no magical FX.
+There must be exactly 4 distinct isolated sprites in each row and exactly 16 in the entire uncropped square image, with four identical column widths and row heights. Do not add pose guides.

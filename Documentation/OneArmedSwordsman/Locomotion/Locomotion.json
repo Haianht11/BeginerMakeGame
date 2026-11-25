@@ -1,0 +1,2941 @@
+{
+  "frameSize": 128,
+  "anchor": [
+    64,
+    116
+  ],
+  "clips": [
+    {
+      "name": "IdleLeft",
+      "row": 0,
+      "count": 6,
+      "frameMs": 200,
+      "unityAsset": "../../../Assets/project/Animation/OneArmedSwordsman/IdleLeft.anim"
+    },
+    {
+      "name": "WalkLeft",
+      "row": 1,
+      "count": 8,
+      "frameMs": 100,
+      "unityAsset": "../../../Assets/project/Animation/OneArmedSwordsman/WalkLeft.anim"
+    },
+    {
+      "name": "IdleRight",
+      "row": 2,
+      "count": 6,
+      "frameMs": 200,
+      "unityAsset": "../../../Assets/project/Animation/OneArmedSwordsman/IdleRight.anim"
+    },
+    {
+      "name": "WalkRight",
+      "row": 3,
+      "count": 8,
+      "frameMs": 100,
+      "unityAsset": "../../../Assets/project/Animation/OneArmedSwordsman/WalkRight.anim"
+    }
+  ],
+  "artSource": "Codex ImageGen cutout atlases, one independently drawn atlas per direction",
+  "animationSource": "Rigged cutout animation composed in Python",
+  "sourceSha256": {
+    "LEFT": "ddc1c57ed4b30a94052bf1b013a80a1804a1f5350ee7daa3f1104e5a42e86f60",
+    "RIGHT": "dce936d3aa66bee083465d2392d5c0a008477270d0a361be36e12207ef12a6bf"
+  },
+  "quality": {
+    "status": "pass",
+    "duplicateAdjacentPairs": 0,
+    "mirroredFrames": 0,
+    "clips": {
+      "IdleLeft": {
+        "frames": [
+          {
+            "opaqueBounds": [
+              29,
+              21,
+              109,
+              116
+            ],
+            "swordBounds": [
+              29,
+              56,
+              48,
+              115
+            ],
+            "swordTip": [
+              39.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              39,
+              68
+            ],
+            "leftWrist": [
+              43.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  58,
+                  107
+                ],
+                "knee": [
+                  60.487,
+                  90.688
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  60.856,
+                  93.265
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 56,
+              "cape/chest": 594,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 352,
+              "upper_arm/forearm": 93,
+              "forearm/fist": 27,
+              "fist/sword": 73,
+              "waist/near_thigh": 224,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 198,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              29,
+              20,
+              108,
+              116
+            ],
+            "swordBounds": [
+              29,
+              56,
+              48,
+              115
+            ],
+            "swordTip": [
+              39.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              39,
+              68
+            ],
+            "leftWrist": [
+              43.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  58,
+                  107
+                ],
+                "knee": [
+                  60.487,
+                  90.688
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  60.856,
+                  93.265
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                59
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 56,
+              "cape/chest": 599,
+              "chest/waist": 167,
+              "chest/stump": 153,
+              "chest/upper_arm": 348,
+              "upper_arm/forearm": 89,
+              "forearm/fist": 29,
+              "fist/sword": 73,
+              "waist/near_thigh": 233,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 208,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              29,
+              19,
+              107,
+              116
+            ],
+            "swordBounds": [
+              29,
+              56,
+              48,
+              115
+            ],
+            "swordTip": [
+              39.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              39,
+              68
+            ],
+            "leftWrist": [
+              43.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              54
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  58,
+                  107
+                ],
+                "knee": [
+                  60.487,
+                  90.688
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  60.856,
+                  93.265
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                58
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 58,
+              "cape/chest": 609,
+              "chest/waist": 145,
+              "chest/stump": 153,
+              "chest/upper_arm": 352,
+              "upper_arm/forearm": 90,
+              "forearm/fist": 28,
+              "fist/sword": 73,
+              "waist/near_thigh": 233,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 208,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              29,
+              19,
+              109,
+              116
+            ],
+            "swordBounds": [
+              29,
+              56,
+              48,
+              115
+            ],
+            "swordTip": [
+              39.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              39,
+              68
+            ],
+            "leftWrist": [
+              43.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              54
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  58,
+                  107
+                ],
+                "knee": [
+                  60.487,
+                  90.688
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  60.856,
+                  93.265
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                58
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 56,
+              "cape/chest": 594,
+              "chest/waist": 145,
+              "chest/stump": 153,
+              "chest/upper_arm": 352,
+              "upper_arm/forearm": 90,
+              "forearm/fist": 28,
+              "fist/sword": 73,
+              "waist/near_thigh": 233,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 208,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              29,
+              20,
+              110,
+              116
+            ],
+            "swordBounds": [
+              29,
+              56,
+              48,
+              115
+            ],
+            "swordTip": [
+              39.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              39,
+              68
+            ],
+            "leftWrist": [
+              43.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  58,
+                  107
+                ],
+                "knee": [
+                  60.487,
+                  90.688
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  60.856,
+                  93.265
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                59
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 56,
+              "cape/chest": 579,
+              "chest/waist": 179,
+              "chest/stump": 153,
+              "chest/upper_arm": 348,
+              "upper_arm/forearm": 89,
+              "forearm/fist": 29,
+              "fist/sword": 73,
+              "waist/near_thigh": 224,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 198,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              29,
+              21,
+              109,
+              116
+            ],
+            "swordBounds": [
+              29,
+              56,
+              48,
+              115
+            ],
+            "swordTip": [
+              39.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              39,
+              68
+            ],
+            "leftWrist": [
+              43.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  58,
+                  107
+                ],
+                "knee": [
+                  60.487,
+                  90.688
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  60.856,
+                  93.265
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 56,
+              "cape/chest": 585,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 352,
+              "upper_arm/forearm": 93,
+              "forearm/fist": 27,
+              "fist/sword": 73,
+              "waist/near_thigh": 224,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 198,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7
+          }
+        ],
+        "adjacentPairs": [
+          {
+            "from": 0,
+            "to": 1,
+            "differentPixels": 2162
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "differentPixels": 1853
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "differentPixels": 1024
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "differentPixels": 2235
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "differentPixels": 2240
+          },
+          {
+            "from": 5,
+            "to": 0,
+            "differentPixels": 585
+          }
+        ]
+      },
+      "WalkLeft": {
+        "frames": [
+          {
+            "opaqueBounds": [
+              15,
+              22,
+              110,
+              116
+            ],
+            "swordBounds": [
+              15,
+              22,
+              53,
+              70
+            ],
+            "swordTip": [
+              15.715,
+              22.464
+            ],
+            "swordAngle": -127,
+            "leftHand": [
+              44,
+              60
+            ],
+            "leftWrist": [
+              48.39817208649327,
+              59.19001092748639
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              57
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  77
+                ],
+                "ankle": [
+                  56,
+                  107
+                ],
+                "knee": [
+                  59.275,
+                  90.828
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 153.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  77
+                ],
+                "ankle": [
+                  72,
+                  105
+                ],
+                "knee": [
+                  59.313,
+                  94.451
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 134.0
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                76
+              ],
+              "chest": [
+                64,
+                61
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 579,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 347,
+              "upper_arm/forearm": 97,
+              "forearm/fist": 32,
+              "fist/sword": 68,
+              "waist/near_thigh": 237,
+              "near_thigh/near_shin": 58,
+              "near_shin/near_boot": 37,
+              "waist/far_thigh": 193,
+              "far_thigh/far_shin": 57,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7,
+            "phase": "contact",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              17,
+              22,
+              109,
+              116
+            ],
+            "swordBounds": [
+              17,
+              22,
+              54,
+              72
+            ],
+            "swordTip": [
+              18.042,
+              22.5
+            ],
+            "swordAngle": -125,
+            "leftHand": [
+              45,
+              61
+            ],
+            "leftWrist": [
+              49.42376104985806,
+              60.3439983431738
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              57
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  77
+                ],
+                "ankle": [
+                  59,
+                  107
+                ],
+                "knee": [
+                  58.865,
+                  90.501
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 140.0
+              },
+              "right": {
+                "hip": [
+                  58,
+                  77
+                ],
+                "ankle": [
+                  74,
+                  101
+                ],
+                "knee": [
+                  58.843,
+                  94.48
+                ],
+                "bottomY": 112,
+                "grounded": false,
+                "kneeAngleDegrees": 116.0
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                76
+              ],
+              "chest": [
+                64,
+                61
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 594,
+              "chest/waist": 189,
+              "chest/stump": 153,
+              "chest/upper_arm": 344,
+              "upper_arm/forearm": 99,
+              "forearm/fist": 33,
+              "fist/sword": 70,
+              "waist/near_thigh": 249,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 204,
+              "far_thigh/far_shin": 56,
+              "far_shin/far_boot": 44
+            },
+            "coveredHandleSamples": 7,
+            "phase": "toe-off",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              20,
+              19,
+              111,
+              116
+            ],
+            "swordBounds": [
+              20,
+              19,
+              54,
+              70
+            ],
+            "swordTip": [
+              21.094,
+              19.142
+            ],
+            "swordAngle": -122,
+            "leftHand": [
+              46,
+              59
+            ],
+            "leftWrist": [
+              50.452030913092116,
+              58.576419135380036
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  75
+                ],
+                "ankle": [
+                  62,
+                  107
+                ],
+                "knee": [
+                  61.877,
+                  90.5
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 151.9
+              },
+              "right": {
+                "hip": [
+                  58,
+                  75
+                ],
+                "ankle": [
+                  65,
+                  99
+                ],
+                "knee": [
+                  50.638,
+                  90.876
+                ],
+                "bottomY": 108,
+                "grounded": false,
+                "kneeAngleDegrees": 94.6
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                74
+              ],
+              "chest": [
+                64,
+                59
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 553,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 344,
+              "upper_arm/forearm": 103,
+              "forearm/fist": 30,
+              "fist/sword": 69,
+              "waist/near_thigh": 215,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 178,
+              "far_thigh/far_shin": 56,
+              "far_shin/far_boot": 45
+            },
+            "coveredHandleSamples": 7,
+            "phase": "passing",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              18,
+              19,
+              110,
+              116
+            ],
+            "swordBounds": [
+              18,
+              19,
+              54,
+              69
+            ],
+            "swordTip": [
+              18.718,
+              19.035
+            ],
+            "swordAngle": -124,
+            "leftHand": [
+              45,
+              58
+            ],
+            "leftWrist": [
+              49.43453609716166,
+              57.421303531227096
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  68,
+                  106
+                ],
+                "knee": [
+                  61.047,
+                  91.036
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 124.3
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  54,
+                  103
+                ],
+                "knee": [
+                  45.888,
+                  88.632
+                ],
+                "bottomY": 111,
+                "grounded": false,
+                "kneeAngleDegrees": 106.8
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 579,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 346,
+              "upper_arm/forearm": 98,
+              "forearm/fist": 32,
+              "fist/sword": 70,
+              "waist/near_thigh": 220,
+              "near_thigh/near_shin": 55,
+              "near_shin/near_boot": 39,
+              "waist/far_thigh": 151,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7,
+            "phase": "forward swing",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              15,
+              21,
+              109,
+              116
+            ],
+            "swordBounds": [
+              15,
+              22,
+              53,
+              70
+            ],
+            "swordTip": [
+              15.715,
+              22.464
+            ],
+            "swordAngle": -127,
+            "leftHand": [
+              44,
+              60
+            ],
+            "leftWrist": [
+              48.39817208649327,
+              59.19001092748639
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  72,
+                  105
+                ],
+                "knee": [
+                  62.249,
+                  91.69
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 117.5
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  53,
+                  107
+                ],
+                "knee": [
+                  48.981,
+                  90.997
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 134.9
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 585,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 346,
+              "upper_arm/forearm": 98,
+              "forearm/fist": 32,
+              "fist/sword": 68,
+              "waist/near_thigh": 209,
+              "near_thigh/near_shin": 56,
+              "near_shin/near_boot": 39,
+              "waist/far_thigh": 173,
+              "far_thigh/far_shin": 53,
+              "far_shin/far_boot": 39
+            },
+            "coveredHandleSamples": 7,
+            "phase": "contact",
+            "plantedFoot": "right"
+          },
+          {
+            "opaqueBounds": [
+              17,
+              21,
+              108,
+              116
+            ],
+            "swordBounds": [
+              17,
+              22,
+              54,
+              72
+            ],
+            "swordTip": [
+              18.042,
+              22.5
+            ],
+            "swordAngle": -125,
+            "leftHand": [
+              45,
+              61
+            ],
+            "leftWrist": [
+              49.42376104985806,
+              60.3439983431738
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  74,
+                  101
+                ],
+                "knee": [
+                  60.911,
+                  90.954
+                ],
+                "bottomY": 112,
+                "grounded": false,
+                "kneeAngleDegrees": 96.2
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  57,
+                  107
+                ],
+                "knee": [
+                  50.525,
+                  91.823
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 131.6
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 599,
+              "chest/waist": 189,
+              "chest/stump": 153,
+              "chest/upper_arm": 345,
+              "upper_arm/forearm": 99,
+              "forearm/fist": 32,
+              "fist/sword": 70,
+              "waist/near_thigh": 230,
+              "near_thigh/near_shin": 59,
+              "near_shin/near_boot": 41,
+              "waist/far_thigh": 181,
+              "far_thigh/far_shin": 58,
+              "far_shin/far_boot": 38
+            },
+            "coveredHandleSamples": 7,
+            "phase": "toe-off",
+            "plantedFoot": "right"
+          },
+          {
+            "opaqueBounds": [
+              19,
+              19,
+              110,
+              116
+            ],
+            "swordBounds": [
+              19,
+              19,
+              54,
+              70
+            ],
+            "swordTip": [
+              20.402,
+              19.582
+            ],
+            "swordAngle": -123,
+            "leftHand": [
+              46,
+              59
+            ],
+            "leftWrist": [
+              50.44396034181175,
+              58.49878499583074
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              54
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  64,
+                  99
+                ],
+                "knee": [
+                  56.037,
+                  84.549
+                ],
+                "bottomY": 108,
+                "grounded": false,
+                "kneeAngleDegrees": 98.2
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  62,
+                  107
+                ],
+                "knee": [
+                  56.518,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                58
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 581,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 344,
+              "upper_arm/forearm": 102,
+              "forearm/fist": 32,
+              "fist/sword": 69,
+              "waist/near_thigh": 258,
+              "near_thigh/near_shin": 58,
+              "near_shin/near_boot": 39,
+              "waist/far_thigh": 189,
+              "far_thigh/far_shin": 57,
+              "far_shin/far_boot": 36
+            },
+            "coveredHandleSamples": 7,
+            "phase": "passing",
+            "plantedFoot": "right"
+          },
+          {
+            "opaqueBounds": [
+              17,
+              20,
+              112,
+              116
+            ],
+            "swordBounds": [
+              17,
+              20,
+              54,
+              70
+            ],
+            "swordTip": [
+              18.042,
+              20.5
+            ],
+            "swordAngle": -125,
+            "leftHand": [
+              45,
+              59
+            ],
+            "leftWrist": [
+              49.42376104985806,
+              58.3439983431738
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  75
+                ],
+                "ankle": [
+                  55,
+                  103
+                ],
+                "knee": [
+                  56.906,
+                  86.61
+                ],
+                "bottomY": 111,
+                "grounded": false,
+                "kneeAngleDegrees": 138.2
+              },
+              "right": {
+                "hip": [
+                  58,
+                  75
+                ],
+                "ankle": [
+                  68,
+                  106
+                ],
+                "knee": [
+                  58.524,
+                  92.492
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 146.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                74
+              ],
+              "chest": [
+                64,
+                59
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 53,
+              "cape/chest": 553,
+              "chest/waist": 201,
+              "chest/stump": 153,
+              "chest/upper_arm": 344,
+              "upper_arm/forearm": 99,
+              "forearm/fist": 33,
+              "fist/sword": 70,
+              "waist/near_thigh": 252,
+              "near_thigh/near_shin": 57,
+              "near_shin/near_boot": 38,
+              "waist/far_thigh": 193,
+              "far_thigh/far_shin": 55,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7,
+            "phase": "forward swing",
+            "plantedFoot": "right"
+          }
+        ],
+        "adjacentPairs": [
+          {
+            "from": 0,
+            "to": 1,
+            "differentPixels": 2604
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "differentPixels": 4222
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "differentPixels": 3948
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "differentPixels": 2270
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "differentPixels": 2826
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "differentPixels": 4245
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "differentPixels": 3709
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "differentPixels": 4156
+          }
+        ]
+      },
+      "IdleRight": {
+        "frames": [
+          {
+            "opaqueBounds": [
+              16,
+              19,
+              101,
+              116
+            ],
+            "swordBounds": [
+              82,
+              56,
+              101,
+              115
+            ],
+            "swordTip": [
+              92.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              92,
+              68
+            ],
+            "leftWrist": [
+              88.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  74.091,
+                  91.015
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 152.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  54,
+                  107
+                ],
+                "knee": [
+                  59.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                58
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 59,
+              "cape/chest": 465,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 339,
+              "upper_arm/forearm": 89,
+              "forearm/fist": 40,
+              "fist/sword": 69,
+              "waist/near_thigh": 189,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 230,
+              "far_thigh/far_shin": 77,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              17,
+              18,
+              101,
+              116
+            ],
+            "swordBounds": [
+              82,
+              56,
+              101,
+              115
+            ],
+            "swordTip": [
+              92.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              92,
+              68
+            ],
+            "leftWrist": [
+              88.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              54
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  74.091,
+                  91.015
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 152.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  54,
+                  107
+                ],
+                "knee": [
+                  59.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                57
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 59,
+              "cape/chest": 474,
+              "chest/waist": 179,
+              "chest/stump": 150,
+              "chest/upper_arm": 338,
+              "upper_arm/forearm": 86,
+              "forearm/fist": 40,
+              "fist/sword": 69,
+              "waist/near_thigh": 189,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 240,
+              "far_thigh/far_shin": 77,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              17,
+              17,
+              101,
+              116
+            ],
+            "swordBounds": [
+              82,
+              56,
+              101,
+              115
+            ],
+            "swordTip": [
+              92.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              92,
+              68
+            ],
+            "leftWrist": [
+              88.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              53
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  74.091,
+                  91.015
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 152.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  54,
+                  107
+                ],
+                "knee": [
+                  59.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                56
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 59,
+              "cape/chest": 481,
+              "chest/waist": 157,
+              "chest/stump": 150,
+              "chest/upper_arm": 338,
+              "upper_arm/forearm": 85,
+              "forearm/fist": 41,
+              "fist/sword": 69,
+              "waist/near_thigh": 189,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 240,
+              "far_thigh/far_shin": 77,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              16,
+              17,
+              101,
+              116
+            ],
+            "swordBounds": [
+              82,
+              56,
+              101,
+              115
+            ],
+            "swordTip": [
+              92.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              92,
+              68
+            ],
+            "leftWrist": [
+              88.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              53
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  74.091,
+                  91.015
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 152.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  54,
+                  107
+                ],
+                "knee": [
+                  59.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                56
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 59,
+              "cape/chest": 465,
+              "chest/waist": 157,
+              "chest/stump": 150,
+              "chest/upper_arm": 338,
+              "upper_arm/forearm": 85,
+              "forearm/fist": 41,
+              "fist/sword": 69,
+              "waist/near_thigh": 189,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 240,
+              "far_thigh/far_shin": 77,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              15,
+              18,
+              101,
+              116
+            ],
+            "swordBounds": [
+              82,
+              56,
+              101,
+              115
+            ],
+            "swordTip": [
+              92.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              92,
+              68
+            ],
+            "leftWrist": [
+              88.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              54
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  74.091,
+                  91.015
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 152.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  54,
+                  107
+                ],
+                "knee": [
+                  59.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                57
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 59,
+              "cape/chest": 444,
+              "chest/waist": 190,
+              "chest/stump": 150,
+              "chest/upper_arm": 338,
+              "upper_arm/forearm": 86,
+              "forearm/fist": 40,
+              "fist/sword": 69,
+              "waist/near_thigh": 189,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 230,
+              "far_thigh/far_shin": 77,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7
+          },
+          {
+            "opaqueBounds": [
+              16,
+              19,
+              101,
+              116
+            ],
+            "swordBounds": [
+              82,
+              56,
+              101,
+              115
+            ],
+            "swordTip": [
+              92.0,
+              115.0
+            ],
+            "swordAngle": 90,
+            "leftHand": [
+              92,
+              68
+            ],
+            "leftWrist": [
+              88.0,
+              70.0
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  74.091,
+                  91.015
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 152.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  54,
+                  107
+                ],
+                "knee": [
+                  59.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                58
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 59,
+              "cape/chest": 459,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 339,
+              "upper_arm/forearm": 89,
+              "forearm/fist": 40,
+              "fist/sword": 69,
+              "waist/near_thigh": 189,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 230,
+              "far_thigh/far_shin": 77,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7
+          }
+        ],
+        "adjacentPairs": [
+          {
+            "from": 0,
+            "to": 1,
+            "differentPixels": 2189
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "differentPixels": 1913
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "differentPixels": 1161
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "differentPixels": 2259
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "differentPixels": 2427
+          },
+          {
+            "from": 5,
+            "to": 0,
+            "differentPixels": 612
+          }
+        ]
+      },
+      "WalkRight": {
+        "frames": [
+          {
+            "opaqueBounds": [
+              15,
+              21,
+              115,
+              116
+            ],
+            "swordBounds": [
+              77,
+              21,
+              115,
+              69
+            ],
+            "swordTip": [
+              114.285,
+              21.464
+            ],
+            "swordAngle": -53,
+            "leftHand": [
+              86,
+              59
+            ],
+            "leftWrist": [
+              81.60182791350672,
+              58.19001092748639
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              57
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  76,
+                  106
+                ],
+                "knee": [
+                  80.377,
+                  90.091
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 128.2
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  56,
+                  105
+                ],
+                "knee": [
+                  65.751,
+                  91.69
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 117.5
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 444,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 338,
+              "upper_arm/forearm": 123,
+              "forearm/fist": 45,
+              "fist/sword": 70,
+              "waist/near_thigh": 225,
+              "near_thigh/near_shin": 85,
+              "near_shin/near_boot": 43,
+              "waist/far_thigh": 200,
+              "far_thigh/far_shin": 83,
+              "far_shin/far_boot": 42
+            },
+            "coveredHandleSamples": 7,
+            "phase": "contact",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              17,
+              21,
+              113,
+              116
+            ],
+            "swordBounds": [
+              76,
+              22,
+              113,
+              72
+            ],
+            "swordTip": [
+              111.958,
+              22.5
+            ],
+            "swordAngle": -55,
+            "leftHand": [
+              85,
+              61
+            ],
+            "leftWrist": [
+              80.57623895014194,
+              60.3439983431738
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              57
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  71,
+                  107
+                ],
+                "knee": [
+                  77.475,
+                  91.823
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 131.6
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  54,
+                  101
+                ],
+                "knee": [
+                  67.089,
+                  90.954
+                ],
+                "bottomY": 112,
+                "grounded": false,
+                "kneeAngleDegrees": 96.2
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 474,
+              "chest/waist": 201,
+              "chest/stump": 150,
+              "chest/upper_arm": 340,
+              "upper_arm/forearm": 121,
+              "forearm/fist": 44,
+              "fist/sword": 71,
+              "waist/near_thigh": 241,
+              "near_thigh/near_shin": 94,
+              "near_shin/near_boot": 46,
+              "waist/far_thigh": 223,
+              "far_thigh/far_shin": 83,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7,
+            "phase": "toe-off",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              15,
+              19,
+              110,
+              116
+            ],
+            "swordBounds": [
+              76,
+              19,
+              110,
+              70
+            ],
+            "swordTip": [
+              108.906,
+              19.142
+            ],
+            "swordAngle": -58,
+            "leftHand": [
+              84,
+              59
+            ],
+            "leftWrist": [
+              79.54796908690788,
+              58.576419135380036
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              55
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  74
+                ],
+                "ankle": [
+                  66,
+                  107
+                ],
+                "knee": [
+                  71.482,
+                  91.437
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 155.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  74
+                ],
+                "ankle": [
+                  63,
+                  99
+                ],
+                "knee": [
+                  71.651,
+                  84.95
+                ],
+                "bottomY": 108,
+                "grounded": false,
+                "kneeAngleDegrees": 97.1
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                73
+              ],
+              "chest": [
+                64,
+                58
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 444,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 342,
+              "upper_arm/forearm": 124,
+              "forearm/fist": 43,
+              "fist/sword": 70,
+              "waist/near_thigh": 278,
+              "near_thigh/near_shin": 96,
+              "near_shin/near_boot": 46,
+              "waist/far_thigh": 238,
+              "far_thigh/far_shin": 76,
+              "far_shin/far_boot": 40
+            },
+            "coveredHandleSamples": 7,
+            "phase": "passing",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              16,
+              19,
+              112,
+              116
+            ],
+            "swordBounds": [
+              76,
+              19,
+              112,
+              69
+            ],
+            "swordTip": [
+              111.282,
+              19.035
+            ],
+            "swordAngle": -56,
+            "leftHand": [
+              85,
+              58
+            ],
+            "leftWrist": [
+              80.56546390283835,
+              57.421303531227096
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  75
+                ],
+                "ankle": [
+                  60,
+                  106
+                ],
+                "knee": [
+                  69.476,
+                  92.492
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 146.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  75
+                ],
+                "ankle": [
+                  73,
+                  102
+                ],
+                "knee": [
+                  71.976,
+                  85.532
+                ],
+                "bottomY": 111,
+                "grounded": false,
+                "kneeAngleDegrees": 130.6
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                74
+              ],
+              "chest": [
+                64,
+                59
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 459,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 341,
+              "upper_arm/forearm": 123,
+              "forearm/fist": 46,
+              "fist/sword": 69,
+              "waist/near_thigh": 282,
+              "near_thigh/near_shin": 80,
+              "near_shin/near_boot": 42,
+              "waist/far_thigh": 240,
+              "far_thigh/far_shin": 80,
+              "far_shin/far_boot": 42
+            },
+            "coveredHandleSamples": 7,
+            "phase": "forward swing",
+            "plantedFoot": "left"
+          },
+          {
+            "opaqueBounds": [
+              16,
+              22,
+              115,
+              116
+            ],
+            "swordBounds": [
+              77,
+              22,
+              115,
+              70
+            ],
+            "swordTip": [
+              114.285,
+              22.464
+            ],
+            "swordAngle": -53,
+            "leftHand": [
+              86,
+              60
+            ],
+            "leftWrist": [
+              81.60182791350672,
+              59.19001092748639
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              58
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  77
+                ],
+                "ankle": [
+                  55,
+                  105
+                ],
+                "knee": [
+                  67.588,
+                  94.333
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 138.2
+              },
+              "right": {
+                "hip": [
+                  58,
+                  77
+                ],
+                "ankle": [
+                  73,
+                  107
+                ],
+                "knee": [
+                  68.216,
+                  91.209
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 161.1
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                76
+              ],
+              "chest": [
+                64,
+                61
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 459,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 338,
+              "upper_arm/forearm": 123,
+              "forearm/fist": 45,
+              "fist/sword": 70,
+              "waist/near_thigh": 241,
+              "near_thigh/near_shin": 65,
+              "near_shin/near_boot": 42,
+              "waist/far_thigh": 243,
+              "far_thigh/far_shin": 79,
+              "far_shin/far_boot": 41
+            },
+            "coveredHandleSamples": 7,
+            "phase": "contact",
+            "plantedFoot": "right"
+          },
+          {
+            "opaqueBounds": [
+              17,
+              22,
+              113,
+              116
+            ],
+            "swordBounds": [
+              76,
+              22,
+              113,
+              72
+            ],
+            "swordTip": [
+              111.958,
+              22.5
+            ],
+            "swordAngle": -55,
+            "leftHand": [
+              85,
+              61
+            ],
+            "leftWrist": [
+              80.57623895014194,
+              60.3439983431738
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              58
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  77
+                ],
+                "ankle": [
+                  53,
+                  101
+                ],
+                "knee": [
+                  68.122,
+                  94.399
+                ],
+                "bottomY": 112,
+                "grounded": false,
+                "kneeAngleDegrees": 119.7
+              },
+              "right": {
+                "hip": [
+                  58,
+                  77
+                ],
+                "ankle": [
+                  70,
+                  107
+                ],
+                "knee": [
+                  69.106,
+                  90.524
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 143.7
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                76
+              ],
+              "chest": [
+                64,
+                61
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 481,
+              "chest/waist": 201,
+              "chest/stump": 150,
+              "chest/upper_arm": 340,
+              "upper_arm/forearm": 119,
+              "forearm/fist": 44,
+              "fist/sword": 71,
+              "waist/near_thigh": 255,
+              "near_thigh/near_shin": 74,
+              "near_shin/near_boot": 43,
+              "waist/far_thigh": 249,
+              "far_thigh/far_shin": 87,
+              "far_shin/far_boot": 43
+            },
+            "coveredHandleSamples": 7,
+            "phase": "toe-off",
+            "plantedFoot": "right"
+          },
+          {
+            "opaqueBounds": [
+              15,
+              19,
+              110,
+              116
+            ],
+            "swordBounds": [
+              76,
+              19,
+              110,
+              70
+            ],
+            "swordTip": [
+              109.598,
+              19.582
+            ],
+            "swordAngle": -57,
+            "leftHand": [
+              84,
+              59
+            ],
+            "leftWrist": [
+              79.55603965818825,
+              58.49878499583074
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              56
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  75
+                ],
+                "ankle": [
+                  62,
+                  99
+                ],
+                "knee": [
+                  76.554,
+                  91.226
+                ],
+                "bottomY": 108,
+                "grounded": false,
+                "kneeAngleDegrees": 96.1
+              },
+              "right": {
+                "hip": [
+                  58,
+                  75
+                ],
+                "ankle": [
+                  66,
+                  107
+                ],
+                "knee": [
+                  66.123,
+                  90.5
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 151.9
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                74
+              ],
+              "chest": [
+                64,
+                59
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 444,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 341,
+              "upper_arm/forearm": 131,
+              "forearm/fist": 44,
+              "fist/sword": 69,
+              "waist/near_thigh": 229,
+              "near_thigh/near_shin": 72,
+              "near_shin/near_boot": 42,
+              "waist/far_thigh": 218,
+              "far_thigh/far_shin": 97,
+              "far_shin/far_boot": 42
+            },
+            "coveredHandleSamples": 7,
+            "phase": "passing",
+            "plantedFoot": "right"
+          },
+          {
+            "opaqueBounds": [
+              14,
+              20,
+              113,
+              116
+            ],
+            "swordBounds": [
+              76,
+              20,
+              113,
+              70
+            ],
+            "swordTip": [
+              111.958,
+              20.5
+            ],
+            "swordAngle": -55,
+            "leftHand": [
+              85,
+              59
+            ],
+            "leftWrist": [
+              80.57623895014194,
+              58.3439983431738
+            ],
+            "rightHand": null,
+            "rightStump": [
+              54,
+              57
+            ],
+            "feet": {
+              "left": {
+                "hip": [
+                  70,
+                  76
+                ],
+                "ankle": [
+                  73,
+                  103
+                ],
+                "knee": [
+                  81.722,
+                  88.994
+                ],
+                "bottomY": 111,
+                "grounded": false,
+                "kneeAngleDegrees": 106.0
+              },
+              "right": {
+                "hip": [
+                  58,
+                  76
+                ],
+                "ankle": [
+                  60,
+                  106
+                ],
+                "knee": [
+                  66.953,
+                  91.036
+                ],
+                "bottomY": 115,
+                "grounded": true,
+                "kneeAngleDegrees": 124.3
+              }
+            },
+            "back": {
+              "hips": [
+                64,
+                75
+              ],
+              "chest": [
+                64,
+                60
+              ]
+            },
+            "jointOverlapPixels": {
+              "head/chest": 54,
+              "cape/chest": 425,
+              "chest/waist": 212,
+              "chest/stump": 150,
+              "chest/upper_arm": 339,
+              "upper_arm/forearm": 126,
+              "forearm/fist": 48,
+              "fist/sword": 71,
+              "waist/near_thigh": 236,
+              "near_thigh/near_shin": 83,
+              "near_shin/near_boot": 44,
+              "waist/far_thigh": 195,
+              "far_thigh/far_shin": 90,
+              "far_shin/far_boot": 44
+            },
+            "coveredHandleSamples": 7,
+            "phase": "forward swing",
+            "plantedFoot": "right"
+          }
+        ],
+        "adjacentPairs": [
+          {
+            "from": 0,
+            "to": 1,
+            "differentPixels": 2883
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "differentPixels": 4513
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "differentPixels": 4026
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "differentPixels": 4317
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "differentPixels": 2743
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "differentPixels": 4452
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "differentPixels": 3891
+          },
+          {
+            "from": 7,
+            "to": 0,
+            "differentPixels": 2786
+          }
+        ]
+      }
+    },
+    "grip": {
+      "samplesPerHandle": 7,
+      "minimumCoveredSamples": 7,
+      "armJoinsCheckedInFrames": 28
+    },
+    "walk": {
+      "tipAboveGripInFrames": 16,
+      "supportKneeDegreesAtPassing": [
+        151.9,
+        155.7
+      ]
+    },
+    "unity": {
+      "version": "6000.6.8f1",
+      "importedSprites": 28,
+      "loopsSampledPerClipPerRate": 3,
+      "playbackRates": [
+        1,
+        0.3333333333333333
+      ],
+      "preservedAssetIds": true,
+      "status": "pass"
+    },
+    "gif": {
+      "playbackRates": [
+        1,
+        0.3333333333333333
+      ],
+      "previewPeriodsCheckedPerRate": 3,
+      "status": "pass"
+    }
+  },
+  "sheet": {
+    "path": "../../../Assets/project/art/Sprites/OneArmedSwordsmanLocomotion.png",
+    "sha256": "bafe150fea70ee1bc6b8aa6b4c9850371323592b4e7b54da6c979fcf5d6a17aa"
+  }
+}

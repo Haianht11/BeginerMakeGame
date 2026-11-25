@@ -1,0 +1,71 @@
+ImageGen part atlases, drawn from ../SourceSheet.png.
+
+LEFT
+
+Using the attached pixel-art outfit reference as the character design, build one production-ready modular pixel-art character part atlas for the SAME original swordsman. This is cutout art for fixed-canvas sprite animation at 128x128. The model is facing the SCREEN LEFT at a readable three-quarter side view (nose and toes clearly left, the character's anatomical left arm and left leg are nearest the viewer).
+
+The attached art is the identity and finish reference. Closely retain its face shape, peach skin, expressive dark eye and stern brow, spiky layered jet-black hair, original dark warm-charcoal armor, bronze rivets, worn brown leather, ragged mid-gray scarf, ragged black cloak, and original long pointed charcoal-steel blade with a dark central fuller and dull bronze crossguard. Match the distinctive compact 3.5-head proportions and large readable face when assembled. Do not redesign this into a different knight, and avoid simplified block or vector shapes. Match its crisp, detailed warm 16-bit pixel clusters, with texture kept subtle and clearly readable. IMPORTANT intentional anatomical update to the outfit reference: the anatomical LEFT arm is his one intact arm; the anatomical RIGHT arm ends high, as a bandaged short upper-arm stump. There are no other hands. The cutout of the right stump is individually visible for compositing. These are separated parts, not sixteen full-body figures.
+
+FORMAT: square image, exactly 16 isolated items with generous transparent gaps, in 4 evenly spaced columns and 4 evenly spaced rows. 16 completely contained cells, no overlap. Each component touches nothing else. No numbers, labels, guides, frame, shadows on background or extra decorations. True transparent alpha. Match metal and fabric shading direction across the parts. Keep every anatomy part exactly in the following slot:
+
+ROW 1, left to right:
+(1) Complete detached normal head from tip of spiky hair to just below chin/short neck, facing LEFT. Large eye, stern original expression. No scarf, shoulders, body, or armor attached to head.
+(2) Core torso cutout ONLY: original charcoal cuirass with gray torn scarf around neck, cropped just above belt, shoulder sockets contained inside chest contour, no shoulder pauldrons, limbs, head or cape. Draw a single contiguous body above waist, viewed facing LEFT.
+(3) Waist only: brown leather belt with metal buckle, charcoal armored hip plates and original pointed central fauld. Modest width in the same perspective. No legs, torso, cape or arms.
+(4) Black tattered cape only, angled trailing toward screen RIGHT, top edge gathered at shoulder, torn folds. No body, head, straps or arm.
+
+ROW 2:
+(1) Anatomical LEFT upper arm cutout in upright neutral local orientation, shoulder at top and elbow at bottom. One original layered rounded dark pauldron trimmed with thin faded bronze and sleeves down to the elbow. No forearm.
+(2) Anatomical LEFT forearm cutout in upright neutral local orientation, elbow at top, wrist at bottom. Bare warm peach forearm under dark cuff or bracer. No fingers or palm.
+(3) Anatomical RIGHT upper-arm stump cutout in upright neutral local orientation: same armor and short capped sleeve, with a pale tan wrapped end approximately halfway down a normal upper arm. The cap is closed and ends well above where the elbow would be. One short, legible rounded piece. No elbow, forearm, gauntlet, or hand.
+(4) One compact closed anatomical LEFT bare hand gripping an invisible round sword hilt, seen in palette and perspective characteristic of this view. No wrist, extra fingers, arm or any visible hilt or blade.
+
+ROW 3:
+(1) Near upper leg segment only, from hip socket at top to armored rounded kneecap at bottom. Original charcoal fabric and mail, dark plate, subtle bronze edging. This is a femur part only, pointing straight down with the rear edge visible. No shin or boot.
+(2) Near shin piece only, in upright neutral local orientation, below kneecap, with dark leather and reinforced tapered calf armor from top immediately below knee to ankle bottom. No thigh and no foot.
+(3) Near flat armored boot only, from heel to toe, toe clearly pointing toward SCREEN LEFT. Top edge ends just above ankle. Flat sole.
+(4) Far upper leg segment, from hip at top to kneecap at bottom, darker shaded charcoal, independently drawn for opposite leg in this view. No shin or boot.
+
+ROW 4:
+(1) Far shin piece only from below knee to ankle, matching darker shade, upright. No foot.
+(2) Far boot only, flat sole, facing SCREEN LEFT; significantly darker than the near boot but with readable edges.
+(3) The original single greatsword drawn vertically, pommel at TOP, tip at BOTTOM. Long subtly tapering dark silver blade, the same sword as the attached sample, faceted edge highlights, long distinct central dark fuller, clipped diamond-shaped tip, muted bronze curved crossguard, dark leather grip, squared pommel. Show full outline with both ends and all edges. No hand. 
+(4) Complete alternate head only, same view and identity as row 1 column 1 with the same size, hair, neck, jaw and shade pattern, one determined battle expression and slightly tightened jaw.
+
+Strong silhouettes, crisp square pixel-style cluster edges with minimal aliasing. All separated components on true transparency. Keep the cells with their exact reading order.
+
+RIGHT
+
+Using the attached pixel-art outfit reference as the character design, build one production-ready modular pixel-art character part atlas for the SAME original swordsman. This is cutout art for fixed-canvas sprite animation at 128x128. The model is facing the SCREEN RIGHT at a readable three-quarter side view (nose and toes clearly right, the short anatomical right upper-arm cuff and right leg are nearest the viewer). Redraw this view with the side and back of the shoulder plating, the cape folds and the camera-facing right cuff visible.
+
+The attached art is the identity and finish reference. Closely retain its face shape, peach skin, expressive dark eye and stern brow, spiky layered jet-black hair, original dark warm-charcoal armor, bronze rivets, worn brown leather, ragged mid-gray scarf, ragged black cloak, and original long pointed charcoal-steel blade with a dark central fuller and dull bronze crossguard. Match the distinctive compact 3.5-head proportions and large readable face when assembled. Do not redesign this into a different knight, and avoid simplified block or vector shapes. Match its crisp, detailed warm 16-bit pixel clusters, with texture kept subtle and clearly readable. IMPORTANT intentional anatomical update to the outfit reference: the anatomical LEFT arm is his one intact arm; the anatomical RIGHT arm ends high, as a bandaged short upper-arm stump. There are no other hands. The cutout of the right stump is individually visible for compositing. These are separated parts, not sixteen full-body figures.
+
+FORMAT: square image, exactly 16 isolated items with generous transparent gaps, in 4 evenly spaced columns and 4 evenly spaced rows. 16 completely contained cells, no overlap. Each component touches nothing else. No numbers, labels, guides, frame, shadows on background or extra decorations. True transparent alpha. Match metal and fabric shading direction across the parts. Keep every anatomy part exactly in the following slot:
+
+ROW 1, left to right:
+(1) Complete detached normal head from tip of spiky hair to just below chin/short neck, facing RIGHT. Large eye, stern original expression. No scarf, shoulders, body, or armor attached to head.
+(2) Core torso cutout ONLY: original charcoal cuirass with gray torn scarf around neck, cropped just above belt, shoulder sockets contained inside chest contour, no shoulder pauldrons, limbs, head or cape. Draw a single contiguous body above waist, viewed facing RIGHT.
+(3) Waist only: brown leather belt with metal buckle, charcoal armored hip plates and original pointed central fauld. Modest width in the same perspective. No legs, torso, cape or arms.
+(4) Black tattered cape only, angled trailing toward screen LEFT, top edge gathered at shoulder, torn folds. No body, head, straps or arm.
+
+ROW 2:
+(1) Anatomical LEFT upper arm cutout in upright neutral local orientation, shoulder at top and elbow at bottom. One original layered rounded dark pauldron trimmed with thin faded bronze and sleeves down to the elbow. No forearm.
+(2) Anatomical LEFT forearm cutout in upright neutral local orientation, elbow at top, wrist at bottom. Bare warm peach forearm under dark cuff or bracer. No fingers or palm.
+(3) Anatomical RIGHT upper-arm stump cutout in upright neutral local orientation: same armor and short capped sleeve, with a pale tan wrapped end approximately halfway down a normal upper arm. The cap is closed and ends well above where the elbow would be. One short, legible rounded piece. No elbow, forearm, gauntlet, or hand.
+(4) One compact closed anatomical LEFT bare hand gripping an invisible round sword hilt, seen in palette and perspective characteristic of this view. No wrist, extra fingers, arm or any visible hilt or blade.
+
+ROW 3:
+(1) Near upper leg segment only, from hip socket at top to armored rounded kneecap at bottom. Original charcoal fabric and mail, dark plate, subtle bronze edging. This is a femur part only, pointing straight down with the rear edge visible. No shin or boot.
+(2) Near shin piece only, in upright neutral local orientation, below kneecap, with dark leather and reinforced tapered calf armor from top immediately below knee to ankle bottom. No thigh and no foot.
+(3) Near flat armored boot only, from heel to toe, toe clearly pointing toward SCREEN RIGHT. Top edge ends just above ankle. Flat sole.
+(4) Far upper leg segment, from hip at top to kneecap at bottom, darker shaded charcoal, independently drawn for opposite leg in this view. No shin or boot.
+
+ROW 4:
+(1) Far shin piece only from below knee to ankle, matching darker shade, upright. No foot.
+(2) Far boot only, flat sole, facing SCREEN RIGHT; significantly darker than the near boot but with readable edges.
+(3) The original single greatsword drawn vertically, pommel at TOP, tip at BOTTOM. Long subtly tapering dark silver blade, the same sword as the attached sample, faceted edge highlights, long distinct central dark fuller, clipped diamond-shaped tip, muted bronze curved crossguard, dark leather grip, squared pommel. Show full outline with both ends and all edges. No hand. 
+(4) Complete alternate head only, same view and identity as row 1 column 1 with the same size, hair, neck, jaw and shade pattern, one determined battle expression and slightly tightened jaw.
+
+Strong silhouettes, crisp square pixel-style cluster edges with minimal aliasing. All separated components on true transparency. Keep the cells with their exact reading order.
+
+Both views use original composited part art and one shared rigid greatsword. The subject's intact anatomical left side controls the weapon.

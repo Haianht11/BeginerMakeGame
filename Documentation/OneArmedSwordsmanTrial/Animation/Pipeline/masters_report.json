@@ -1,0 +1,305 @@
+{
+  "heroic": {
+    "file": "c:\\Users\\Admin\\source\\repos\\BeginerMakeGame\\Documentation\\OneArmedSwordsmanTrial\\Sprites\\01-Heroic.png",
+    "size": [
+      128,
+      128
+    ],
+    "bbox": [
+      35,
+      20,
+      100,
+      117
+    ],
+    "width_px": 66,
+    "height_px": 98,
+    "crown_y": 20,
+    "ground_y": 117,
+    "head_chin_y": 54,
+    "head_height_px": 35,
+    "hip_x": 65.0,
+    "unique_colors": 32,
+    "partial_alpha_px": 0
+  },
+  "sides": {
+    "left": {
+      "keying": {
+        "source": "c:\\Users\\Admin\\source\\repos\\BeginerMakeGame\\Documentation\\OneArmedSwordsmanTrial\\Animation\\RawMasters\\raw_master_left.png",
+        "raw_size": [
+          965,
+          715
+        ],
+        "key_hint": "auto",
+        "key_quality": "native_alpha",
+        "grid_detect": {
+          "period": 24,
+          "score": 0.033
+        },
+        "despill": null,
+        "removed_specks": [],
+        "matte_qa": {
+          "key": [
+            255.0,
+            0.0,
+            255.0
+          ],
+          "opaque_key_px": 0,
+          "outer_ring_spill_fraction": 0.0,
+          "semitransparent_fraction": 0.061484632419495054,
+          "enclosed_key_pockets": 0,
+          "key_hued_px": 0,
+          "visible_px": 279517,
+          "outer_ring_px": 4230,
+          "thresholds": {
+            "key_tolerance": 48.0,
+            "spill_threshold": 20.0,
+            "min_pocket_area": 16,
+            "opaque_alpha": 128,
+            "spill_hue_balance": 0.5
+          },
+          "method": "forge_matte.matte_qa v1: straight-colour key distance and dominance on the keyed image; two-channel keys count spill only where the key channels are balanced"
+        }
+      },
+      "normalization": {
+        "src_bbox": [
+          1,
+          1,
+          963,
+          713
+        ],
+        "src_body_span_y": [
+          1,
+          713
+        ],
+        "src_body_h": 713,
+        "scale": 0.13745,
+        "resampler": "lanczos_premul",
+        "scaled_size": [
+          132,
+          98
+        ],
+        "hip_x_in_scaled": 71.88,
+        "paste_xy": [
+          8,
+          46
+        ],
+        "canvas_bbox_opaque": [
+          8,
+          46,
+          139,
+          143
+        ],
+        "canvas_height": 98,
+        "clipped": false
+      },
+      "final_stats": {
+        "file": "c:\\Users\\Admin\\source\\repos\\BeginerMakeGame\\Documentation\\OneArmedSwordsmanTrial\\Animation\\Masters\\master_left_160.png",
+        "size": [
+          160,
+          160
+        ],
+        "bbox": [
+          8,
+          46,
+          139,
+          143
+        ],
+        "width_px": 132,
+        "height_px": 98,
+        "crown_y": 46,
+        "ground_y": 143,
+        "head_chin_y": 79,
+        "head_height_px": 34,
+        "hip_x": 94.0,
+        "unique_colors": 32,
+        "partial_alpha_px": 0
+      }
+    },
+    "right": {
+      "keying": {
+        "source": "c:\\Users\\Admin\\source\\repos\\BeginerMakeGame\\Documentation\\OneArmedSwordsmanTrial\\Animation\\RawMasters\\raw_master_right.jpg",
+        "raw_size": [
+          1024,
+          1024
+        ],
+        "key_hint": "magenta",
+        "key_quality": "soft",
+        "grid_detect": {
+          "period": 24,
+          "score": 0.049
+        },
+        "despill": null,
+        "removed_specks": [],
+        "matte_qa": {
+          "key": [
+            252.0,
+            1.0,
+            251.0
+          ],
+          "opaque_key_px": 0,
+          "outer_ring_spill_fraction": 0.0,
+          "semitransparent_fraction": 0.052222601570501875,
+          "enclosed_key_pockets": 0,
+          "key_hued_px": 0,
+          "visible_px": 219675,
+          "outer_ring_px": 3009,
+          "thresholds": {
+            "key_tolerance": 48.0,
+            "spill_threshold": 20.0,
+            "min_pocket_area": 16,
+            "opaque_alpha": 128,
+            "spill_hue_balance": 0.5
+          },
+          "method": "forge_matte.matte_qa v1: straight-colour key distance and dominance on the keyed image; two-channel keys count spill only where the key channels are balanced"
+        }
+      },
+      "normalization": {
+        "src_bbox": [
+          260,
+          173,
+          871,
+          893
+        ],
+        "src_body_span_y": [
+          173,
+          893
+        ],
+        "src_body_h": 721,
+        "scale": 0.13592,
+        "resampler": "lanczos_premul",
+        "scaled_size": [
+          83,
+          98
+        ],
+        "hip_x_in_scaled": 31.26,
+        "paste_xy": [
+          49,
+          46
+        ],
+        "canvas_bbox_opaque": [
+          49,
+          47,
+          131,
+          143
+        ],
+        "canvas_height": 97,
+        "clipped": false
+      },
+      "final_stats": {
+        "file": "c:\\Users\\Admin\\source\\repos\\BeginerMakeGame\\Documentation\\OneArmedSwordsmanTrial\\Animation\\Masters\\master_right_160.png",
+        "size": [
+          160,
+          160
+        ],
+        "bbox": [
+          49,
+          47,
+          131,
+          143
+        ],
+        "width_px": 83,
+        "height_px": 97,
+        "crown_y": 47,
+        "ground_y": 143,
+        "head_chin_y": 80,
+        "head_height_px": 34,
+        "hip_x": 78.5,
+        "unique_colors": 31,
+        "partial_alpha_px": 0
+      }
+    }
+  },
+  "palette_apply_qa": {
+    "status": "pass",
+    "method": "forge_palette.quantize_image: OKLab-nearest palette colour per pixel (exact palette colours kept), alpha binary at the threshold, then the written PNGs re-read and measured with forge_palette.fit_report against the palette",
+    "notProven": [
+      "Visual quality after snapping: compare an output with its input.",
+      "Indexed PNGs are engine exports; they are not checked by builders.",
+      "No --max-delta-e gate was set."
+    ],
+    "checks": [
+      {
+        "id": "output_off_palette_px",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "output_partial_alpha_px",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "max_delta_e",
+        "status": "skipped",
+        "value": 0.06134,
+        "threshold": null
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../masters-normalized-20261125_120239/master_left_160.png",
+        "sha256": "3952c5a5f6ac059cacd51bd16e1d732f3c5dccdea54fcb4d5f61c7314974b7e3",
+        "bytes": 16801
+      },
+      {
+        "path": "../masters-normalized-20261125_120239/master_right_160.png",
+        "sha256": "fb968952fb9a52fb15e697324ae45cb814052b2557d7d27a0b05bcf4d8a22f7f",
+        "bytes": 13101
+      },
+      {
+        "path": "../../../Pipeline/03-palette/palette.json",
+        "sha256": "767b6ca47c1747cadffc57d392d61f3c1741921a29b54d00f80bd574b892ceb6",
+        "bytes": 1387
+      }
+    ],
+    "outputs": [
+      {
+        "path": "master_left_160.png",
+        "sha256": "ec3e438fb6ea64c282f0aead5e1c7e3d8cd3716855f1a7fd99a6e627e920c812",
+        "bytes": 8170
+      },
+      {
+        "path": "master_right_160.png",
+        "sha256": "3f7c8117996a21ec66ebd17e59186db7a841e59a17b63a21657efb84e8ba1494",
+        "bytes": 6757
+      }
+    ],
+    "tool": {
+      "name": "palette_tool",
+      "version": "0.6.0"
+    },
+    "fit": {
+      "master_left_160.png": {
+        "measured_px": 5020,
+        "alpha_threshold": 128,
+        "off_palette_px": 5015,
+        "partial_alpha_px": 794,
+        "colors": 3226,
+        "palette_colors_used": 32,
+        "mean_delta_e": 0.012166,
+        "p95_delta_e": 0.025909,
+        "max_delta_e": 0.049653
+      },
+      "master_right_160.png": {
+        "measured_px": 3892,
+        "alpha_threshold": 128,
+        "off_palette_px": 3886,
+        "partial_alpha_px": 538,
+        "colors": 2719,
+        "palette_colors_used": 31,
+        "mean_delta_e": 0.01337,
+        "p95_delta_e": 0.029694,
+        "max_delta_e": 0.06134
+      }
+    },
+    "totals": {
+      "max_delta_e": 0.06134,
+      "worst_p95_delta_e": 0.029694,
+      "off_palette_px": 8901
+    },
+    "locked_inputs": []
+  },
+  "compare_path": "c:\\Users\\Admin\\source\\repos\\BeginerMakeGame\\Documentation\\OneArmedSwordsmanTrial\\Animation\\Masters\\masters_compare.png"
+}

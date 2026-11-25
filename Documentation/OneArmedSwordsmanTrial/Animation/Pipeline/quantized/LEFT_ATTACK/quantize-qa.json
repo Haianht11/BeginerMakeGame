@@ -1,0 +1,229 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.049439,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../dedup/LEFT_ATTACK/00.png",
+      "sha256": "ec3e438fb6ea64c282f0aead5e1c7e3d8cd3716855f1a7fd99a6e627e920c812",
+      "bytes": 8170
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/01.png",
+      "sha256": "ed3d6ddf8acfb7d84bd8fb329908734eb3ba577864c7531a22047d108fd8d499",
+      "bytes": 7444
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/02.png",
+      "sha256": "6a7751964dcfea4ecab545b242026ccdc3180fea3e3df7cc6dff565710d16fc5",
+      "bytes": 7364
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/03.png",
+      "sha256": "787dff0afed53063acff64a5bc4effd4c12291e50755b82596c45cf16e0aeab2",
+      "bytes": 6346
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/04.png",
+      "sha256": "b5cb6ca72dadb8417cec40981aa15f801ab26782619031cc8c10683819aeabfd",
+      "bytes": 7967
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/05.png",
+      "sha256": "ae971ee8253f8e37d3c83e6e66b9d9f319ec1c56cd4183d09ba9553cc44c05a1",
+      "bytes": 8826
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/06.png",
+      "sha256": "1e6cae90ef44f5ab62d636442c328ae260b50d8c1a0ffd9f2d055254df34a374",
+      "bytes": 7664
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/07.png",
+      "sha256": "33d8ed33b561d948f5ac63d89c6e7c867f021ce631d454f74682892cccf0eb6f",
+      "bytes": 7101
+    },
+    {
+      "path": "../../dedup/LEFT_ATTACK/08.png",
+      "sha256": "de69dc6dc76cee0818d2486371e963ec86be03df461df6e91ab6fc8ea5921765",
+      "bytes": 7284
+    },
+    {
+      "path": "../../../../Pipeline/03-palette/palette.json",
+      "sha256": "767b6ca47c1747cadffc57d392d61f3c1741921a29b54d00f80bd574b892ceb6",
+      "bytes": 1387
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "e5e3000705f58940aa0d4420e9cb5065e6af2d873384b757ac53f915e72cb1f0",
+      "bytes": 8149
+    },
+    {
+      "path": "01.png",
+      "sha256": "4def57a9b47908cd308b94cdd40259da5df7041edd86fe90def22ddea9f29805",
+      "bytes": 7395
+    },
+    {
+      "path": "02.png",
+      "sha256": "9411bab53ab6203eefa8e666e235b369bad1e4fdda5e06ffa0a59812170d586b",
+      "bytes": 7297
+    },
+    {
+      "path": "03.png",
+      "sha256": "8dbd7b79f8f375178f904376d91e88c9b53fbedca02ef82277bd076f831504d9",
+      "bytes": 6288
+    },
+    {
+      "path": "04.png",
+      "sha256": "43d63e2964bc1da8a5ae4c40357fba20b45dc73cca6317fb3fa7aefae2e02520",
+      "bytes": 7942
+    },
+    {
+      "path": "05.png",
+      "sha256": "bf161c30b1cc9ddb247363df2a19f22fd82fb2dfd3283c08becb8e8c027cbe09",
+      "bytes": 8323
+    },
+    {
+      "path": "06.png",
+      "sha256": "2a174bf6b4ab0bc9b8126dcd8fad60150193ec8d5d7ce856bc3b96cf637be2d8",
+      "bytes": 7627
+    },
+    {
+      "path": "07.png",
+      "sha256": "3b10a965b4983abb7c29ef928a95cf2aead48a97a3ab25b53fb887bb96d08773",
+      "bytes": 7039
+    },
+    {
+      "path": "08.png",
+      "sha256": "7f7674845ce153bb3432d78cbf5090811a1ac3e9f8554dea0dffc35d4bb23b6f",
+      "bytes": 7219
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "oneshot",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 8,
+      "idx_flip": 0.699421,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.454502
+    },
+    "per_frame_nearest": {
+      "pairs": 8,
+      "idx_flip": 0.699467,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.454502
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 17
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 17
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 15
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 20
+    },
+    {
+      "file": "04.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 12
+    },
+    {
+      "file": "05.png",
+      "held_index_px": 1,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 18
+    },
+    {
+      "file": "06.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 17
+    },
+    {
+      "file": "07.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 21
+    },
+    {
+      "file": "08.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 18
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.049439,
+    "worst_p95_delta_e": 0.0,
+    "off_palette_px": 333
+  }
+}

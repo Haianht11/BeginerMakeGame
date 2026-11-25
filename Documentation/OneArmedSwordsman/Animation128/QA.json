@@ -1,0 +1,2572 @@
+{
+  "frames": {
+    "LEFT/IDLE/00.png": {
+      "opaqueBounds": [
+        29,
+        29,
+        110,
+        116
+      ],
+      "swordBounds": [
+        29,
+        56,
+        48,
+        115
+      ],
+      "swordTip": [
+        39.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        39,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        54,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            59,
+            107
+          ],
+          "knee": [
+            54.074,
+            91.253
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.466,
+            101.439
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/IDLE/01.png": {
+      "opaqueBounds": [
+        29,
+        28,
+        110,
+        116
+      ],
+      "swordBounds": [
+        29,
+        56,
+        48,
+        115
+      ],
+      "swordTip": [
+        39.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        39,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        54,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            59,
+            107
+          ],
+          "knee": [
+            54.074,
+            91.253
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.466,
+            101.439
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/IDLE/02.png": {
+      "opaqueBounds": [
+        29,
+        27,
+        110,
+        116
+      ],
+      "swordBounds": [
+        29,
+        56,
+        48,
+        115
+      ],
+      "swordTip": [
+        39.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        39,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        62
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            59,
+            107
+          ],
+          "knee": [
+            54.501,
+            91.125
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.878,
+            100.399
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/IDLE/03.png": {
+      "opaqueBounds": [
+        29,
+        28,
+        109,
+        116
+      ],
+      "swordBounds": [
+        29,
+        56,
+        48,
+        115
+      ],
+      "swordTip": [
+        39.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        39,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            59,
+            107
+          ],
+          "knee": [
+            54.074,
+            91.253
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.466,
+            101.439
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/WALK/00.png": {
+      "opaqueBounds": [
+        30,
+        30,
+        109,
+        116
+      ],
+      "swordBounds": [
+        30,
+        54,
+        89,
+        73
+      ],
+      "swordTip": [
+        88.821,
+        67.096
+      ],
+      "swordAngle": 5,
+      "leftHand": [
+        42,
+        63
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        65
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            48,
+            107
+          ],
+          "knee": [
+            53.768,
+            91.541
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.136,
+            102.463
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/WALK/01.png": {
+      "opaqueBounds": [
+        30,
+        31,
+        107,
+        116
+      ],
+      "swordBounds": [
+        30,
+        55,
+        89,
+        74
+      ],
+      "swordTip": [
+        88.743,
+        68.913
+      ],
+      "swordAngle": 6,
+      "leftHand": [
+        42,
+        64
+      ],
+      "rightHand": null,
+      "rightStump": [
+        52,
+        66
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            53.095,
+            90.525
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            77,
+            99
+          ],
+          "knee": [
+            61.052,
+            103.232
+          ],
+          "bottomY": 111,
+          "grounded": false
+        }
+      }
+    },
+    "LEFT/WALK/02.png": {
+      "opaqueBounds": [
+        31,
+        28,
+        110,
+        116
+      ],
+      "swordBounds": [
+        31,
+        53,
+        90,
+        72
+      ],
+      "swordTip": [
+        89.971,
+        63.64
+      ],
+      "swordAngle": 2,
+      "leftHand": [
+        43,
+        62
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            61,
+            107
+          ],
+          "knee": [
+            54.378,
+            91.887
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            65,
+            93
+          ],
+          "knee": [
+            49.822,
+            99.472
+          ],
+          "bottomY": 103,
+          "grounded": false
+        }
+      }
+    },
+    "LEFT/WALK/03.png": {
+      "opaqueBounds": [
+        31,
+        27,
+        109,
+        116
+      ],
+      "swordBounds": [
+        31,
+        52,
+        90,
+        71
+      ],
+      "swordTip": [
+        89.936,
+        63.46
+      ],
+      "swordAngle": 3,
+      "leftHand": [
+        43,
+        61
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        62
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            68,
+            107
+          ],
+          "knee": [
+            56.993,
+            94.708
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            52,
+            99
+          ],
+          "knee": [
+            40.913,
+            86.78
+          ],
+          "bottomY": 107,
+          "grounded": false
+        }
+      }
+    },
+    "LEFT/WALK/04.png": {
+      "opaqueBounds": [
+        30,
+        30,
+        107,
+        116
+      ],
+      "swordBounds": [
+        30,
+        54,
+        89,
+        73
+      ],
+      "swordTip": [
+        88.821,
+        67.096
+      ],
+      "swordAngle": 5,
+      "leftHand": [
+        42,
+        63
+      ],
+      "rightHand": null,
+      "rightStump": [
+        52,
+        65
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            73,
+            107
+          ],
+          "knee": [
+            58.86,
+            98.496
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            49,
+            107
+          ],
+          "knee": [
+            41.989,
+            92.064
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/WALK/05.png": {
+      "opaqueBounds": [
+        30,
+        31,
+        106,
+        116
+      ],
+      "swordBounds": [
+        30,
+        55,
+        89,
+        74
+      ],
+      "swordTip": [
+        88.743,
+        68.913
+      ],
+      "swordAngle": 6,
+      "leftHand": [
+        42,
+        64
+      ],
+      "rightHand": null,
+      "rightStump": [
+        52,
+        66
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            78,
+            99
+          ],
+          "knee": [
+            61.674,
+            101.393
+          ],
+          "bottomY": 111,
+          "grounded": false
+        },
+        "right": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            42.88,
+            94.81
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/WALK/06.png": {
+      "opaqueBounds": [
+        30,
+        28,
+        109,
+        116
+      ],
+      "swordBounds": [
+        30,
+        53,
+        89,
+        72
+      ],
+      "swordTip": [
+        88.971,
+        63.64
+      ],
+      "swordAngle": 2,
+      "leftHand": [
+        42,
+        62
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            64,
+            92
+          ],
+          "knee": [
+            53.047,
+            79.66
+          ],
+          "bottomY": 103,
+          "grounded": false
+        },
+        "right": {
+          "ankle": [
+            61,
+            107
+          ],
+          "knee": [
+            47.281,
+            97.833
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/WALK/07.png": {
+      "opaqueBounds": [
+        31,
+        27,
+        111,
+        116
+      ],
+      "swordBounds": [
+        31,
+        52,
+        90,
+        71
+      ],
+      "swordTip": [
+        89.936,
+        63.46
+      ],
+      "swordAngle": 3,
+      "leftHand": [
+        43,
+        61
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        62
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            53,
+            98
+          ],
+          "knee": [
+            52.564,
+            81.506
+          ],
+          "bottomY": 107,
+          "grounded": false
+        },
+        "right": {
+          "ankle": [
+            68,
+            107
+          ],
+          "knee": [
+            53.147,
+            99.814
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/00.png": {
+      "opaqueBounds": [
+        13,
+        29,
+        110,
+        116
+      ],
+      "swordBounds": [
+        13,
+        59,
+        59,
+        100
+      ],
+      "swordTip": [
+        13.529,
+        98.835
+      ],
+      "swordAngle": 139,
+      "leftHand": [
+        49,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        54,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            58,
+            107
+          ],
+          "knee": [
+            53.962,
+            91.002
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.466,
+            101.439
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/01.png": {
+      "opaqueBounds": [
+        45,
+        28,
+        114,
+        116
+      ],
+      "swordBounds": [
+        48,
+        36,
+        106,
+        59
+      ],
+      "swordTip": [
+        105.604,
+        39.63
+      ],
+      "swordAngle": -14,
+      "leftHand": [
+        60,
+        51
+      ],
+      "rightHand": null,
+      "rightStump": [
+        56,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            57,
+            107
+          ],
+          "knee": [
+            54.811,
+            90.646
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            77,
+            107
+          ],
+          "knee": [
+            61.509,
+            101.319
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/02.png": {
+      "opaqueBounds": [
+        43,
+        6,
+        116,
+        116
+      ],
+      "swordBounds": [
+        55,
+        6,
+        97,
+        52
+      ],
+      "swordTip": [
+        96.449,
+        7.072
+      ],
+      "swordAngle": -48,
+      "leftHand": [
+        65,
+        42
+      ],
+      "rightHand": null,
+      "rightStump": [
+        57,
+        62
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            55,
+            107
+          ],
+          "knee": [
+            54.753,
+            90.502
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            77,
+            107
+          ],
+          "knee": [
+            61.509,
+            101.319
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/03.png": {
+      "opaqueBounds": [
+        31,
+        12,
+        107,
+        116
+      ],
+      "swordBounds": [
+        31,
+        12,
+        63,
+        65
+      ],
+      "swordTip": [
+        32.214,
+        12.893
+      ],
+      "swordAngle": -119,
+      "leftHand": [
+        55,
+        54
+      ],
+      "rightHand": null,
+      "rightStump": [
+        52,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            49,
+            107
+          ],
+          "knee": [
+            53.62,
+            91.16
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            78,
+            107
+          ],
+          "knee": [
+            62.286,
+            101.967
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/04.png": {
+      "opaqueBounds": [
+        4,
+        33,
+        110,
+        116
+      ],
+      "swordBounds": [
+        4,
+        55,
+        63,
+        74
+      ],
+      "swordTip": [
+        4.064,
+        66.46
+      ],
+      "swordAngle": 177,
+      "leftHand": [
+        51,
+        64
+      ],
+      "rightHand": null,
+      "rightStump": [
+        49,
+        68
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            47,
+            107
+          ],
+          "knee": [
+            52.87,
+            91.579
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            80,
+            107
+          ],
+          "knee": [
+            63.683,
+            104.552
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/05.png": {
+      "opaqueBounds": [
+        7,
+        39,
+        109,
+        116
+      ],
+      "swordBounds": [
+        7,
+        67,
+        59,
+        100
+      ],
+      "swordTip": [
+        7.297,
+        98.5
+      ],
+      "swordAngle": 150,
+      "leftHand": [
+        48,
+        75
+      ],
+      "rightHand": null,
+      "rightStump": [
+        45,
+        72
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            44,
+            107
+          ],
+          "knee": [
+            51.503,
+            92.304
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            81,
+            107
+          ],
+          "knee": [
+            64.52,
+            107.802
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/06.png": {
+      "opaqueBounds": [
+        14,
+        39,
+        108,
+        116
+      ],
+      "swordBounds": [
+        14,
+        68,
+        58,
+        112
+      ],
+      "swordTip": [
+        14.766,
+        111.234
+      ],
+      "swordAngle": 135,
+      "leftHand": [
+        48,
+        78
+      ],
+      "rightHand": null,
+      "rightStump": [
+        46,
+        74
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            44,
+            107
+          ],
+          "knee": [
+            52.522,
+            92.871
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            81,
+            107
+          ],
+          "knee": [
+            64.546,
+            108.23
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/07.png": {
+      "opaqueBounds": [
+        14,
+        32,
+        110,
+        116
+      ],
+      "swordBounds": [
+        14,
+        63,
+        54,
+        109
+      ],
+      "swordTip": [
+        14.789,
+        109.004
+      ],
+      "swordAngle": 130,
+      "leftHand": [
+        45,
+        73
+      ],
+      "rightHand": null,
+      "rightStump": [
+        50,
+        68
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            50,
+            107
+          ],
+          "knee": [
+            52.713,
+            90.725
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            78,
+            107
+          ],
+          "knee": [
+            61.607,
+            105.124
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "LEFT/ATTACK/08.png": {
+      "opaqueBounds": [
+        29,
+        29,
+        110,
+        116
+      ],
+      "swordBounds": [
+        29,
+        56,
+        48,
+        115
+      ],
+      "swordTip": [
+        39.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        39,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        54,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            57,
+            107
+          ],
+          "knee": [
+            53.875,
+            90.799
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            107
+          ],
+          "knee": [
+            59.466,
+            101.439
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/IDLE/00.png": {
+      "opaqueBounds": [
+        14,
+        29,
+        101,
+        116
+      ],
+      "swordBounds": [
+        82,
+        56,
+        101,
+        115
+      ],
+      "swordTip": [
+        92.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        92,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        65
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            69,
+            107
+          ],
+          "knee": [
+            81.954,
+            96.781
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            68.04,
+            98.333
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/IDLE/01.png": {
+      "opaqueBounds": [
+        14,
+        28,
+        101,
+        116
+      ],
+      "swordBounds": [
+        82,
+        56,
+        101,
+        115
+      ],
+      "swordTip": [
+        92.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        92,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            69,
+            107
+          ],
+          "knee": [
+            81.481,
+            96.208
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            67.588,
+            97.64
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/IDLE/02.png": {
+      "opaqueBounds": [
+        14,
+        27,
+        101,
+        116
+      ],
+      "swordBounds": [
+        82,
+        56,
+        101,
+        115
+      ],
+      "swordTip": [
+        92.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        92,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        54,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            69,
+            107
+          ],
+          "knee": [
+            81.481,
+            96.208
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            67.588,
+            97.64
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/IDLE/03.png": {
+      "opaqueBounds": [
+        15,
+        28,
+        101,
+        116
+      ],
+      "swordBounds": [
+        82,
+        56,
+        101,
+        115
+      ],
+      "swordTip": [
+        92.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        92,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        54,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            69,
+            107
+          ],
+          "knee": [
+            81.954,
+            96.781
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            68.04,
+            98.333
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/WALK/00.png": {
+      "opaqueBounds": [
+        16,
+        30,
+        97,
+        116
+      ],
+      "swordBounds": [
+        38,
+        54,
+        97,
+        73
+      ],
+      "swordTip": [
+        38.257,
+        67.913
+      ],
+      "swordAngle": 174,
+      "leftHand": [
+        85,
+        63
+      ],
+      "rightHand": null,
+      "rightStump": [
+        55,
+        66
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            80,
+            107
+          ],
+          "knee": [
+            86.168,
+            91.696
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            52,
+            107
+          ],
+          "knee": [
+            66.957,
+            100.034
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/WALK/01.png": {
+      "opaqueBounds": [
+        19,
+        31,
+        98,
+        116
+      ],
+      "swordBounds": [
+        39,
+        55,
+        98,
+        74
+      ],
+      "swordTip": [
+        39.35,
+        69.728
+      ],
+      "swordAngle": 173,
+      "leftHand": [
+        86,
+        64
+      ],
+      "rightHand": null,
+      "rightStump": [
+        56,
+        67
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            74,
+            107
+          ],
+          "knee": [
+            85.12,
+            94.81
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            49,
+            99
+          ],
+          "knee": [
+            65.237,
+            101.933
+          ],
+          "bottomY": 111,
+          "grounded": false
+        }
+      }
+    },
+    "RIGHT/WALK/02.png": {
+      "opaqueBounds": [
+        16,
+        28,
+        97,
+        116
+      ],
+      "swordBounds": [
+        38,
+        52,
+        97,
+        71
+      ],
+      "swordTip": [
+        38.064,
+        63.46
+      ],
+      "swordAngle": 177,
+      "leftHand": [
+        85,
+        61
+      ],
+      "rightHand": null,
+      "rightStump": [
+        55,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            67,
+            107
+          ],
+          "knee": [
+            80.719,
+            97.833
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            62,
+            91
+          ],
+          "knee": [
+            75.275,
+            81.2
+          ],
+          "bottomY": 102,
+          "grounded": false
+        }
+      }
+    },
+    "RIGHT/WALK/03.png": {
+      "opaqueBounds": [
+        17,
+        27,
+        96,
+        116
+      ],
+      "swordBounds": [
+        37,
+        51,
+        96,
+        70
+      ],
+      "swordTip": [
+        37.114,
+        63.279
+      ],
+      "swordAngle": 176,
+      "leftHand": [
+        84,
+        60
+      ],
+      "rightHand": null,
+      "rightStump": [
+        55,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            60,
+            107
+          ],
+          "knee": [
+            74.853,
+            99.814
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            75,
+            98
+          ],
+          "knee": [
+            75.436,
+            81.506
+          ],
+          "bottomY": 107,
+          "grounded": false
+        }
+      }
+    },
+    "RIGHT/WALK/04.png": {
+      "opaqueBounds": [
+        18,
+        30,
+        98,
+        116
+      ],
+      "swordBounds": [
+        39,
+        54,
+        98,
+        73
+      ],
+      "swordTip": [
+        39.179,
+        67.096
+      ],
+      "swordAngle": 175,
+      "leftHand": [
+        86,
+        63
+      ],
+      "rightHand": null,
+      "rightStump": [
+        56,
+        66
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            51,
+            107
+          ],
+          "knee": [
+            66.787,
+            102.203
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            81,
+            107
+          ],
+          "knee": [
+            74.017,
+            92.051
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/WALK/05.png": {
+      "opaqueBounds": [
+        18,
+        31,
+        97,
+        116
+      ],
+      "swordBounds": [
+        38,
+        55,
+        97,
+        74
+      ],
+      "swordTip": [
+        38.35,
+        69.728
+      ],
+      "swordAngle": 173,
+      "leftHand": [
+        85,
+        64
+      ],
+      "rightHand": null,
+      "rightStump": [
+        55,
+        67
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            49,
+            99
+          ],
+          "knee": [
+            65.059,
+            102.788
+          ],
+          "bottomY": 111,
+          "grounded": false
+        },
+        "right": {
+          "ankle": [
+            74,
+            107
+          ],
+          "knee": [
+            74.905,
+            90.525
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/WALK/06.png": {
+      "opaqueBounds": [
+        17,
+        28,
+        97,
+        116
+      ],
+      "swordBounds": [
+        38,
+        52,
+        97,
+        71
+      ],
+      "swordTip": [
+        38.064,
+        63.46
+      ],
+      "swordAngle": 177,
+      "leftHand": [
+        85,
+        61
+      ],
+      "rightHand": null,
+      "rightStump": [
+        56,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            61,
+            93
+          ],
+          "knee": [
+            75.668,
+            100.557
+          ],
+          "bottomY": 103,
+          "grounded": false
+        },
+        "right": {
+          "ankle": [
+            68,
+            107
+          ],
+          "knee": [
+            73.788,
+            91.549
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/WALK/07.png": {
+      "opaqueBounds": [
+        15,
+        27,
+        96,
+        116
+      ],
+      "swordBounds": [
+        37,
+        52,
+        96,
+        71
+      ],
+      "swordTip": [
+        37.114,
+        64.279
+      ],
+      "swordAngle": 176,
+      "leftHand": [
+        84,
+        61
+      ],
+      "rightHand": null,
+      "rightStump": [
+        55,
+        63
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            75,
+            97
+          ],
+          "knee": [
+            87.25,
+            85.946
+          ],
+          "bottomY": 106,
+          "grounded": false
+        },
+        "right": {
+          "ankle": [
+            60,
+            107
+          ],
+          "knee": [
+            71.007,
+            94.708
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/00.png": {
+      "opaqueBounds": [
+        14,
+        29,
+        120,
+        116
+      ],
+      "swordBounds": [
+        74,
+        59,
+        120,
+        99
+      ],
+      "swordTip": [
+        120.004,
+        98.211
+      ],
+      "swordAngle": 40,
+      "leftHand": [
+        84,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        65
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            70,
+            107
+          ],
+          "knee": [
+            82.508,
+            96.239
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            54,
+            107
+          ],
+          "knee": [
+            68.04,
+            98.333
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/01.png": {
+      "opaqueBounds": [
+        10,
+        28,
+        90,
+        116
+      ],
+      "swordBounds": [
+        21,
+        36,
+        79,
+        59
+      ],
+      "swordTip": [
+        21.821,
+        38.045
+      ],
+      "swordAngle": 196,
+      "leftHand": [
+        67,
+        51
+      ],
+      "rightHand": null,
+      "rightStump": [
+        51,
+        65
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            71,
+            107
+          ],
+          "knee": [
+            82.485,
+            95.153
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            52,
+            107
+          ],
+          "knee": [
+            66.324,
+            98.809
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/02.png": {
+      "opaqueBounds": [
+        8,
+        6,
+        88,
+        116
+      ],
+      "swordBounds": [
+        33,
+        6,
+        73,
+        52
+      ],
+      "swordTip": [
+        33.789,
+        5.996
+      ],
+      "swordAngle": 230,
+      "leftHand": [
+        64,
+        42
+      ],
+      "rightHand": null,
+      "rightStump": [
+        50,
+        62
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            72,
+            107
+          ],
+          "knee": [
+            82.433,
+            94.217
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            50,
+            107
+          ],
+          "knee": [
+            64.362,
+            98.876
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/03.png": {
+      "opaqueBounds": [
+        16,
+        13,
+        102,
+        116
+      ],
+      "swordBounds": [
+        68,
+        13,
+        102,
+        64
+      ],
+      "swordTip": [
+        100.906,
+        13.142
+      ],
+      "swordAngle": 302,
+      "leftHand": [
+        76,
+        53
+      ],
+      "rightHand": null,
+      "rightStump": [
+        55,
+        64
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            76,
+            107
+          ],
+          "knee": [
+            85.35,
+            93.405
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            48,
+            107
+          ],
+          "knee": [
+            63.586,
+            101.585
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/04.png": {
+      "opaqueBounds": [
+        16,
+        32,
+        125,
+        116
+      ],
+      "swordBounds": [
+        66,
+        54,
+        125,
+        73
+      ],
+      "swordTip": [
+        124.65,
+        58.272
+      ],
+      "swordAngle": -7,
+      "leftHand": [
+        78,
+        64
+      ],
+      "rightHand": null,
+      "rightStump": [
+        59,
+        68
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            80,
+            107
+          ],
+          "knee": [
+            87.652,
+            92.382
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            47,
+            107
+          ],
+          "knee": [
+            63.222,
+            103.983
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/05.png": {
+      "opaqueBounds": [
+        18,
+        38,
+        123,
+        116
+      ],
+      "swordBounds": [
+        73,
+        65,
+        123,
+        101
+      ],
+      "swordTip": [
+        122.965,
+        100.282
+      ],
+      "swordAngle": 34,
+      "leftHand": [
+        84,
+        74
+      ],
+      "rightHand": null,
+      "rightStump": [
+        63,
+        72
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            83,
+            107
+          ],
+          "knee": [
+            88.494,
+            91.442
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            46,
+            107
+          ],
+          "knee": [
+            62.46,
+            108.155
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/06.png": {
+      "opaqueBounds": [
+        19,
+        40,
+        117,
+        116
+      ],
+      "swordBounds": [
+        75,
+        68,
+        117,
+        113
+      ],
+      "swordTip": [
+        116.054,
+        112.374
+      ],
+      "swordAngle": 47,
+      "leftHand": [
+        84,
+        78
+      ],
+      "rightHand": null,
+      "rightStump": [
+        62,
+        75
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            83,
+            107
+          ],
+          "knee": [
+            88.491,
+            91.44
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            46,
+            107
+          ],
+          "knee": [
+            62.356,
+            109.175
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/07.png": {
+      "opaqueBounds": [
+        17,
+        33,
+        118,
+        116
+      ],
+      "swordBounds": [
+        76,
+        63,
+        118,
+        109
+      ],
+      "swordTip": [
+        117.449,
+        107.928
+      ],
+      "swordAngle": 48,
+      "leftHand": [
+        86,
+        73
+      ],
+      "rightHand": null,
+      "rightStump": [
+        58,
+        69
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            77,
+            107
+          ],
+          "knee": [
+            86.299,
+            93.37
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            49,
+            107
+          ],
+          "knee": [
+            65.016,
+            103.032
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    },
+    "RIGHT/ATTACK/08.png": {
+      "opaqueBounds": [
+        14,
+        29,
+        101,
+        116
+      ],
+      "swordBounds": [
+        82,
+        56,
+        101,
+        115
+      ],
+      "swordTip": [
+        92.0,
+        115.0
+      ],
+      "swordAngle": 90,
+      "leftHand": [
+        92,
+        68
+      ],
+      "rightHand": null,
+      "rightStump": [
+        53,
+        65
+      ],
+      "feet": {
+        "left": {
+          "ankle": [
+            71,
+            107
+          ],
+          "knee": [
+            83.018,
+            95.695
+          ],
+          "bottomY": 115,
+          "grounded": true
+        },
+        "right": {
+          "ankle": [
+            53,
+            107
+          ],
+          "knee": [
+            67.324,
+            98.809
+          ],
+          "bottomY": 115,
+          "grounded": true
+        }
+      }
+    }
+  },
+  "adjacentPairs": {
+    "LEFT/IDLE": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 2297
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 2638
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 2599
+      },
+      {
+        "pair": [
+          3,
+          0
+        ],
+        "differentPixels": 2133
+      }
+    ],
+    "LEFT/WALK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 3538
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 3760
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 3268
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 3967
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 3568
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 3827
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 3378
+      },
+      {
+        "pair": [
+          7,
+          0
+        ],
+        "differentPixels": 3830
+      }
+    ],
+    "LEFT/ATTACK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 4230
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 3440
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 4466
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 4276
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 4351
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 3520
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 4256
+      },
+      {
+        "pair": [
+          7,
+          8
+        ],
+        "differentPixels": 4441
+      }
+    ],
+    "RIGHT/IDLE": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 2741
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 2407
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 3034
+      },
+      {
+        "pair": [
+          3,
+          0
+        ],
+        "differentPixels": 2506
+      }
+    ],
+    "RIGHT/WALK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 4058
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 4185
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 3273
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 4127
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 3818
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 3977
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 3827
+      },
+      {
+        "pair": [
+          7,
+          0
+        ],
+        "differentPixels": 4298
+      }
+    ],
+    "RIGHT/ATTACK": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "differentPixels": 4825
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "differentPixels": 4780
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "differentPixels": 4909
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "differentPixels": 4681
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "differentPixels": 4837
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "differentPixels": 3959
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "differentPixels": 4747
+      },
+      {
+        "pair": [
+          7,
+          8
+        ],
+        "differentPixels": 5019
+      }
+    ]
+  },
+  "weaponArt": "Source/LEFT.png, row 4 column 3",
+  "gripToTipPx": 47,
+  "swordArtRaster": [
+    19,
+    59
+  ]
+}

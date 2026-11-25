@@ -1,0 +1,78 @@
+{
+  "asset": "../../../Assets/project/art/Sprites/OneArmedSwordsman.png",
+  "sha256": "0f772d74bb54c666abb1352870bda63d2a4c53154e3c2142daf00c859b41d818",
+  "canvas_px": [
+    128,
+    128
+  ],
+  "visible_bounds_px": [
+    32,
+    14,
+    98,
+    118
+  ],
+  "stance_anchor_px_from_top_left": [
+    64,
+    118
+  ],
+  "resampler": "premultiplied box",
+  "colors": 48,
+  "palette": "palette.json",
+  "alpha_values": [
+    0,
+    255
+  ],
+  "preview": "preview.png",
+  "unity": {
+    "sprite_mode": "Single",
+    "filter_mode": "Point",
+    "compression": "None",
+    "pixels_per_unit": 96,
+    "pivot_from_bottom_left": [
+      0.5,
+      0.078125
+    ]
+  },
+  "quality": {
+    "status": "pass",
+    "checks": [
+      {
+        "id": "palette_colors",
+        "status": "pass",
+        "value": 48,
+        "threshold": 48
+      },
+      {
+        "id": "inputs_without_samples",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0,
+        "files": []
+      },
+      {
+        "id": "max_delta_e",
+        "status": "skipped",
+        "value": 0.035602,
+        "threshold": null
+      },
+      {
+        "id": "output_off_palette_px",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "output_partial_alpha_px",
+        "status": "pass",
+        "value": 0,
+        "threshold": 0
+      },
+      {
+        "id": "max_delta_e",
+        "status": "skipped",
+        "value": 0.035602,
+        "threshold": null
+      }
+    ]
+  }
+}
