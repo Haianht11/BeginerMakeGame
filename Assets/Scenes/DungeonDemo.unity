@@ -900,7 +900,7 @@ GameObject:
   - component: {fileID: 2000000503}
   - component: {fileID: 2000000504}
   m_Layer: 0
-  m_Name: Goblin Warrior
+  m_Name: Dark Beast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -971,12 +971,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -131959139, guid: 55fc90ca333ec6345b43dd18d3c0dc4b, type: 3}
+  m_Sprite: {fileID: -1189150943, guid: 733c21e7ad37492ca2dd1143afb2f9e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.5, y: 3}
+  m_Size: {x: 2.4, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   - {fileID: 938180270000000014, guid: 774060e82b1250bcb0c6f30827a6ef7a, type: 3}
   - {fileID: 938180270000000015, guid: 774060e82b1250bcb0c6f30827a6ef7a, type: 3}
   hitFramesPerSecond: 30
-  reach: 1.3
+  reach: 1.45
   verticalTolerance: 0.65
 --- !u!95 &2000000504
 Animator:
@@ -1025,7 +1025,7 @@ Animator:
   m_GameObject: {fileID: 2000000500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 73914b5f099d75141a77f3a08e0aa50a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1682bb0621c84e48b044a8e8b084d313, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

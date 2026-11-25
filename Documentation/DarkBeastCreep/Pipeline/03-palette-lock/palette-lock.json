@@ -1,0 +1,60 @@
+{
+  "schema": "generate2dsprite.palette_lock.v1",
+  "palette": {
+    "path": "palette.json",
+    "sha256": "707a660111f413777208edc8b9766b8d9ff03a6f76249b159290092ed530cf00",
+    "bytes": 1430
+  },
+  "colors": [
+    "#f09028",
+    "#000000",
+    "#000005",
+    "#04050a",
+    "#080b13",
+    "#0d1219",
+    "#12171f",
+    "#181e26",
+    "#261a1b",
+    "#1f242d",
+    "#252b33",
+    "#3f2524",
+    "#2b313a",
+    "#313741",
+    "#373f49",
+    "#5e3431",
+    "#3f4852",
+    "#4e4742",
+    "#47505b",
+    "#505963",
+    "#84473b",
+    "#5a636c",
+    "#646e77",
+    "#ab5745",
+    "#6d7881",
+    "#76818a",
+    "#838d94",
+    "#a29680",
+    "#98a3a9",
+    "#beb8a5",
+    "#ddcfb2",
+    "#f6e9c8"
+  ],
+  "transparent_index": 255,
+  "sources": [
+    {
+      "path": "../../Masters/master_right_192x160.png",
+      "sha256": "20198c6fb8fcc05cc1e2043fae89ae534d02a22a241c7a250ee6af63c2511171",
+      "fit": {
+        "measured_px": 7606,
+        "alpha_threshold": 1,
+        "off_palette_px": 0,
+        "partial_alpha_px": 0,
+        "colors": 32,
+        "palette_colors_used": 32,
+        "mean_delta_e": 0.0,
+        "p95_delta_e": 0.0,
+        "max_delta_e": 0.0
+      }
+    }
+  ]
+}

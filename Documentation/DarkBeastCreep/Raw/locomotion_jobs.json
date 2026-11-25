@@ -1,0 +1,447 @@
+{
+  "character": "DarkBeastCreep",
+  "master_sprite": "Documentation/DarkBeastCreep/Masters/master_right_192x160.png",
+  "upload_id": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+  "tool": "animate_image_pixminimax",
+  "view": "side",
+  "direction": "east",
+  "no_background": true,
+  "common_subject_description": "quadrupedal dark-armored predator beast with horned draconic skull, glowing amber eyes, jagged jet-black fur mane, clawed dark-scaled legs, and an upward-curving segmented slate-steel bladed tail",
+  "common_initial_pose": "crouched menacing side profile facing right with all four clawed paws planted flat on the ground, jaws open in a snarl, and bladed tail arched up behind",
+  "clips": {
+    "IDLE": {
+      "job_id": "38cc6b6e-b7de-4509-a22a-248feca4122f",
+      "asset_id": "86627c8e-29e2-534b-867b-b85c9cb3a284",
+      "seed": 201,
+      "requested_frame_count": 4,
+      "raw_frame_count": 5,
+      "dimensions": [
+        192,
+        160
+      ],
+      "pinned_first_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "pinned_last_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "subject_description": "quadrupedal dark-armored predator beast with horned draconic skull, glowing amber eyes, jagged jet-black fur mane, clawed dark-scaled legs, and an upward-curving segmented slate-steel bladed tail",
+      "initial_pose": "crouched menacing side profile facing right with all four clawed paws planted flat on the ground, jaws open in a snarl, and bladed tail arched up behind",
+      "description": "menacing crouched idle breathing loop in place facing right; gentle chest and jaw heave, jagged black fur mane softly bristling, segmented bladed tail gently swaying overhead while keeping same heavy curved blade size, all four clawed paws staying planted firmly on the ground",
+      "frames": [
+        {
+          "file": "frame_00.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            28,
+            29,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_01.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            27,
+            23,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_02.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            26,
+            19,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_03.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            27,
+            23,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_04.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            28,
+            29,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        }
+      ]
+    },
+    "RUN": {
+      "job_id": "dee6095d-95d8-4ee6-a7fb-86e523325783",
+      "asset_id": "c3da5ff1-ac0b-5150-a24b-2ffd62b01270",
+      "seed": 202,
+      "requested_frame_count": 8,
+      "raw_frame_count": 9,
+      "dimensions": [
+        192,
+        160
+      ],
+      "pinned_first_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "pinned_last_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "subject_description": "quadrupedal dark-armored predator beast with horned draconic skull, glowing amber eyes, jagged jet-black fur mane, clawed dark-scaled legs, and an upward-curving segmented slate-steel bladed tail",
+      "initial_pose": "crouched menacing side profile facing right with all four clawed paws planted flat on the ground, jaws open in a snarl, and bladed tail arched up behind",
+      "description": "seamless looping ferocious quadrupedal prowl-gallop run cycle in place facing right; powerful alternating strides of forelegs and hindlegs with heavy beast body bounce, jagged black fur mane whipping backward, segmented bladed tail counter-balancing dynamically without shrinking, paws striking the same ground line",
+      "frames": [
+        {
+          "file": "frame_00.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            28,
+            29,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_01.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            23,
+            23,
+            162,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_02.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            19,
+            17,
+            162,
+            142
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_03.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            18,
+            16,
+            166,
+            142
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_04.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            19,
+            18,
+            171,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_05.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            23,
+            16,
+            173,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_06.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            27,
+            17,
+            170,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_07.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            29,
+            24,
+            167,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_08.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            28,
+            29,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        }
+      ]
+    },
+    "HURT": {
+      "job_id": "7ebeadc4-b356-4edb-bf17-f69d4129bf3e",
+      "asset_id": "27c85311-2aaa-510d-8e7e-be43d62b21a1",
+      "seed": 203,
+      "requested_frame_count": 4,
+      "raw_frame_count": 5,
+      "dimensions": [
+        192,
+        160
+      ],
+      "pinned_first_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "pinned_last_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "subject_description": "quadrupedal dark-armored predator beast with horned draconic skull, glowing amber eyes, jagged jet-black fur mane, clawed dark-scaled legs, and an upward-curving segmented slate-steel bladed tail",
+      "initial_pose": "crouched menacing side profile facing right with all four clawed paws planted flat on the ground, jaws open in a snarl, and bladed tail arched up behind",
+      "description": "sharp hit-reaction stagger recoil backward to the left while facing right, then recovering cleanly to guard stance; beast flinches back with jaws snapping and mane flaring on impact frame, paws sliding slightly before bracing firmly back into starting pose",
+      "frames": [
+        {
+          "file": "frame_00.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            28,
+            29,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_01.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            18,
+            14,
+            159,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_02.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            21,
+            17,
+            153,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_03.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            25,
+            25,
+            159,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        },
+        {
+          "file": "frame_04.png",
+          "size": [
+            192,
+            160
+          ],
+          "bbox": [
+            28,
+            29,
+            163,
+            144
+          ],
+          "edge_touch": {
+            "any": false,
+            "top": false,
+            "bottom": false,
+            "left": false,
+            "right": false
+          }
+        }
+      ]
+    }
+  }
+}

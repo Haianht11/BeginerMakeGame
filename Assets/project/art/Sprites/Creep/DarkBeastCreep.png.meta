@@ -1,0 +1,1029 @@
+fileFormatVersion: 2
+guid: 733c21e7ad37492ca2dd1143afb2f9e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1189150943
+    second: DarkBeast_Idle_00
+  - first:
+      213: -997754208
+    second: DarkBeast_Idle_01
+  - first:
+      213: 1276909363
+    second: DarkBeast_Idle_02
+  - first:
+      213: 738683061
+    second: DarkBeast_Idle_03
+  - first:
+      213: -1333862160
+    second: DarkBeast_Run_00
+  - first:
+      213: -2091540326
+    second: DarkBeast_Run_01
+  - first:
+      213: 1309005935
+    second: DarkBeast_Run_02
+  - first:
+      213: 1268055899
+    second: DarkBeast_Run_03
+  - first:
+      213: -968543948
+    second: DarkBeast_Run_04
+  - first:
+      213: 1992410698
+    second: DarkBeast_Run_05
+  - first:
+      213: 1671178978
+    second: DarkBeast_Run_06
+  - first:
+      213: 537592892
+    second: DarkBeast_Run_07
+  - first:
+      213: 1994999600
+    second: DarkBeast_Attack_00
+  - first:
+      213: -1084104087
+    second: DarkBeast_Attack_01
+  - first:
+      213: -1746854768
+    second: DarkBeast_Attack_02
+  - first:
+      213: 1967685171
+    second: DarkBeast_Attack_03
+  - first:
+      213: -2005524584
+    second: DarkBeast_Attack_04
+  - first:
+      213: 1802027090
+    second: DarkBeast_Attack_05
+  - first:
+      213: -2045801552
+    second: DarkBeast_Attack_06
+  - first:
+      213: 430234780
+    second: DarkBeast_Attack_07
+  - first:
+      213: -103559560
+    second: DarkBeast_Attack_08
+  - first:
+      213: -1489164600
+    second: DarkBeast_Hurt_00
+  - first:
+      213: 1763998824
+    second: DarkBeast_Hurt_01
+  - first:
+      213: 1587285272
+    second: DarkBeast_Hurt_02
+  - first:
+      213: -391556861
+    second: DarkBeast_Hurt_03
+  - first:
+      213: 139856562
+    second: DarkBeast_Hurt_04
+  - first:
+      213: -540499586
+    second: DarkBeast_Death_00
+  - first:
+      213: -977676806
+    second: DarkBeast_Death_01
+  - first:
+      213: -1945120748
+    second: DarkBeast_Death_02
+  - first:
+      213: -413468282
+    second: DarkBeast_Death_03
+  - first:
+      213: -845171661
+    second: DarkBeast_Death_04
+  - first:
+      213: 585563590
+    second: DarkBeast_Death_05
+  - first:
+      213: 365652172
+    second: DarkBeast_Death_06
+  - first:
+      213: 78491688
+    second: DarkBeast_Death_07
+  - first:
+      213: -1745046222
+    second: DarkBeast_Death_08
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.1}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DarkBeast_Idle_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fe56505fc0515391207bd9a619bf95
+      internalID: -1189150943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Idle_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df42a8796bd5881bf78044d9299b8a6
+      internalID: -997754208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Idle_02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd01891299fd528880bbe8e11836de1a
+      internalID: 1276909363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Idle_03
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 640
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e26c36b2405fbd8a3f00d645c4dd0e
+      internalID: 738683061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c495878e0fe51c0803fd6d400f1118d
+      internalID: -1333862160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d53ac5b1a1959cb8eafc29f6df875f4
+      internalID: -2091540326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a399c56382a3545498d79f3af98cb8e9
+      internalID: 1309005935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_03
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fb786a76255d48809489e69b92c13b
+      internalID: 1268055899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_04
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e82a2409dfb57aca984ebd00d1f5fbf
+      internalID: -968543948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_05
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2487bc61433f5bfe8b848f5e7005b1a5
+      internalID: 1992410698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_06
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954462950f8154909eb1bd3ec45b0451
+      internalID: 1671178978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Run_07
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 480
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d344505ab45c550086c73a1a621331a4
+      internalID: 537592892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7f0e2b974c5e3a9a3a381b09b04701
+      internalID: 1994999600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dbdc894988564f975d42470ebdc5e1
+      internalID: -1084104087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59914f7c38c05bdeaeae2aef50c8d0fd
+      internalID: -1746854768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_03
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09997312f82f573ab1b4b1d359a3c285
+      internalID: 1967685171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_04
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502b100bd88b549d917a54b9e0d85821
+      internalID: -2005524584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_05
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9af21a5a8b5d5282bc5795c5de525f
+      internalID: 1802027090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_06
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33d399a686d5da6ae7d352865b8b86d
+      internalID: -2045801552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_07
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc3a904043c59f4b39773e962c13b2e
+      internalID: 430234780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Attack_08
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 320
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9024dc64a735e4d8ad605825958194b
+      internalID: -103559560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Hurt_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6020545a146598998de794f0e6247e3
+      internalID: -1489164600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Hurt_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124ded807260580d9fba281ac56259b3
+      internalID: 1763998824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Hurt_02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cea0f42db452589c6d369d0873e061
+      internalID: 1587285272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Hurt_03
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66d5edd12fc56d0a7bdfa7d0baed324
+      internalID: -391556861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Hurt_04
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 160
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b178761c545604ab318832772e6ec8
+      internalID: 139856562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edabdda1c25d57a5b430ef80b3778026
+      internalID: -540499586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94d08bd4f525363a01c590c24de98ae
+      internalID: -977676806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_02
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2ddbb99a4e553d8f8afa42f5b41aea
+      internalID: -1945120748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_03
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8308ca28dfbb532e8096339a9f38ef19
+      internalID: -413468282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_04
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7636ac7874a5cb98819373f95acb18c
+      internalID: -845171661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_05
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9537eafaadfa591cbb6ad86493602016
+      internalID: 585563590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_06
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c3b58a53215262b743bef38fbfe9ea
+      internalID: 365652172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_07
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c97e60d20d5d098c1275ae6bca6ced
+      internalID: 78491688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkBeast_Death_08
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 192
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093da97fefc1509bb95bed351c7e58a4
+      internalID: -1745046222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fb97e36e98815d83b3a8c2690e520bc8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DarkBeast_Idle_00: -1189150943
+      DarkBeast_Idle_01: -997754208
+      DarkBeast_Idle_02: 1276909363
+      DarkBeast_Idle_03: 738683061
+      DarkBeast_Run_00: -1333862160
+      DarkBeast_Run_01: -2091540326
+      DarkBeast_Run_02: 1309005935
+      DarkBeast_Run_03: 1268055899
+      DarkBeast_Run_04: -968543948
+      DarkBeast_Run_05: 1992410698
+      DarkBeast_Run_06: 1671178978
+      DarkBeast_Run_07: 537592892
+      DarkBeast_Attack_00: 1994999600
+      DarkBeast_Attack_01: -1084104087
+      DarkBeast_Attack_02: -1746854768
+      DarkBeast_Attack_03: 1967685171
+      DarkBeast_Attack_04: -2005524584
+      DarkBeast_Attack_05: 1802027090
+      DarkBeast_Attack_06: -2045801552
+      DarkBeast_Attack_07: 430234780
+      DarkBeast_Attack_08: -103559560
+      DarkBeast_Hurt_00: -1489164600
+      DarkBeast_Hurt_01: 1763998824
+      DarkBeast_Hurt_02: 1587285272
+      DarkBeast_Hurt_03: -391556861
+      DarkBeast_Hurt_04: 139856562
+      DarkBeast_Death_00: -540499586
+      DarkBeast_Death_01: -977676806
+      DarkBeast_Death_02: -1945120748
+      DarkBeast_Death_03: -413468282
+      DarkBeast_Death_04: -845171661
+      DarkBeast_Death_05: 585563590
+      DarkBeast_Death_06: 365652172
+      DarkBeast_Death_07: 78491688
+      DarkBeast_Death_08: -1745046222
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

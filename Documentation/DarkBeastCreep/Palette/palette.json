@@ -1,0 +1,106 @@
+{
+  "schema": "generate2dsprite.palette.v1",
+  "name": "dark_beast_creep",
+  "colors": [
+    {
+      "hex": "#f09028",
+      "reserved": true
+    },
+    {
+      "hex": "#000000"
+    },
+    {
+      "hex": "#000005"
+    },
+    {
+      "hex": "#04050a"
+    },
+    {
+      "hex": "#080b13"
+    },
+    {
+      "hex": "#0d1219"
+    },
+    {
+      "hex": "#12171f"
+    },
+    {
+      "hex": "#181e26"
+    },
+    {
+      "hex": "#261a1b"
+    },
+    {
+      "hex": "#1f242d"
+    },
+    {
+      "hex": "#252b33"
+    },
+    {
+      "hex": "#3f2524"
+    },
+    {
+      "hex": "#2b313a"
+    },
+    {
+      "hex": "#313741"
+    },
+    {
+      "hex": "#373f49"
+    },
+    {
+      "hex": "#5e3431"
+    },
+    {
+      "hex": "#3f4852"
+    },
+    {
+      "hex": "#4e4742"
+    },
+    {
+      "hex": "#47505b"
+    },
+    {
+      "hex": "#505963"
+    },
+    {
+      "hex": "#84473b"
+    },
+    {
+      "hex": "#5a636c"
+    },
+    {
+      "hex": "#646e77"
+    },
+    {
+      "hex": "#ab5745"
+    },
+    {
+      "hex": "#6d7881"
+    },
+    {
+      "hex": "#76818a"
+    },
+    {
+      "hex": "#838d94"
+    },
+    {
+      "hex": "#a29680"
+    },
+    {
+      "hex": "#98a3a9"
+    },
+    {
+      "hex": "#beb8a5"
+    },
+    {
+      "hex": "#ddcfb2"
+    },
+    {
+      "hex": "#f6e9c8"
+    }
+  ],
+  "transparent_index": 255,
+  "locked": false,
+  "source": "palette_tool build: OKLab k-means++ of 1 image(s), 32 colours, seed 0"
+}

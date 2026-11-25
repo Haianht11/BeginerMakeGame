@@ -1,0 +1,144 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.0,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/IDLE/00.png",
+      "sha256": "20198c6fb8fcc05cc1e2043fae89ae534d02a22a241c7a250ee6af63c2511171",
+      "bytes": 14338
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/IDLE/01.png",
+      "sha256": "570c2bd1330d8dd3cdb7a7f50878a7d41fcad52d4da9b05346d282a87658de9e",
+      "bytes": 13867
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/IDLE/02.png",
+      "sha256": "02ade56a987e3669245ce89fabcee3f54362e5e0a6027a2b9ded61c09afb558c",
+      "bytes": 14149
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/IDLE/03.png",
+      "sha256": "d18d8d49c47cd330a0a13956972b84271e126c7f19cd5aa426ad266eb55171a4",
+      "bytes": 14020
+    },
+    {
+      "path": "../../Palette/palette.json",
+      "sha256": "0b08ef9cc345928507c2e782efdfeed24ac7b85c68a82a3da4f7297e32716a33",
+      "bytes": 1402
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "a6dcdd510d4d200ebfca9f3f61c468ea3cae5bfd0c09272c6ca86d0b9122f65c",
+      "bytes": 14279
+    },
+    {
+      "path": "01.png",
+      "sha256": "d44cd374aa06019a4b681836e01a8ffeaa9e64616fe18797b5abcb1096c595d4",
+      "bytes": 13810
+    },
+    {
+      "path": "02.png",
+      "sha256": "f4c7d60dfbabded073cce3b7895937681dd091c15b84b11cd13e5de0e812b443",
+      "bytes": 14073
+    },
+    {
+      "path": "03.png",
+      "sha256": "67a5697b45158682cdd47531e090eb1742ac0aa79e2b295109956b92561e3d78",
+      "bytes": 13927
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "cycle",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 4,
+      "idx_flip": 0.789214,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.128645
+    },
+    "per_frame_nearest": {
+      "pairs": 4,
+      "idx_flip": 0.789214,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.128645
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 27
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 28
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 27
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 23
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.0,
+    "worst_p95_delta_e": 0.0,
+    "off_palette_px": 0
+  }
+}

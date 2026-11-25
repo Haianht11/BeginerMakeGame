@@ -1,0 +1,15 @@
+Create exactly ONE square 1024x1024 2D game sprite illustration on a solid flat pure magenta #FF00FF background.
+
+Reference roles:
+- The FIRST attached image is the character design identity reference: copy this exact quadrupedal dark-armored predator beast's anatomy, silhouette, armor plates, colors, and details faithfully.
+- The SECOND attached image is the approved in-game hero sprite (facing right): match its exact hi-bit 2D pixel art style, crisp dark charcoal outlines, clean 2-4 tone cel-shaded color ramps, pixel density/resolution, and crisp un-blurred pixel clusters. Do NOT copy the human swordsman's body, sword, or cape.
+
+Subject & Pose:
+- The dark-armored quadrupedal Berserk x Monster Hunter predator beast in side-profile, clearly FACING RIGHT: snarling horned draconic-wolf skull head pointing toward the RIGHT edge, arched segmented bladed tail sweeping upward on the LEFT side.
+- Crouched menacing predator stance with all four clawed paws firmly planted flat on the same invisible horizontal ground baseline.
+- Design details copied from the FIRST image: horned plated charcoal and slate-steel draconic-wolf skull, glowing amber-orange eyes, open snarling fanged jaws, bristling jagged jet-black fur mane along the neck and upper back, overlapping dark charcoal/slate-steel scale-plate limbs with 4 pale bone claws per paw, and a thick upward-sweeping segmented armored tail ending in a heavy curved slate-steel tail-blade.
+
+Framing & Rendering:
+- Entire beast centered with generous margin (~15% empty space on all four sides), nothing touching or crossing any canvas edge.
+- Crisp hi-bit pixel art style matching the SECOND image: clean 1 px dark charcoal outlines, sharp 2-4 tone cel-shaded color clusters, zero anti-aliasing, zero blur, zero smooth airbrush gradients, zero noisy dithering, solid fully opaque pixels everywhere on the beast (no semi-transparent glow or smoke).
+- Background: solid flat pure magenta #FF00FF everywhere outside the beast. Strictly NO text, NO logos, NO watermarks, NO signature, NO ground shadow, NO floor line, NO border, NO frame, NO grid.

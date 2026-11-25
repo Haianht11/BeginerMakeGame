@@ -1,0 +1,161 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.0,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/HURT/00.png",
+      "sha256": "20198c6fb8fcc05cc1e2043fae89ae534d02a22a241c7a250ee6af63c2511171",
+      "bytes": 14338
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/HURT/01.png",
+      "sha256": "68fac57ba153bf2f30ad8e657075d50876da5dcec1f978b24808890c6cf8d251",
+      "bytes": 14259
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/HURT/02.png",
+      "sha256": "1d93f1f46647b37a726658ec8a1f92408170b13e68932baabbfcc3486f32d72f",
+      "bytes": 14270
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/HURT/03.png",
+      "sha256": "9de80c08008a452c547fc52d5f96f5e621b3c72cf4c4c95af97557bcda0c2dfb",
+      "bytes": 13720
+    },
+    {
+      "path": "../../../../../../../.gemini/antigravity/brain/51278bfe-eaab-445e-a32d-d0372a35e8bd/scratch/staged_raw/HURT/04.png",
+      "sha256": "610ae2b6c4726ffb141134d7dce55c6af68e9ee4f2fd0d9827df48b673956360",
+      "bytes": 13512
+    },
+    {
+      "path": "../../Palette/palette.json",
+      "sha256": "0b08ef9cc345928507c2e782efdfeed24ac7b85c68a82a3da4f7297e32716a33",
+      "bytes": 1402
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "a6dcdd510d4d200ebfca9f3f61c468ea3cae5bfd0c09272c6ca86d0b9122f65c",
+      "bytes": 14279
+    },
+    {
+      "path": "01.png",
+      "sha256": "04c6d6f27dbcc098bf63b1f49e513d9c2ed0b2278ebc6a0dcbd974fae4a713e6",
+      "bytes": 14197
+    },
+    {
+      "path": "02.png",
+      "sha256": "6172edb63ea5cd0d880335289fbe5ed6e732dba515a9818b27c6a7f7d19781b1",
+      "bytes": 14200
+    },
+    {
+      "path": "03.png",
+      "sha256": "9f3caa4f02e57ec5a514d476ed3e4e0d1580aa0fb7bb5f9d0bde8e336d03ba89",
+      "bytes": 13696
+    },
+    {
+      "path": "04.png",
+      "sha256": "c1e91b5bc772be1984e96a6be59cae83c83af346f5e3dc9a712cd406b7225ac4",
+      "bytes": 13467
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "oneshot",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 4,
+      "idx_flip": 0.868264,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.277742
+    },
+    "per_frame_nearest": {
+      "pairs": 4,
+      "idx_flip": 0.868264,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.277742
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 27
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 34
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 36
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 28
+    },
+    {
+      "file": "04.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 29
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.0,
+    "worst_p95_delta_e": 0.0,
+    "off_palette_px": 0
+  }
+}

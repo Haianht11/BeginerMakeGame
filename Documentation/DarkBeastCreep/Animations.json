@@ -1,0 +1,137 @@
+{
+  "character": "DarkBeastCreep",
+  "frameSize": [
+    192,
+    160
+  ],
+  "anchor": [
+    96,
+    144
+  ],
+  "groundPixelY": 143,
+  "ppu": 80,
+  "facing": "right",
+  "sampling": "nearest",
+  "clips": {
+    "IDLE": {
+      "frames": [
+        "Animations/IDLE/00.png",
+        "Animations/IDLE/01.png",
+        "Animations/IDLE/02.png",
+        "Animations/IDLE/03.png"
+      ],
+      "strip": "Strips/IDLE.png",
+      "gif": "Gifs/IDLE.gif",
+      "durationMs": [
+        190,
+        190,
+        190,
+        190
+      ],
+      "loop": true,
+      "hitFrame": null
+    },
+    "RUN": {
+      "frames": [
+        "Animations/RUN/00.png",
+        "Animations/RUN/01.png",
+        "Animations/RUN/02.png",
+        "Animations/RUN/03.png",
+        "Animations/RUN/04.png",
+        "Animations/RUN/05.png",
+        "Animations/RUN/06.png",
+        "Animations/RUN/07.png"
+      ],
+      "strip": "Strips/RUN.png",
+      "gif": "Gifs/RUN.gif",
+      "durationMs": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "loop": true,
+      "hitFrame": null
+    },
+    "ATTACK": {
+      "frames": [
+        "Animations/ATTACK/00.png",
+        "Animations/ATTACK/01.png",
+        "Animations/ATTACK/02.png",
+        "Animations/ATTACK/03.png",
+        "Animations/ATTACK/04.png",
+        "Animations/ATTACK/05.png",
+        "Animations/ATTACK/06.png",
+        "Animations/ATTACK/07.png",
+        "Animations/ATTACK/08.png"
+      ],
+      "strip": "Strips/ATTACK.png",
+      "gif": "Gifs/ATTACK.gif",
+      "durationMs": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "loop": false,
+      "hitFrame": 4
+    },
+    "HURT": {
+      "frames": [
+        "Animations/HURT/00.png",
+        "Animations/HURT/01.png",
+        "Animations/HURT/02.png",
+        "Animations/HURT/03.png",
+        "Animations/HURT/04.png"
+      ],
+      "strip": "Strips/HURT.png",
+      "gif": "Gifs/HURT.gif",
+      "durationMs": [
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "loop": false,
+      "hitFrame": null
+    },
+    "DEATH": {
+      "frames": [
+        "Animations/DEATH/00.png",
+        "Animations/DEATH/01.png",
+        "Animations/DEATH/02.png",
+        "Animations/DEATH/03.png",
+        "Animations/DEATH/04.png",
+        "Animations/DEATH/05.png",
+        "Animations/DEATH/06.png",
+        "Animations/DEATH/07.png",
+        "Animations/DEATH/08.png"
+      ],
+      "strip": "Strips/DEATH.png",
+      "gif": "Gifs/DEATH.gif",
+      "durationMs": [
+        105,
+        105,
+        105,
+        105,
+        105,
+        105,
+        105,
+        105,
+        105
+      ],
+      "loop": false,
+      "hitFrame": null
+    }
+  }
+}

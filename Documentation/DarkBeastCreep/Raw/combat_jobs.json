@@ -1,0 +1,43 @@
+{
+  "tool": "pixellab:animate_image_pixminimax",
+  "master_sprite": "Documentation/DarkBeastCreep/Masters/master_right_192x160.png",
+  "upload_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+  "common_params": {
+    "view": "side",
+    "direction": "east",
+    "no_background": true,
+    "subject_description": "quadrupedal dark-armored predator beast with horned draconic skull, glowing amber eyes, jagged jet-black fur mane, clawed dark-scaled legs, and an upward-curving segmented slate-steel bladed tail",
+    "initial_pose": "crouched menacing side profile facing right with all four clawed paws planted flat on the ground, jaws open in a snarl, and bladed tail arched up behind"
+  },
+  "jobs": {
+    "ATTACK": {
+      "job_id": "e09d4cc8-10f1-41cc-a681-2e41105744e0",
+      "asset_id": "63892d2f-d367-5d5d-82d8-893a4075385c",
+      "seed": 206,
+      "frame_count": 8,
+      "raw_frame_count": 9,
+      "dimensions": [192, 160],
+      "first_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "last_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "description": "savage predator melee attack combo facing right and recovering to guard pose; beast coils low compressing legs and pulling tail back overhead, then lunges aggressively forward to the right jaws snapping wide while whipping the heavy slate-steel bladed tail in a lethal forward-down slash arc, followed by clean recoil back to starting stance; keep full body and curved bladed tail inside the frame",
+      "hitFrame": 4,
+      "edge_touch_frames": 0,
+      "visual_status": "pass",
+      "visual_notes": "Retake seed=206 (replacing seed=204 job_id=c43d44f5-dec5-4e09-8853-2485a04178e8 which had an opaque smear blob on f05). Clean coil back f01-f03, crisp unclipped forward lunge + crescent slash climax at f04 (hitFrame=4, bbox=[66,13,183,145]), follow-through f05-f06, clean recoil to master f07-f08."
+    },
+    "DEATH": {
+      "job_id": "08f4d5f5-9b8e-4e8c-9b2f-a57cfae61168",
+      "asset_id": "b85c86fa-0bf1-5937-82f6-7598f03b28a1",
+      "seed": 205,
+      "frame_count": 8,
+      "raw_frame_count": 9,
+      "dimensions": [192, 160],
+      "first_frame_url": "upload:d4d56878-b267-4475-9143-f3b3ecad4447",
+      "last_frame_url": null,
+      "description": "dramatic defeated collapse onto the ground facing right; beast staggers heavily as front and hind armored legs buckle downward, horned head and heavy segmented bladed tail drop flat onto the floor line in a limp fallen corpse pose resting horizontally on the ground",
+      "edge_touch_frames": 0,
+      "visual_status": "pass",
+      "visual_notes": "Smooth stagger f01-f03, buckling down onto floor line at f04, settled flat horizontal corpse pose f05-f08 (bbox y=96..146) with 0 edge clipping."
+    }
+  }
+}
