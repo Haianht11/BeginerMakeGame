@@ -1,0 +1,52 @@
+{
+  "RIGHT_IDLE": {
+    "job_id": "6b3ac30e-a923-444f-ac4e-92308883792c",
+    "seed": 501,
+    "frames": 5
+  },
+  "RIGHT_WALK": {
+    "job_id": "51ac820e-24c2-4e78-b443-0ee2dad36a3b",
+    "seed": 502,
+    "frames": 9
+  },
+  "RIGHT_ATTACK": {
+    "job_id": "7e3b03d9-2a06-4cdb-a5ea-ee95895232c3",
+    "seed": 503,
+    "frames": 9
+  },
+  "RIGHT_HURT": {
+    "job_id": "e651455e-c568-46cf-98ae-356459f3f33a",
+    "seed": 504,
+    "frames": 5
+  },
+  "RIGHT_DEATH": {
+    "job_id": "d28cba1f-2cdc-4479-b5f4-160a44a88f60",
+    "seed": 505,
+    "frames": 9
+  },
+  "LEFT_IDLE": {
+    "job_id": "fd9af90e-33ea-4e0f-aa67-e2213306e93c",
+    "seed": 506,
+    "frames": 5
+  },
+  "LEFT_WALK": {
+    "job_id": "9dde0c5d-41be-4f40-8f0a-319d9a5c811e",
+    "seed": 507,
+    "frames": 9
+  },
+  "LEFT_ATTACK": {
+    "job_id": "82a6a623-920d-49d2-92de-39e3c4aef97c",
+    "seed": 608,
+    "frames": 9
+  },
+  "LEFT_HURT": {
+    "job_id": "5e26db56-4ff8-412f-b71b-391549cb41fa",
+    "seed": 509,
+    "frames": 5
+  },
+  "LEFT_DEATH": {
+    "job_id": "9fd56f0b-0a5b-42d4-9c0c-8710017e4869",
+    "seed": 510,
+    "frames": 9
+  }
+}

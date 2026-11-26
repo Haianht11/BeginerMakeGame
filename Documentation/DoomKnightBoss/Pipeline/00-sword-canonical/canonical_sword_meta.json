@@ -1,0 +1,26 @@
+{
+  "size": [
+    1041,
+    255
+  ],
+  "centerline_y": 127,
+  "pommel_gem_center": [
+    58,
+    127
+  ],
+  "grip_center": [
+    177,
+    127
+  ],
+  "crossguard_gem_center": [
+    296,
+    127
+  ],
+  "blade_tip": [
+    1024,
+    127
+  ],
+  "blade_half_width_px": 74.0,
+  "outline_px": 8.0,
+  "bevel_px": 20.0
+}

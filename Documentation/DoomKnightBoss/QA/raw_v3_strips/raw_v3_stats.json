@@ -1,0 +1,1172 @@
+{
+  "RIGHT_IDLE": {
+    "frames": 5,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/RIGHT_IDLE_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          37,
+          197,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          58,
+          36,
+          196,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          58,
+          34,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          60,
+          34,
+          193,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "LEFT_IDLE": {
+    "frames": 5,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/LEFT_IDLE_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          24,
+          36,
+          234,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          25,
+          35,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          26,
+          35,
+          229,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          28,
+          34,
+          225,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "RIGHT_WALK": {
+    "frames": 9,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/RIGHT_WALK_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          62,
+          35,
+          199,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          64,
+          34,
+          203,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          65,
+          33,
+          206,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          62,
+          34,
+          208,
+          168
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 5,
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          206,
+          168
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 6,
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          57,
+          36,
+          204,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 7,
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          56,
+          35,
+          199,
+          168
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 8,
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          33,
+          194,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "LEFT_WALK": {
+    "frames": 9,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/LEFT_WALK_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          25,
+          35,
+          233,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          27,
+          34,
+          233,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          30,
+          33,
+          231,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          27,
+          34,
+          228,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 5,
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          26,
+          34,
+          226,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 6,
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          24,
+          35,
+          222,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 7,
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          22,
+          36,
+          222,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 8,
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          25,
+          34,
+          227,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "RIGHT_ATTACK": {
+    "frames": 9,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/RIGHT_ATTACK_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          63,
+          19,
+          183,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          13,
+          29,
+          182,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          25,
+          24,
+          183,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          41,
+          19,
+          246,
+          171
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 5,
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          39,
+          37,
+          247,
+          171
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 6,
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          42,
+          39,
+          247,
+          171
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 7,
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          46,
+          37,
+          213,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 8,
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "LEFT_ATTACK": {
+    "frames": 9,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/LEFT_ATTACK_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          107,
+          25,
+          228,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          113,
+          37,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          20,
+          20,
+          233,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          20,
+          26,
+          234,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 5,
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          20,
+          38,
+          234,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 6,
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          227,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 7,
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 8,
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "RIGHT_HURT": {
+    "frames": 5,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/RIGHT_HURT_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          63,
+          36,
+          183,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          60,
+          36,
+          180,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          58,
+          36,
+          187,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          57,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "LEFT_HURT": {
+    "frames": 5,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/LEFT_HURT_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          27,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          34,
+          38,
+          229,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          31,
+          38,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          25,
+          36,
+          233,
+          167
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "RIGHT_DEATH": {
+    "frames": 9,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/RIGHT_DEATH_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          59,
+          36,
+          195,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          39,
+          24,
+          210,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          43,
+          22,
+          216,
+          170
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          43,
+          21,
+          217,
+          170
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          41,
+          73,
+          216,
+          171
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 5,
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          39,
+          86,
+          216,
+          171
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 6,
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          40,
+          88,
+          216,
+          172
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 7,
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          40,
+          88,
+          216,
+          172
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 8,
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          40,
+          88,
+          216,
+          172
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  },
+  "LEFT_DEATH": {
+    "frames": 9,
+    "strip": "Documentation/DoomKnightBoss/QA/raw_v3_strips/LEFT_DEATH_2x.png",
+    "stats": [
+      {
+        "index": 0,
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          23,
+          36,
+          232,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 1,
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          33,
+          22,
+          236,
+          167
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 2,
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          40,
+          21,
+          237,
+          160
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 3,
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          19,
+          46,
+          229,
+          169
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 4,
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          47,
+          226,
+          169
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 5,
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          70,
+          236,
+          169
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 6,
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          70,
+          236,
+          169
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 7,
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          70,
+          236,
+          169
+        ],
+        "edge_touch_px": 0
+      },
+      {
+        "index": 8,
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          70,
+          236,
+          169
+        ],
+        "edge_touch_px": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.0,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/00.png",
+      "sha256": "40f2a981cbf63967f1c2b2c50ce69912880ec871fd87b9baa8aac69c421a29c8",
+      "bytes": 16688
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/01.png",
+      "sha256": "4e975d8eef59f338533e6de4074997c6c42ab708866fb5adeea5b9b23e3b625e",
+      "bytes": 15225
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/02.png",
+      "sha256": "e5f89f24fa6f1febc5bf871749b6c8a1a872285f922f7ab0cd07da24d0d7e2ef",
+      "bytes": 14804
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/03.png",
+      "sha256": "198e17b32e4fd24e5905ed76782d6e33c041b024c1576a3a00b55b6e0b2c6423",
+      "bytes": 14701
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/04.png",
+      "sha256": "112847c2e87b0bb6dcba063c1e3cb4857af60be9172bab931599f4ce3ffe90e6",
+      "bytes": 14224
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/05.png",
+      "sha256": "e0f10d89b19bdd968755150a79e69fd2b35757bdf645a2841152733c5b75b63b",
+      "bytes": 14864
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/06.png",
+      "sha256": "d817bedfbc7570895457c101c37baa45ef5b35367c71bb82c687f54d03ebad0c",
+      "bytes": 15225
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_WALK/07.png",
+      "sha256": "d346cc894a0421c36117d45cf3a8a34ac5b0e0ebd251a8a1ab3da33be820e686",
+      "bytes": 15388
+    },
+    {
+      "path": "../../../Palette/palette.json",
+      "sha256": "54cef005f259bc91db31e1360c4770e6e61436c22494c90a212ce76871097127",
+      "bytes": 1424
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "7f9f70cfaceba82e82447bfbef76427902a10c50e150857c39a883663dd2e3c0",
+      "bytes": 16605
+    },
+    {
+      "path": "01.png",
+      "sha256": "d451632d2266077a35c6664cea48480689a1a6e0b19ee3931e7f3bac50663760",
+      "bytes": 15150
+    },
+    {
+      "path": "02.png",
+      "sha256": "694638c9b38e58cb39e5407e767486796e0028b76fb5f97c08b6d5443a41b053",
+      "bytes": 14739
+    },
+    {
+      "path": "03.png",
+      "sha256": "dd74097e8870662b9a93d5ef7c0bd4a8a0d0081ac2d7e8978e63fb69394aaeb1",
+      "bytes": 14639
+    },
+    {
+      "path": "04.png",
+      "sha256": "16464731c14cafd957f7902b77790c6ac5653ac910c8767a036125e13f79f8d4",
+      "bytes": 14167
+    },
+    {
+      "path": "05.png",
+      "sha256": "bd8ce38627fd7d5678261f66b570c8db4ee469408f429da3cdd636f68f7321db",
+      "bytes": 14835
+    },
+    {
+      "path": "06.png",
+      "sha256": "1ecc59e7ae42fa600fe17f26d918c69e207a1d8903e85f9d8ced64cac0dc4553",
+      "bytes": 15190
+    },
+    {
+      "path": "07.png",
+      "sha256": "ac60e0eb15a9987c3b55203b5cdae72c7a1adb69966fdf86b63db5960523a3f7",
+      "bytes": 15199
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "cycle",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 8,
+      "idx_flip": 0.733347,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.142907
+    },
+    "per_frame_nearest": {
+      "pairs": 8,
+      "idx_flip": 0.733347,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.142907
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 25
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 19
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 18
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 20
+    },
+    {
+      "file": "04.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 21
+    },
+    {
+      "file": "05.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 21
+    },
+    {
+      "file": "06.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 17
+    },
+    {
+      "file": "07.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 22
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.0,
+    "worst_p95_delta_e": 0.0,
+    "off_palette_px": 0
+  }
+}

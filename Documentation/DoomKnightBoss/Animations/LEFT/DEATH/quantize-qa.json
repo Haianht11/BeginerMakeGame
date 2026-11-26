@@ -1,0 +1,229 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.0,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/00.png",
+      "sha256": "a5b89ec9ad802bd14027f6719f3299bec15b1a8a937c24ae0b44bfe1e52ec412",
+      "bytes": 18271
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/01.png",
+      "sha256": "12783b58c91b137d077d2c032a4368dfe0a4db19b820da07561ca7bdfd57d4a5",
+      "bytes": 17396
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/02.png",
+      "sha256": "f35ea2f72dbc7582bfbab2a77c07f575d5183d4f92a7e3f464e95f86972346bd",
+      "bytes": 16583
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/03.png",
+      "sha256": "a8766a758c68b9fd2330903b23ceb16b8dded588c86eedcc6358b168163dff1e",
+      "bytes": 14432
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/04.png",
+      "sha256": "ca34235b6cd3d41be1b1ddac0ac53d39f9128dacbad86180ea7db28d6d0dc715",
+      "bytes": 14008
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/05.png",
+      "sha256": "15d1486cea248be85c2486cbc45f6c5d5cc22763ecd765cd4c7fd6d642196cbf",
+      "bytes": 12993
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/06.png",
+      "sha256": "15d1486cea248be85c2486cbc45f6c5d5cc22763ecd765cd4c7fd6d642196cbf",
+      "bytes": 12993
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/07.png",
+      "sha256": "15d1486cea248be85c2486cbc45f6c5d5cc22763ecd765cd4c7fd6d642196cbf",
+      "bytes": 12993
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/LEFT_DEATH/08.png",
+      "sha256": "15d1486cea248be85c2486cbc45f6c5d5cc22763ecd765cd4c7fd6d642196cbf",
+      "bytes": 12993
+    },
+    {
+      "path": "../../../Palette/palette.json",
+      "sha256": "54cef005f259bc91db31e1360c4770e6e61436c22494c90a212ce76871097127",
+      "bytes": 1424
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "9452172162f9ca2d44ff1eaeea9f638c6e8221dad945eee67334c6957e17b940",
+      "bytes": 18213
+    },
+    {
+      "path": "01.png",
+      "sha256": "f3363a192bad469d12c410f38b8932e97d71f642a37a04418879133d1e5efcb6",
+      "bytes": 17318
+    },
+    {
+      "path": "02.png",
+      "sha256": "ccf6e5a4c9b9f1f3dbccb0fd1548d7b92766519188fd3b11c2453f272d96ff8f",
+      "bytes": 16491
+    },
+    {
+      "path": "03.png",
+      "sha256": "574d39a7737587dc0853432709a6e516d26d319e852440d580fc32499b70e087",
+      "bytes": 14381
+    },
+    {
+      "path": "04.png",
+      "sha256": "55a70f9552c1da7d527ced0003958a21c95af721f117a942961dce26a352235d",
+      "bytes": 14083
+    },
+    {
+      "path": "05.png",
+      "sha256": "6f6e44110e11915024344de80c43c09198e06562931883001fe5db05f022eb6f",
+      "bytes": 12944
+    },
+    {
+      "path": "06.png",
+      "sha256": "6f6e44110e11915024344de80c43c09198e06562931883001fe5db05f022eb6f",
+      "bytes": 12944
+    },
+    {
+      "path": "07.png",
+      "sha256": "6f6e44110e11915024344de80c43c09198e06562931883001fe5db05f022eb6f",
+      "bytes": 12944
+    },
+    {
+      "path": "08.png",
+      "sha256": "6f6e44110e11915024344de80c43c09198e06562931883001fe5db05f022eb6f",
+      "bytes": 12944
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "oneshot",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 8,
+      "idx_flip": 0.53028,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.329517
+    },
+    "per_frame_nearest": {
+      "pairs": 8,
+      "idx_flip": 0.53028,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.329517
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 20
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 37
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 24
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 24
+    },
+    {
+      "file": "04.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 22
+    },
+    {
+      "file": "05.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 10
+    },
+    {
+      "file": "06.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 10
+    },
+    {
+      "file": "07.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 10
+    },
+    {
+      "file": "08.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 10
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.0,
+    "worst_p95_delta_e": 0.0,
+    "off_palette_px": 0
+  }
+}

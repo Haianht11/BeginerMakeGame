@@ -1,0 +1,144 @@
+{
+  "status": "pass",
+  "method": "forge_palette.quantize_sequence: OKLab-nearest colours with temporal hysteresis (a pixel keeps last frame's index within the margin and last frame's opacity inside the alpha band), cleanup_orphans and cleanup_alpha per frame; flips measured with forge_palette.flip_stats against per-frame nearest quantizing with the same cleanup",
+  "notProven": [
+    "Motion quality: hysteresis can delay a real colour change smaller than the margin.",
+    "The flip reduction is measured on this clip only.",
+    "No --max-delta-e gate was set."
+  ],
+  "checks": [
+    {
+      "id": "output_off_palette_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "output_partial_alpha_px",
+      "status": "pass",
+      "value": 0,
+      "threshold": 0
+    },
+    {
+      "id": "max_delta_e",
+      "status": "skipped",
+      "value": 0.0,
+      "threshold": null
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_IDLE/00.png",
+      "sha256": "40f2a981cbf63967f1c2b2c50ce69912880ec871fd87b9baa8aac69c421a29c8",
+      "bytes": 16688
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_IDLE/01.png",
+      "sha256": "fed8e80155ab7f0649929be7e569e37190586039dad489cdc90f55f4f49d8dd9",
+      "bytes": 15606
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_IDLE/02.png",
+      "sha256": "7faae8f99d051bdecabbe0ec1db044b140c7b6b0b02acb18a9b67f2427176ead",
+      "bytes": 15178
+    },
+    {
+      "path": "../../../Pipeline/03-staged-v3/RIGHT_IDLE/03.png",
+      "sha256": "cd6e01b018554d24210ecd7d806683c0ed6835e92e2b1fd58922c59f51cbbf92",
+      "bytes": 15004
+    },
+    {
+      "path": "../../../Palette/palette.json",
+      "sha256": "54cef005f259bc91db31e1360c4770e6e61436c22494c90a212ce76871097127",
+      "bytes": 1424
+    }
+  ],
+  "outputs": [
+    {
+      "path": "00.png",
+      "sha256": "7f9f70cfaceba82e82447bfbef76427902a10c50e150857c39a883663dd2e3c0",
+      "bytes": 16605
+    },
+    {
+      "path": "01.png",
+      "sha256": "5cf6a1fbab8dbeaea2cf1aa6151bbd19582f346fc479d0ba9ac5cb7cf4c970b9",
+      "bytes": 15509
+    },
+    {
+      "path": "02.png",
+      "sha256": "28e40133e19893e287baffae2932c88496aea17dd508e8ba3925049e7fabff72",
+      "bytes": 15088
+    },
+    {
+      "path": "03.png",
+      "sha256": "69facdb6fb47709319851dc402acc16467d6c1919997559699c75c659664ee63",
+      "bytes": 14977
+    }
+  ],
+  "tool": {
+    "name": "palette_tool",
+    "version": "0.6.0"
+  },
+  "loop_policy": "cycle",
+  "locked": false,
+  "params": {
+    "margin": 0.0004,
+    "alpha_band": [
+      0.4,
+      0.6
+    ],
+    "alpha_threshold": 128,
+    "orphans": 0,
+    "despeckle": true
+  },
+  "flips": {
+    "hysteresis": {
+      "pairs": 4,
+      "idx_flip": 0.689899,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.109231
+    },
+    "per_frame_nearest": {
+      "pairs": 4,
+      "idx_flip": 0.689899,
+      "noise_flip": 0.0,
+      "alpha_flip": 0.109231
+    },
+    "noise_flip_reduction": null
+  },
+  "frames": [
+    {
+      "file": "00.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 25
+    },
+    {
+      "file": "01.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 33
+    },
+    {
+      "file": "02.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 35
+    },
+    {
+      "file": "03.png",
+      "held_index_px": 0,
+      "held_alpha_px": 0,
+      "orphans_fixed_px": 0,
+      "despeckled_px": 26
+    }
+  ],
+  "totals": {
+    "max_delta_e": 0.0,
+    "worst_p95_delta_e": 0.0,
+    "off_palette_px": 0
+  }
+}

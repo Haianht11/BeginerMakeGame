@@ -1,0 +1,46 @@
+{
+  "right": {
+    "key": [
+      249.0,
+      3.0,
+      249.0
+    ],
+    "opaque_key_px": 0,
+    "outer_ring_spill_fraction": 0.0,
+    "semitransparent_fraction": 0.01624278035804899,
+    "enclosed_key_pockets": 0,
+    "key_hued_px": 3,
+    "visible_px": 618798,
+    "outer_ring_px": 8383,
+    "thresholds": {
+      "key_tolerance": 48.0,
+      "spill_threshold": 20.0,
+      "min_pocket_area": 16,
+      "opaque_alpha": 128,
+      "spill_hue_balance": 0.5
+    },
+    "method": "forge_matte.matte_qa v1: straight-colour key distance and dominance on the keyed image; two-channel keys count spill only where the key channels are balanced"
+  },
+  "left": {
+    "key": [
+      250.0,
+      3.0,
+      249.0
+    ],
+    "opaque_key_px": 0,
+    "outer_ring_spill_fraction": 0.0,
+    "semitransparent_fraction": 0.01757315889233045,
+    "enclosed_key_pockets": 0,
+    "key_hued_px": 0,
+    "visible_px": 519144,
+    "outer_ring_px": 7370,
+    "thresholds": {
+      "key_tolerance": 48.0,
+      "spill_threshold": 20.0,
+      "min_pocket_area": 16,
+      "opaque_alpha": 128,
+      "spill_hue_balance": 0.5
+    },
+    "method": "forge_matte.matte_qa v1: straight-colour key distance and dominance on the keyed image; two-channel keys count spill only where the key channels are balanced"
+  }
+}

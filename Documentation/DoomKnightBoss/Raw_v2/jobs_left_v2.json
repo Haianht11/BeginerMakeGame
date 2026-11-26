@@ -1,0 +1,787 @@
+{
+  "LEFT_IDLE": {
+    "job_id": "7c0f9add-b53c-40cc-97ad-6d6e9a18a4e0",
+    "seed": 402,
+    "direction": "west",
+    "frame_count": 4,
+    "raw_frame_count": 5,
+    "frames": [
+      {
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          239,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          37,
+          239,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          37,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      }
+    ]
+  },
+  "LEFT_WALK": {
+    "job_id": "ae784046-325b-428a-91fc-035767047f72",
+    "seed": 404,
+    "direction": "west",
+    "frame_count": 8,
+    "raw_frame_count": 9,
+    "frames": [
+      {
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          35,
+          239,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          20,
+          33,
+          240,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          21,
+          34,
+          236,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          22,
+          36,
+          234,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          21,
+          35,
+          233,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          20,
+          33,
+          231,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          18,
+          34,
+          231,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      }
+    ]
+  },
+  "LEFT_ATTACK": {
+    "job_id": "62d2b37d-64e5-4735-b878-c64a325c12c1",
+    "seed": 406,
+    "direction": "west",
+    "frame_count": 8,
+    "raw_frame_count": 9,
+    "frames": [
+      {
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          238,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          71,
+          11,
+          235,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          110,
+          32,
+          234,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          114,
+          37,
+          241,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          37,
+          18,
+          241,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          2,
+          19,
+          225,
+          177
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          0,
+          38,
+          240,
+          180
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": true,
+          "right": false,
+          "any": true
+        }
+      },
+      {
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      }
+    ]
+  },
+  "LEFT_HURT": {
+    "job_id": "ef3d367a-e484-4022-9bfb-1f60ebb427de",
+    "seed": 408,
+    "direction": "west",
+    "frame_count": 4,
+    "raw_frame_count": 5,
+    "frames": [
+      {
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          35,
+          36,
+          236,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          42,
+          36,
+          231,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          28,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      }
+    ]
+  },
+  "LEFT_DEATH": {
+    "job_id": "a57353e3-c678-451e-b21a-f038d77163a5",
+    "seed": 410,
+    "direction": "west",
+    "frame_count": 8,
+    "raw_frame_count": 9,
+    "frames": [
+      {
+        "file": "frame_00.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          237,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_01.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          239,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_02.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          32,
+          230,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_03.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          28,
+          231,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_04.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          17,
+          36,
+          215,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_05.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          15,
+          39,
+          217,
+          167
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_06.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          16,
+          90,
+          228,
+          169
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_07.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          16,
+          114,
+          230,
+          170
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      },
+      {
+        "file": "frame_08.png",
+        "size": [
+          256,
+          192
+        ],
+        "bbox": [
+          16,
+          126,
+          238,
+          171
+        ],
+        "edge_touch": {
+          "top": false,
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "any": false
+        }
+      }
+    ]
+  }
+}

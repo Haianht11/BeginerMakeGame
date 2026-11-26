@@ -1,0 +1,7 @@
+Create a crisp 2D hi-bit pixel-art side-view dark-fantasy Boss Arena background (1536x1024 landscape): an Obsidian Doom Citadel Crimson Throne Hall.
+Match the exact architectural side-on perspective, stone masonry depth, moody cool-slate/crimson-torch lighting, and crisp un-blurred pixel cluster density of the attached reference DungeonBackdrop.png.
+Scene details:
+- Massive dark obsidian basalt columns and pointed gothic arches framing a deep cavernous crimson-lit throne hall in the background.
+- Tattered dark-crimson war banners hanging from high stone beams, subtle glowing crimson rune braziers and distant embers in the deep background.
+- Across the bottom ~30% of the image, a completely flat, level, unobstructed horizontal dark stone brick arena floor with a clean crisp top edge spanning the entire width from left to right (no steps, no pits, no foreground pillars blocking the walking surface).
+- Strictly NO characters, NO monsters, NO bosses, NO foreground cages blocking the center arena, NO UI, NO text, NO logos, NO frame/border.

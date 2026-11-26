@@ -1,0 +1,13 @@
+Edit ONLY the far-right forearm/hand grip seam on the FIRST attached image while keeping EVERYTHING else identical, producing a crisp 1024x1024 2D hi-bit pixel art sprite on a solid flat pure magenta #FF00FF background.
+
+Reference roles:
+- FIRST attached image: the exact Doom Knight Boss (facing LEFT) with the exact body, horned helm, glowing crimson visor, spiked left pauldron, empty foreground clawed left gauntlet, tattered cape, boots, AND the exact full-length straight black-and-crimson runed greatsword. Preserve the entire armor, cape, and full sword length, blade width, angle, diamond crossguard, and straight collinear pommel-handle-blade axis from this image!
+- SECOND attached image: the RIGHT-facing master sprite showing the exact hi-bit pixel art style, 1 px dark charcoal outlines, 2-4 tone cel-shading, and how the armored gauntlet cleanly wraps around the sword handle behind the crimson diamond crossguard.
+
+Required fix (ONLY at the far-right hand & sword handle):
+- Draw the far-right armored forearm extending smoothly into a clenched dark-iron armored gauntlet fist firmly gripping ONLY the wrapped sword handle BETWEEN the red diamond pommel and the crimson diamond crossguard.
+- The gauntlet fingers must sit cleanly behind the crimson diamond crossguard (NOT covering the crossguard), and the red-capped pommel + wrapped grip must remain straight and collinear with the blade's centerline (do NOT bend the hilt into the hip, and do NOT shorten or shrink the sword blade!).
+- Keep the foreground LEFT arm/shoulder (viewer's right) with its oversized crimson-spiked pauldron and empty clawed gauntlet completely unchanged.
+
+Framing & Background:
+- Solid flat pure magenta #FF00FF background everywhere outside the character, crisp un-blurred pixel clusters, zero anti-aliasing, zero ground shadow, zero text, zero grid lines, generous empty margins on all sides.

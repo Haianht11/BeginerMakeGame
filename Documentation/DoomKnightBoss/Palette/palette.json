@@ -1,0 +1,107 @@
+{
+  "schema": "generate2dsprite.palette.v1",
+  "name": "DoomKnightBoss",
+  "colors": [
+    {
+      "hex": "#121016",
+      "reserved": true
+    },
+    {
+      "hex": "#e61924",
+      "reserved": true
+    },
+    {
+      "hex": "#000000"
+    },
+    {
+      "hex": "#020102"
+    },
+    {
+      "hex": "#040405"
+    },
+    {
+      "hex": "#0c0709"
+    },
+    {
+      "hex": "#1d070c"
+    },
+    {
+      "hex": "#2c0911"
+    },
+    {
+      "hex": "#101924"
+    },
+    {
+      "hex": "#1c1822"
+    },
+    {
+      "hex": "#380a14"
+    },
+    {
+      "hex": "#231d28"
+    },
+    {
+      "hex": "#292430"
+    },
+    {
+      "hex": "#480e19"
+    },
+    {
+      "hex": "#2f2937"
+    },
+    {
+      "hex": "#570f1d"
+    },
+    {
+      "hex": "#37303d"
+    },
+    {
+      "hex": "#661020"
+    },
+    {
+      "hex": "#413744"
+    },
+    {
+      "hex": "#761122"
+    },
+    {
+      "hex": "#4a3f4c"
+    },
+    {
+      "hex": "#851125"
+    },
+    {
+      "hex": "#544653"
+    },
+    {
+      "hex": "#961326"
+    },
+    {
+      "hex": "#7f3848"
+    },
+    {
+      "hex": "#5e4f5c"
+    },
+    {
+      "hex": "#ac1729"
+    },
+    {
+      "hex": "#675969"
+    },
+    {
+      "hex": "#c91726"
+    },
+    {
+      "hex": "#796777"
+    },
+    {
+      "hex": "#8e7a89"
+    },
+    {
+      "hex": "#fc1820"
+    }
+  ],
+  "transparent_index": 255,
+  "locked": false,
+  "source": "palette_tool build: OKLab k-means++ of 2 image(s), 32 colours, seed 0"
+}

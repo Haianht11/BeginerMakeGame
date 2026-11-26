@@ -1,0 +1,14 @@
+Create exactly ONE square 1024x1024 2D game sprite illustration on a solid flat pure magenta #FF00FF background.
+
+Reference role:
+- The attached image is the approved in-game hero sprite (facing right): match its exact hi-bit 2D pixel art style, Soul Knight chibi-proportioned dark-fantasy aesthetic, crisp 1 px dark charcoal outlines, clean 2-4 tone cel-shaded color ramps, pixel density, and un-blurred pixel clusters. Do NOT copy the human hero's face, one-armed stump, or outfit.
+
+Subject & Pose (#200 Doom Knight Boss — FACING RIGHT):
+- Imposing chibi dark-fantasy Doom Knight Boss in heavy 3/4 side profile clearly FACING RIGHT: massive black-and-crimson spiked plate armor, oversized horned black-iron greathelm with a menacing glowing crimson visor slit, broad chestplate with crimson trim, and a tattered dark-crimson cape trailing behind to the left.
+- Strict asymmetric anatomy: his near RIGHT arm (viewer's foreground/left side of torso) firmly grips a massive broad black-obsidian and glowing-crimson runed greatsword angled diagonally forward-down toward the RIGHT; his far LEFT shoulder wears a prominent jagged crimson-spiked pauldron and heavy clawed dark-iron gauntlet without holding a weapon.
+- Heavy armored boots planted firmly flat on the same invisible horizontal ground baseline, combat-ready boss stance.
+
+Framing & Rendering:
+- Entire boss + horns + cape + greatsword centered with generous empty margin (~15% empty space on all four sides), nothing touching or crossing any canvas edge.
+- Crisp hi-bit pixel art matching the attached reference: clean 1 px dark charcoal outlines, sharp 2-4 tone cel-shaded color clusters, zero anti-aliasing, zero blur, zero smooth gradients, zero noisy dithering, solid fully opaque pixels everywhere on the boss (no semi-transparent glow or smoke).
+- Background: solid flat pure magenta #FF00FF everywhere outside the boss. Strictly NO text, NO labels, NO grid lines, NO ground shadow, NO floor line, NO border.

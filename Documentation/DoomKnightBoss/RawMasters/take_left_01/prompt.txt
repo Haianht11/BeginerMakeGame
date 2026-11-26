@@ -1,0 +1,17 @@
+Create exactly ONE square 1024x1024 2D game sprite illustration on a solid flat pure magenta #FF00FF background.
+
+Reference roles:
+- The FIRST attached image is the exact Doom Knight Boss design identity reference (facing right): copy this exact character's horned black-iron greathelm, glowing crimson visor slit, black-and-crimson spiked plate armor, crimson-trimmed chestplate, tattered dark-crimson cape, and massive black-obsidian runed greatsword faithfully.
+- The SECOND attached image is the approved in-game hero sprite (facing left, non-mirrored): match its exact hi-bit 2D pixel art style, crisp dark charcoal outlines, 2-4 tone cel-shaded color ramps, pixel density, and LEFT-facing non-mirrored pose composition. Do NOT copy the human hero's face, stump, or clothes.
+
+Subject & Pose (#200 Doom Knight Boss — FACING LEFT, STRICTLY NON-MIRRORED):
+- The exact same Doom Knight Boss in heavy 3/4 side profile clearly FACING LEFT (horned helm and glowing crimson visor facing LEFT).
+- Strict asymmetric anatomy (NOT a horizontal mirror):
+  - His near LEFT shoulder and arm (in the foreground on the viewer's right side of the torso) wear the oversized jagged crimson-spiked pauldron and heavy clawed black-iron gauntlet with an EMPTY clenched gauntlet fist (NOT holding the sword).
+  - His far RIGHT arm (on the far side of the torso) reaches forward to grip the exact same massive black-obsidian and glowing-crimson runed greatsword, holding it diagonally forward-down toward the LEFT edge (the broad runed blade and crossguard matching the exact proportions of the FIRST image).
+  - Tattered dark-crimson cape trails backward to the RIGHT; heavy armored boots are planted firmly flat on the same invisible horizontal ground baseline.
+
+Framing & Rendering:
+- Entire boss + horns + cape + greatsword centered with generous empty margin (~15% empty space on all four sides), nothing touching or crossing any canvas edge.
+- Crisp hi-bit pixel art matching the references: clean 1 px dark charcoal outlines, sharp 2-4 tone cel-shaded color clusters, zero anti-aliasing, zero blur, zero smooth gradients, zero noisy dithering, solid fully opaque pixels everywhere on the boss.
+- Background: solid flat pure magenta #FF00FF everywhere outside the boss. Strictly NO text, NO labels, NO grid lines, NO ground shadow, NO floor line, NO border.

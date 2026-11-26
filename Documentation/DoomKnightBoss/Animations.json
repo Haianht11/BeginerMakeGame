@@ -1,0 +1,273 @@
+{
+  "character": "DoomKnightBoss",
+  "promptSource": "d:\\2dgame\\# BỘ PROMPT TẠO ASSET SPRITE SHEET.txt (#200 Doom Knight Boss)",
+  "frameSize": [
+    256,
+    192
+  ],
+  "anchor": [
+    128,
+    168
+  ],
+  "groundPixelY": 167,
+  "ppu": 80,
+  "asymmetric": true,
+  "flipXAllowed": false,
+  "sampling": "nearest",
+  "directions": {
+    "RIGHT": {
+      "IDLE": {
+        "clipName": "IdleRight",
+        "frames": [
+          "Animations/RIGHT/IDLE/00.png",
+          "Animations/RIGHT/IDLE/01.png",
+          "Animations/RIGHT/IDLE/02.png",
+          "Animations/RIGHT/IDLE/03.png"
+        ],
+        "strip": "Strips/RIGHT_IDLE.png",
+        "gif": "Gifs/RIGHT_IDLE.gif",
+        "durationMs": [
+          190,
+          190,
+          190,
+          190
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "WALK": {
+        "clipName": "WalkRight",
+        "frames": [
+          "Animations/RIGHT/WALK/00.png",
+          "Animations/RIGHT/WALK/01.png",
+          "Animations/RIGHT/WALK/02.png",
+          "Animations/RIGHT/WALK/03.png",
+          "Animations/RIGHT/WALK/04.png",
+          "Animations/RIGHT/WALK/05.png",
+          "Animations/RIGHT/WALK/06.png",
+          "Animations/RIGHT/WALK/07.png"
+        ],
+        "strip": "Strips/RIGHT_WALK.png",
+        "gif": "Gifs/RIGHT_WALK.gif",
+        "durationMs": [
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "ATTACK": {
+        "clipName": "AttackRight",
+        "frames": [
+          "Animations/RIGHT/ATTACK/00.png",
+          "Animations/RIGHT/ATTACK/01.png",
+          "Animations/RIGHT/ATTACK/02.png",
+          "Animations/RIGHT/ATTACK/03.png",
+          "Animations/RIGHT/ATTACK/04.png",
+          "Animations/RIGHT/ATTACK/05.png",
+          "Animations/RIGHT/ATTACK/06.png",
+          "Animations/RIGHT/ATTACK/07.png",
+          "Animations/RIGHT/ATTACK/08.png"
+        ],
+        "strip": "Strips/RIGHT_ATTACK.png",
+        "gif": "Gifs/RIGHT_ATTACK.gif",
+        "durationMs": [
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95
+        ],
+        "loop": false,
+        "hitFrame": 4
+      },
+      "HURT": {
+        "clipName": "HurtRight",
+        "frames": [
+          "Animations/RIGHT/HURT/00.png",
+          "Animations/RIGHT/HURT/01.png",
+          "Animations/RIGHT/HURT/02.png",
+          "Animations/RIGHT/HURT/03.png",
+          "Animations/RIGHT/HURT/04.png"
+        ],
+        "strip": "Strips/RIGHT_HURT.png",
+        "gif": "Gifs/RIGHT_HURT.gif",
+        "durationMs": [
+          85,
+          85,
+          85,
+          85,
+          85
+        ],
+        "loop": false,
+        "hitFrame": null
+      },
+      "DEATH": {
+        "clipName": "DeathRight",
+        "frames": [
+          "Animations/RIGHT/DEATH/00.png",
+          "Animations/RIGHT/DEATH/01.png",
+          "Animations/RIGHT/DEATH/02.png",
+          "Animations/RIGHT/DEATH/03.png",
+          "Animations/RIGHT/DEATH/04.png",
+          "Animations/RIGHT/DEATH/05.png",
+          "Animations/RIGHT/DEATH/06.png",
+          "Animations/RIGHT/DEATH/07.png",
+          "Animations/RIGHT/DEATH/08.png"
+        ],
+        "strip": "Strips/RIGHT_DEATH.png",
+        "gif": "Gifs/RIGHT_DEATH.gif",
+        "durationMs": [
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110
+        ],
+        "loop": false,
+        "hitFrame": null
+      }
+    },
+    "LEFT": {
+      "IDLE": {
+        "clipName": "IdleLeft",
+        "frames": [
+          "Animations/LEFT/IDLE/00.png",
+          "Animations/LEFT/IDLE/01.png",
+          "Animations/LEFT/IDLE/02.png",
+          "Animations/LEFT/IDLE/03.png"
+        ],
+        "strip": "Strips/LEFT_IDLE.png",
+        "gif": "Gifs/LEFT_IDLE.gif",
+        "durationMs": [
+          190,
+          190,
+          190,
+          190
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "WALK": {
+        "clipName": "WalkLeft",
+        "frames": [
+          "Animations/LEFT/WALK/00.png",
+          "Animations/LEFT/WALK/01.png",
+          "Animations/LEFT/WALK/02.png",
+          "Animations/LEFT/WALK/03.png",
+          "Animations/LEFT/WALK/04.png",
+          "Animations/LEFT/WALK/05.png",
+          "Animations/LEFT/WALK/06.png",
+          "Animations/LEFT/WALK/07.png"
+        ],
+        "strip": "Strips/LEFT_WALK.png",
+        "gif": "Gifs/LEFT_WALK.gif",
+        "durationMs": [
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105
+        ],
+        "loop": true,
+        "hitFrame": null
+      },
+      "ATTACK": {
+        "clipName": "AttackLeft",
+        "frames": [
+          "Animations/LEFT/ATTACK/00.png",
+          "Animations/LEFT/ATTACK/01.png",
+          "Animations/LEFT/ATTACK/02.png",
+          "Animations/LEFT/ATTACK/03.png",
+          "Animations/LEFT/ATTACK/04.png",
+          "Animations/LEFT/ATTACK/05.png",
+          "Animations/LEFT/ATTACK/06.png",
+          "Animations/LEFT/ATTACK/07.png",
+          "Animations/LEFT/ATTACK/08.png"
+        ],
+        "strip": "Strips/LEFT_ATTACK.png",
+        "gif": "Gifs/LEFT_ATTACK.gif",
+        "durationMs": [
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95,
+          95
+        ],
+        "loop": false,
+        "hitFrame": 3
+      },
+      "HURT": {
+        "clipName": "HurtLeft",
+        "frames": [
+          "Animations/LEFT/HURT/00.png",
+          "Animations/LEFT/HURT/01.png",
+          "Animations/LEFT/HURT/02.png",
+          "Animations/LEFT/HURT/03.png",
+          "Animations/LEFT/HURT/04.png"
+        ],
+        "strip": "Strips/LEFT_HURT.png",
+        "gif": "Gifs/LEFT_HURT.gif",
+        "durationMs": [
+          85,
+          85,
+          85,
+          85,
+          85
+        ],
+        "loop": false,
+        "hitFrame": null
+      },
+      "DEATH": {
+        "clipName": "DeathLeft",
+        "frames": [
+          "Animations/LEFT/DEATH/00.png",
+          "Animations/LEFT/DEATH/01.png",
+          "Animations/LEFT/DEATH/02.png",
+          "Animations/LEFT/DEATH/03.png",
+          "Animations/LEFT/DEATH/04.png",
+          "Animations/LEFT/DEATH/05.png",
+          "Animations/LEFT/DEATH/06.png",
+          "Animations/LEFT/DEATH/07.png",
+          "Animations/LEFT/DEATH/08.png"
+        ],
+        "strip": "Strips/LEFT_DEATH.png",
+        "gif": "Gifs/LEFT_DEATH.gif",
+        "durationMs": [
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110,
+          110
+        ],
+        "loop": false,
+        "hitFrame": null
+      }
+    }
+  }
+}

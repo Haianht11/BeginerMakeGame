@@ -1,0 +1,1528 @@
+{
+  "overall_pass": true,
+  "checks": {
+    "atlas_2304x1920": true,
+    "slices_70": true,
+    "guid_ok": true,
+    "ppu_80": true,
+    "filter_point": true,
+    "mip_off": true,
+    "compression_none": true,
+    "internal_ids_consistent_unique_70": true,
+    "all_70_frames_nonempty": true,
+    "zero_off_palette": true,
+    "zero_partial_alpha": true,
+    "zero_edge_touch": true,
+    "atlas_matches_animation_pngs": true,
+    "attack_right_event_0_38": true,
+    "attack_left_event_0_285": true,
+    "anim_lf_only": true,
+    "unique_meta_guids": true,
+    "scenes_zero_edits": true
+  },
+  "atlas": {
+    "size": [
+      2304,
+      1920
+    ],
+    "mode": "RGBA"
+  },
+  "meta": {
+    "guid": "3960fb48e22f4a47b0a15f6c1cffee7b",
+    "spritePixelsToUnits": "80",
+    "enableMipMap": "0",
+    "filterMode": "0",
+    "textureCompression_all": [
+      "0"
+    ],
+    "meta_git_diff": ""
+  },
+  "totals": {
+    "off_palette_px": 0,
+    "partial_alpha_px": 0,
+    "edge_touch_px": 0,
+    "frames": 70
+  },
+  "mismatch": [],
+  "anim_check": {
+    "Right_Idle": {
+      "dir": "Documentation/DoomKnightBoss/Animations/RIGHT/IDLE",
+      "files": 4,
+      "slices": 4
+    },
+    "Left_Idle": {
+      "dir": "Documentation/DoomKnightBoss/Animations/LEFT/IDLE",
+      "files": 4,
+      "slices": 4
+    },
+    "Right_Walk": {
+      "dir": "Documentation/DoomKnightBoss/Animations/RIGHT/WALK",
+      "files": 8,
+      "slices": 8
+    },
+    "Left_Walk": {
+      "dir": "Documentation/DoomKnightBoss/Animations/LEFT/WALK",
+      "files": 8,
+      "slices": 8
+    },
+    "Right_Attack": {
+      "dir": "Documentation/DoomKnightBoss/Animations/RIGHT/ATTACK",
+      "files": 9,
+      "slices": 9
+    },
+    "Left_Attack": {
+      "dir": "Documentation/DoomKnightBoss/Animations/LEFT/ATTACK",
+      "files": 9,
+      "slices": 9
+    },
+    "Right_Hurt": {
+      "dir": "Documentation/DoomKnightBoss/Animations/RIGHT/HURT",
+      "files": 5,
+      "slices": 5
+    },
+    "Left_Hurt": {
+      "dir": "Documentation/DoomKnightBoss/Animations/LEFT/HURT",
+      "files": 5,
+      "slices": 5
+    },
+    "Right_Death": {
+      "dir": "Documentation/DoomKnightBoss/Animations/RIGHT/DEATH",
+      "files": 9,
+      "slices": 9
+    },
+    "Left_Death": {
+      "dir": "Documentation/DoomKnightBoss/Animations/LEFT/DEATH",
+      "files": 9,
+      "slices": 9
+    }
+  },
+  "events": {
+    "Right": {
+      "path": "Assets/project/Animation/Boss/DoomKnight_AttackRight.anim",
+      "events": [
+        [
+          "0.38",
+          "OnBossAttackContact"
+        ]
+      ],
+      "crlf_count": 0,
+      "git_diff_stat": ""
+    },
+    "Left": {
+      "path": "Assets/project/Animation/Boss/DoomKnight_AttackLeft.anim",
+      "events": [
+        [
+          "0.285",
+          "OnBossAttackContact"
+        ]
+      ],
+      "crlf_count": 0,
+      "git_diff_stat": ""
+    }
+  },
+  "duplicate_guids": {},
+  "scene_diff": "",
+  "scene_status": "",
+  "frames": [
+    {
+      "name": "DoomKnight_IdleRight_00",
+      "rect": [
+        0,
+        1728,
+        256,
+        192
+      ],
+      "opaque_px": 9966,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleRight_01",
+      "rect": [
+        256,
+        1728,
+        256,
+        192
+      ],
+      "opaque_px": 9855,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        38,
+        196,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleRight_02",
+      "rect": [
+        512,
+        1728,
+        256,
+        192
+      ],
+      "opaque_px": 9773,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        58,
+        37,
+        195,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleRight_03",
+      "rect": [
+        768,
+        1728,
+        256,
+        192
+      ],
+      "opaque_px": 9735,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        35,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleLeft_00",
+      "rect": [
+        0,
+        1536,
+        256,
+        192
+      ],
+      "opaque_px": 10162,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleLeft_01",
+      "rect": [
+        256,
+        1536,
+        256,
+        192
+      ],
+      "opaque_px": 10027,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        25,
+        36,
+        234,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleLeft_02",
+      "rect": [
+        512,
+        1536,
+        256,
+        192
+      ],
+      "opaque_px": 9927,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        26,
+        35,
+        231,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_IdleLeft_03",
+      "rect": [
+        768,
+        1536,
+        256,
+        192
+      ],
+      "opaque_px": 9872,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        27,
+        35,
+        228,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_00",
+      "rect": [
+        0,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 9966,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_01",
+      "rect": [
+        256,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 9789,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        62,
+        36,
+        198,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_02",
+      "rect": [
+        512,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 9518,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        64,
+        35,
+        202,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_03",
+      "rect": [
+        768,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 9348,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        65,
+        34,
+        205,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_04",
+      "rect": [
+        1024,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 9326,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        62,
+        35,
+        207,
+        168
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_05",
+      "rect": [
+        1280,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 9843,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        206,
+        168
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_06",
+      "rect": [
+        1536,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 10098,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        57,
+        37,
+        203,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkRight_07",
+      "rect": [
+        1792,
+        1344,
+        256,
+        192
+      ],
+      "opaque_px": 10032,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        56,
+        36,
+        198,
+        168
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_00",
+      "rect": [
+        0,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 10162,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_01",
+      "rect": [
+        256,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 9854,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        26,
+        35,
+        233,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_02",
+      "rect": [
+        512,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 9544,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        28,
+        34,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_03",
+      "rect": [
+        768,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 9187,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        31,
+        33,
+        230,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_04",
+      "rect": [
+        1024,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 8961,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        28,
+        34,
+        227,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_05",
+      "rect": [
+        1280,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 9064,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        27,
+        34,
+        225,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_06",
+      "rect": [
+        1536,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 9326,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        25,
+        35,
+        221,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_WalkLeft_07",
+      "rect": [
+        1792,
+        1152,
+        256,
+        192
+      ],
+      "opaque_px": 9391,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        23,
+        36,
+        222,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_00",
+      "rect": [
+        0,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 9966,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_01",
+      "rect": [
+        256,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 9564,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        63,
+        20,
+        183,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_02",
+      "rect": [
+        512,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 10427,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        14,
+        29,
+        182,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_03",
+      "rect": [
+        768,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 10974,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        26,
+        24,
+        183,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_04",
+      "rect": [
+        1024,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 15321,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        42,
+        19,
+        246,
+        171
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_05",
+      "rect": [
+        1280,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 11300,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        40,
+        37,
+        247,
+        171
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_06",
+      "rect": [
+        1536,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 9928,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        42,
+        40,
+        247,
+        171
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_07",
+      "rect": [
+        1792,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 9697,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        47,
+        38,
+        212,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackRight_08",
+      "rect": [
+        2048,
+        960,
+        256,
+        192
+      ],
+      "opaque_px": 9963,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_00",
+      "rect": [
+        0,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 10162,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_01",
+      "rect": [
+        256,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 8500,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        107,
+        25,
+        227,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_02",
+      "rect": [
+        512,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 8726,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        113,
+        37,
+        231,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_03",
+      "rect": [
+        768,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 17079,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        20,
+        20,
+        233,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_04",
+      "rect": [
+        1024,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 11140,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        20,
+        26,
+        233,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_05",
+      "rect": [
+        1280,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 9129,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        20,
+        38,
+        233,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_06",
+      "rect": [
+        1536,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 9849,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        225,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_07",
+      "rect": [
+        1792,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 10161,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_AttackLeft_08",
+      "rect": [
+        2048,
+        768,
+        256,
+        192
+      ],
+      "opaque_px": 10162,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtRight_00",
+      "rect": [
+        0,
+        576,
+        256,
+        192
+      ],
+      "opaque_px": 9966,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtRight_01",
+      "rect": [
+        256,
+        576,
+        256,
+        192
+      ],
+      "opaque_px": 9057,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        63,
+        37,
+        182,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtRight_02",
+      "rect": [
+        512,
+        576,
+        256,
+        192
+      ],
+      "opaque_px": 9005,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        61,
+        37,
+        179,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtRight_03",
+      "rect": [
+        768,
+        576,
+        256,
+        192
+      ],
+      "opaque_px": 9629,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        58,
+        37,
+        186,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtRight_04",
+      "rect": [
+        1024,
+        576,
+        256,
+        192
+      ],
+      "opaque_px": 10126,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        57,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtLeft_00",
+      "rect": [
+        0,
+        384,
+        256,
+        192
+      ],
+      "opaque_px": 10162,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtLeft_01",
+      "rect": [
+        256,
+        384,
+        256,
+        192
+      ],
+      "opaque_px": 9848,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        28,
+        36,
+        231,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtLeft_02",
+      "rect": [
+        512,
+        384,
+        256,
+        192
+      ],
+      "opaque_px": 9532,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        35,
+        38,
+        228,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtLeft_03",
+      "rect": [
+        768,
+        384,
+        256,
+        192
+      ],
+      "opaque_px": 9689,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        31,
+        38,
+        231,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_HurtLeft_04",
+      "rect": [
+        1024,
+        384,
+        256,
+        192
+      ],
+      "opaque_px": 10240,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        25,
+        36,
+        233,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_00",
+      "rect": [
+        0,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 9966,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        59,
+        37,
+        194,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_01",
+      "rect": [
+        256,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 11264,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        39,
+        24,
+        210,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_02",
+      "rect": [
+        512,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 9955,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        43,
+        22,
+        215,
+        170
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_03",
+      "rect": [
+        768,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 8805,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        44,
+        21,
+        217,
+        170
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_04",
+      "rect": [
+        1024,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 7009,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        41,
+        88,
+        215,
+        171
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_05",
+      "rect": [
+        1280,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 6489,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        40,
+        87,
+        215,
+        171
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_06",
+      "rect": [
+        1536,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 6316,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        41,
+        89,
+        215,
+        172
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_07",
+      "rect": [
+        1792,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 6316,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        41,
+        89,
+        215,
+        172
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathRight_08",
+      "rect": [
+        2048,
+        192,
+        256,
+        192
+      ],
+      "opaque_px": 6316,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        41,
+        89,
+        215,
+        172
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_00",
+      "rect": [
+        0,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 10162,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        24,
+        36,
+        232,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_01",
+      "rect": [
+        256,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 9702,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        34,
+        22,
+        235,
+        167
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_02",
+      "rect": [
+        512,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 8597,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        40,
+        22,
+        236,
+        160
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_03",
+      "rect": [
+        768,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 8145,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        20,
+        46,
+        228,
+        169
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_04",
+      "rect": [
+        1024,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 7733,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        19,
+        47,
+        226,
+        169
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_05",
+      "rect": [
+        1280,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 7311,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        19,
+        71,
+        235,
+        169
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_06",
+      "rect": [
+        1536,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 7311,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        19,
+        71,
+        235,
+        169
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_07",
+      "rect": [
+        1792,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 7311,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        19,
+        71,
+        235,
+        169
+      ],
+      "empty": false
+    },
+    {
+      "name": "DoomKnight_DeathLeft_08",
+      "rect": [
+        2048,
+        0,
+        256,
+        192
+      ],
+      "opaque_px": 7311,
+      "off_palette_px": 0,
+      "partial_alpha_px": 0,
+      "edge_touch_px": 0,
+      "bbox": [
+        19,
+        71,
+        235,
+        169
+      ],
+      "empty": false
+    }
+  ]
+}

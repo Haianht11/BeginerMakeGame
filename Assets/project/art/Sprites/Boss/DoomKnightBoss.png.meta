@@ -1,0 +1,1939 @@
+fileFormatVersion: 2
+guid: 3960fb48e22f4a47b0a15f6c1cffee7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1623419230
+    second: DoomKnight_IdleRight_00
+  - first:
+      213: -398744012
+    second: DoomKnight_IdleRight_01
+  - first:
+      213: 1899165582
+    second: DoomKnight_IdleRight_02
+  - first:
+      213: 104187672
+    second: DoomKnight_IdleRight_03
+  - first:
+      213: 1038700358
+    second: DoomKnight_IdleLeft_00
+  - first:
+      213: 1257144272
+    second: DoomKnight_IdleLeft_01
+  - first:
+      213: -739824022
+    second: DoomKnight_IdleLeft_02
+  - first:
+      213: -1528815876
+    second: DoomKnight_IdleLeft_03
+  - first:
+      213: -1014964336
+    second: DoomKnight_WalkRight_00
+  - first:
+      213: -1266159866
+    second: DoomKnight_WalkRight_01
+  - first:
+      213: 764329660
+    second: DoomKnight_WalkRight_02
+  - first:
+      213: 1518964266
+    second: DoomKnight_WalkRight_03
+  - first:
+      213: -991093879
+    second: DoomKnight_WalkRight_04
+  - first:
+      213: -1276499169
+    second: DoomKnight_WalkRight_05
+  - first:
+      213: 719551141
+    second: DoomKnight_WalkRight_06
+  - first:
+      213: 1575242291
+    second: DoomKnight_WalkRight_07
+  - first:
+      213: 852130301
+    second: DoomKnight_WalkLeft_00
+  - first:
+      213: 1171081579
+    second: DoomKnight_WalkLeft_01
+  - first:
+      213: -591128367
+    second: DoomKnight_WalkLeft_02
+  - first:
+      213: -1413273529
+    second: DoomKnight_WalkLeft_03
+  - first:
+      213: 900185572
+    second: DoomKnight_WalkLeft_04
+  - first:
+      213: 1117818226
+    second: DoomKnight_WalkLeft_05
+  - first:
+      213: -609624888
+    second: DoomKnight_WalkLeft_06
+  - first:
+      213: -1397822370
+    second: DoomKnight_WalkLeft_07
+  - first:
+      213: 61600531
+    second: DoomKnight_AttackRight_00
+  - first:
+      213: 1957479301
+    second: DoomKnight_AttackRight_01
+  - first:
+      213: -307916225
+    second: DoomKnight_AttackRight_02
+  - first:
+      213: -1700617559
+    second: DoomKnight_AttackRight_03
+  - first:
+      213: 80099082
+    second: DoomKnight_AttackRight_04
+  - first:
+      213: 1942030236
+    second: DoomKnight_AttackRight_05
+  - first:
+      213: -355969498
+    second: DoomKnight_AttackRight_06
+  - first:
+      213: -1647352144
+    second: DoomKnight_AttackRight_07
+  - first:
+      213: 225475361
+    second: DoomKnight_AttackRight_08
+  - first:
+      213: -1551214718
+    second: DoomKnight_AttackLeft_00
+  - first:
+      213: -728930540
+    second: DoomKnight_AttackLeft_01
+  - first:
+      213: 1300510382
+    second: DoomKnight_AttackLeft_02
+  - first:
+      213: 981665336
+    second: DoomKnight_AttackLeft_03
+  - first:
+      213: -1528327269
+    second: DoomKnight_AttackLeft_04
+  - first:
+      213: -740252915
+    second: DoomKnight_AttackLeft_05
+  - first:
+      213: 1256846007
+    second: DoomKnight_AttackLeft_06
+  - first:
+      213: 1039057441
+    second: DoomKnight_AttackLeft_07
+  - first:
+      213: -1387143248
+    second: DoomKnight_AttackLeft_08
+  - first:
+      213: -381868369
+    second: DoomKnight_HurtRight_00
+  - first:
+      213: -1640360391
+    second: DoomKnight_HurtRight_01
+  - first:
+      213: 120801155
+    second: DoomKnight_HurtRight_02
+  - first:
+      213: 1882486549
+    second: DoomKnight_HurtRight_03
+  - first:
+      213: -296688970
+    second: DoomKnight_HurtRight_04
+  - first:
+      213: -535244282
+    second: DoomKnight_HurtLeft_00
+  - first:
+      213: -1759518064
+    second: DoomKnight_HurtLeft_01
+  - first:
+      213: 236368682
+    second: DoomKnight_HurtLeft_02
+  - first:
+      213: 2031190972
+    second: DoomKnight_HurtLeft_03
+  - first:
+      213: -411757025
+    second: DoomKnight_HurtLeft_04
+  - first:
+      213: 1083488509
+    second: DoomKnight_DeathRight_00
+  - first:
+      213: 932415595
+    second: DoomKnight_DeathRight_01
+  - first:
+      213: -1365583407
+    second: DoomKnight_DeathRight_02
+  - first:
+      213: -643962553
+    second: DoomKnight_DeathRight_03
+  - first:
+      213: 1207532772
+    second: DoomKnight_DeathRight_04
+  - first:
+      213: 821972082
+    second: DoomKnight_DeathRight_05
+  - first:
+      213: -1443422776
+    second: DoomKnight_DeathRight_06
+  - first:
+      213: -554685090
+    second: DoomKnight_DeathRight_07
+  - first:
+      213: 1313812687
+    second: DoomKnight_DeathRight_08
+  - first:
+      213: -181873686
+    second: DoomKnight_DeathLeft_00
+  - first:
+      213: -2110790788
+    second: DoomKnight_DeathLeft_01
+  - first:
+      213: 455520966
+    second: DoomKnight_DeathLeft_02
+  - first:
+      213: 1814135376
+    second: DoomKnight_DeathLeft_03
+  - first:
+      213: -230352909
+    second: DoomKnight_DeathLeft_04
+  - first:
+      213: -2059262107
+    second: DoomKnight_DeathLeft_05
+  - first:
+      213: 474707679
+    second: DoomKnight_DeathLeft_06
+  - first:
+      213: 1800160841
+    second: DoomKnight_DeathLeft_07
+  - first:
+      213: -67937320
+    second: DoomKnight_DeathLeft_08
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.125}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoomKnight_IdleRight_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f5c441ef9540de9ec7c916cc157045
+      internalID: -1623419230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleRight_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1728
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113a56b8c51c4dc7b2a72679433f06d0
+      internalID: -398744012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleRight_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1728
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6a89a6984f45818812ceae0abf6d7f
+      internalID: 1899165582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleRight_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1728
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97db76c3f354dab98f47249885b3a58
+      internalID: 104187672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleLeft_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cff1e3618ab4bc69c39ccc002806e46
+      internalID: 1038700358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleLeft_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e03ecaa8f6b46b1be8bb22b53c34e75
+      internalID: 1257144272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleLeft_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c843dc65864e2bae1bf837cd504ccc
+      internalID: -739824022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_IdleLeft_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905949d99f9947a08dbfba8c2514978e
+      internalID: -1528815876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9752cfbe50b84aa493b29b955a95705d
+      internalID: -1014964336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e8181b40b444f89c2c78eda3ede354
+      internalID: -1266159866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b57d8f1271c4888bf7eb37622bb92f9
+      internalID: 764329660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e547f8c2cf1947dc8cabb7402b3a0116
+      internalID: 1518964266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3968f1ab18ec4f9b96024555d15e6484
+      internalID: -991093879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179d74e02a864e3fb3967a5e2c6a71e2
+      internalID: -1276499169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9879da160642e6ab8ba2b8e87a73cc
+      internalID: 719551141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkRight_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1344
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8df3a824e184b8989f00325d9d6f1c4
+      internalID: 1575242291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7197798aff574eacb8c37d9397560452
+      internalID: 852130301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6e011007bc45499651e5573e411bf7
+      internalID: 1171081579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b28c87813d4b1c80c068714f7cba6b
+      internalID: -591128367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823dc694211a43dd971059606392ca4b
+      internalID: -1413273529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ded3f6fccf94cb594f486e7da143ad8
+      internalID: 900185572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3591f51b77ca440fae492517a5d3f93e
+      internalID: 1117818226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acb1c46623742faaeacad46c6feec5b
+      internalID: -609624888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_WalkLeft_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1152
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38e1689c24f4089879eea885f5f5b4c
+      internalID: -1397822370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573b1956ce834796a33de9a4637c9d0e
+      internalID: 61600531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc9c52b90bc4da28c1b29c31590d355
+      internalID: 1957479301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565dba9732d4400b97602daddf540248
+      internalID: -307916225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90db0d2932f5459596532b56da8d8bc3
+      internalID: -1700617559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f43e496e8344ba38d24fb75884d5a4f
+      internalID: 80099082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9393927c72cd4809b119874e3b00eb6b
+      internalID: 1942030236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e0004091394fab9bc3829bcd10b452
+      internalID: -355969498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8facd7510424b2fa507c50c767950a6
+      internalID: -1647352144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackRight_08
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 960
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c542be4753ed4fb7bd4bdf5a6027aa85
+      internalID: 225475361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873a71595e204654b1a30680cdd4b44d
+      internalID: -1551214718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbcf2f6da824a0c9cc296e697598257
+      internalID: -728930540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc8e785fd7c4c94a16c51ad1c95b854
+      internalID: 1300510382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd44aa5c8bb4c8ead1bca7abacf18ff
+      internalID: 981665336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe798a8279649118abb299609666d51
+      internalID: -1528327269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd86cdd1825d4d498bb0bb40245c18df
+      internalID: -740252915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403ce3938b0f44b69a975d287f6e43fb
+      internalID: 1256846007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07201ff08cc1407dbe8fadb7df46b706
+      internalID: 1039057441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_AttackLeft_08
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 768
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9aa3f080e242af9093a4340a5da8f5
+      internalID: -1387143248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtRight_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe27b318e4c4a7ca3ae4f120fdbe457
+      internalID: -381868369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtRight_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c7c8dd1a5a4d5480c505bc90105773
+      internalID: -1640360391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtRight_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0d82f7f6ba4310a6bb86394791eb5c
+      internalID: 120801155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtRight_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf88dcb7bd44b72ac08d88ec1c66675
+      internalID: 1882486549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtRight_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 576
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f72bfdc1bc44f6cae0b29f020b93ea3
+      internalID: -296688970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtLeft_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0be25f98b8404aa3f96ab6d71f032c
+      internalID: -535244282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtLeft_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a188ff5b44954633b7e1e7331bb0dde1
+      internalID: -1759518064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtLeft_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec14ed681aa49fdba6f1c1cd4e5e58a
+      internalID: 236368682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtLeft_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ca8997e0754a8892ecd2834c0bc2a0
+      internalID: 2031190972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_HurtLeft_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a24b6e541343b3bb643af295768544
+      internalID: -411757025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d930db6bb8437aa4024f1e8e2e0239
+      internalID: 1083488509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e49d5740f349a2bb1f7ef10df9bdbf
+      internalID: 932415595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063dea9fc6ff4d54bbc6491e0c36730d
+      internalID: -1365583407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92582d656e7f4341ad4f80c09bbd91c9
+      internalID: -643962553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88269936bc374ffeac5c5b52aac25f7b
+      internalID: 1207532772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd3023b36ba4f8bbaa12114a35a1774
+      internalID: 821972082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3879923cfa6842b0bffb46c2648b4127
+      internalID: -1443422776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3d4a69cf014a07ac56e31c89719ed7
+      internalID: -554685090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathRight_08
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 192
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05aabcb7196847eeab6a83f1e2fe283c
+      internalID: 1313812687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4963ed3a1d4566a13f9d222126aadc
+      internalID: -181873686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f15ad22be14d2ca28bd9dca67ec745
+      internalID: -2110790788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6d81aee5984ca3a9cef73b2da9daa9
+      internalID: 455520966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fff31ecd4f14114bd0e56fed7b17a4a
+      internalID: 1814135376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_04
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87870d791fd04a3aae05727e244b626a
+      internalID: -230352909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_05
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382f9b2c0f7f49dcb490adce2800922e
+      internalID: -2059262107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_06
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3332649f2d6a435bbaee563550271851
+      internalID: 474707679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_07
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9729f1dc9b55496faf7e9a35f63724cc
+      internalID: 1800160841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomKnight_DeathLeft_08
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac80ac68a26d473fbc12ba978aa6f064
+      internalID: -67937320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3cd323fe1e0f456f9af95a17907532ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DoomKnight_IdleRight_00: -1623419230
+      DoomKnight_IdleRight_01: -398744012
+      DoomKnight_IdleRight_02: 1899165582
+      DoomKnight_IdleRight_03: 104187672
+      DoomKnight_IdleLeft_00: 1038700358
+      DoomKnight_IdleLeft_01: 1257144272
+      DoomKnight_IdleLeft_02: -739824022
+      DoomKnight_IdleLeft_03: -1528815876
+      DoomKnight_WalkRight_00: -1014964336
+      DoomKnight_WalkRight_01: -1266159866
+      DoomKnight_WalkRight_02: 764329660
+      DoomKnight_WalkRight_03: 1518964266
+      DoomKnight_WalkRight_04: -991093879
+      DoomKnight_WalkRight_05: -1276499169
+      DoomKnight_WalkRight_06: 719551141
+      DoomKnight_WalkRight_07: 1575242291
+      DoomKnight_WalkLeft_00: 852130301
+      DoomKnight_WalkLeft_01: 1171081579
+      DoomKnight_WalkLeft_02: -591128367
+      DoomKnight_WalkLeft_03: -1413273529
+      DoomKnight_WalkLeft_04: 900185572
+      DoomKnight_WalkLeft_05: 1117818226
+      DoomKnight_WalkLeft_06: -609624888
+      DoomKnight_WalkLeft_07: -1397822370
+      DoomKnight_AttackRight_00: 61600531
+      DoomKnight_AttackRight_01: 1957479301
+      DoomKnight_AttackRight_02: -307916225
+      DoomKnight_AttackRight_03: -1700617559
+      DoomKnight_AttackRight_04: 80099082
+      DoomKnight_AttackRight_05: 1942030236
+      DoomKnight_AttackRight_06: -355969498
+      DoomKnight_AttackRight_07: -1647352144
+      DoomKnight_AttackRight_08: 225475361
+      DoomKnight_AttackLeft_00: -1551214718
+      DoomKnight_AttackLeft_01: -728930540
+      DoomKnight_AttackLeft_02: 1300510382
+      DoomKnight_AttackLeft_03: 981665336
+      DoomKnight_AttackLeft_04: -1528327269
+      DoomKnight_AttackLeft_05: -740252915
+      DoomKnight_AttackLeft_06: 1256846007
+      DoomKnight_AttackLeft_07: 1039057441
+      DoomKnight_AttackLeft_08: -1387143248
+      DoomKnight_HurtRight_00: -381868369
+      DoomKnight_HurtRight_01: -1640360391
+      DoomKnight_HurtRight_02: 120801155
+      DoomKnight_HurtRight_03: 1882486549
+      DoomKnight_HurtRight_04: -296688970
+      DoomKnight_HurtLeft_00: -535244282
+      DoomKnight_HurtLeft_01: -1759518064
+      DoomKnight_HurtLeft_02: 236368682
+      DoomKnight_HurtLeft_03: 2031190972
+      DoomKnight_HurtLeft_04: -411757025
+      DoomKnight_DeathRight_00: 1083488509
+      DoomKnight_DeathRight_01: 932415595
+      DoomKnight_DeathRight_02: -1365583407
+      DoomKnight_DeathRight_03: -643962553
+      DoomKnight_DeathRight_04: 1207532772
+      DoomKnight_DeathRight_05: 821972082
+      DoomKnight_DeathRight_06: -1443422776
+      DoomKnight_DeathRight_07: -554685090
+      DoomKnight_DeathRight_08: 1313812687
+      DoomKnight_DeathLeft_00: -181873686
+      DoomKnight_DeathLeft_01: -2110790788
+      DoomKnight_DeathLeft_02: 455520966
+      DoomKnight_DeathLeft_03: 1814135376
+      DoomKnight_DeathLeft_04: -230352909
+      DoomKnight_DeathLeft_05: -2059262107
+      DoomKnight_DeathLeft_06: 474707679
+      DoomKnight_DeathLeft_07: 1800160841
+      DoomKnight_DeathLeft_08: -67937320
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

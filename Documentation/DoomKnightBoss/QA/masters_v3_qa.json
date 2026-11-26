@@ -1,0 +1,210 @@
+{
+  "gate": "Gate 1 - Masters v3 QA",
+  "overall_pass": true,
+  "checks": {
+    "right_coaxial_ortho_le_0_6": true,
+    "left_coaxial_ortho_le_0_6": true,
+    "right_kink_le_1_5": true,
+    "left_kink_le_1_5": true,
+    "right_bevels_100pct": true,
+    "left_bevels_100pct": true,
+    "right_bevel_sym_le_0_5": true,
+    "left_bevel_sym_le_0_5": true,
+    "sword_length_diff_le_1_5": true,
+    "blade_width_diff_le_0_5": true,
+    "angle_diff_le_1_0": true,
+    "canvas_and_format_ok": true,
+    "grounded_167_height_132": true,
+    "margins_ge_10_zero_edge_touch": true,
+    "binary_alpha_zero_off_palette": true,
+    "non_mirrored_asymmetric": true
+  },
+  "cross_side_comparison": {
+    "sword_length_diff_px": 0.0,
+    "blade_width_diff_px": 0.0,
+    "angle_diff_deg": 0.0,
+    "mirror_diff_ratio": 0.3102
+  },
+  "master_right": {
+    "file": "Documentation/DoomKnightBoss/Masters/master_right_256x192.png",
+    "width": 256,
+    "height_canvas": 192,
+    "mode": "RGBA",
+    "alpha_values": [
+      0,
+      255
+    ],
+    "binary_alpha": true,
+    "off_palette_count": 0,
+    "off_palette_hex": [],
+    "bbox": {
+      "x_min": 59,
+      "y_min": 36,
+      "x_max": 195,
+      "y_max": 167
+    },
+    "character_height_px": 132,
+    "grounded_y": 167,
+    "boot_grounded_y": 167,
+    "margins_px": {
+      "left": 59,
+      "right": 60,
+      "top": 36,
+      "bottom": 24
+    },
+    "min_margin_px": 24,
+    "edge_touch_px": 0,
+    "orphan_1px_count": 0,
+    "landmarks": {
+      "pommel_centroid": [
+        93.667,
+        111.667
+      ],
+      "grip_centroid": [
+        106.607,
+        118.643
+      ],
+      "crossguard_gem_centroid": [
+        118.5,
+        125.0
+      ],
+      "mid_blade_centroid": [
+        156.818,
+        145.057
+      ],
+      "blade_tip": [
+        195.0,
+        165.0
+      ]
+    },
+    "ortho_dev_tls_px": {
+      "pommel_centroid": 0.1299,
+      "grip_centroid": 0.0252,
+      "crossguard_gem_centroid": 0.1197,
+      "mid_blade_centroid": 0.047,
+      "blade_tip": 0.062
+    },
+    "max_ortho_dev_tls_px": 0.1299,
+    "ortho_dev_pommel_to_tip_px": {
+      "pommel_centroid": 0.0,
+      "grip_centroid": 0.1464,
+      "crossguard_gem_centroid": 0.2329,
+      "mid_blade_centroid": 0.1346,
+      "blade_tip": 0.0
+    },
+    "max_ortho_dev_pommel_to_tip_px": 0.2329,
+    "angles_deg": {
+      "handle": 28.232,
+      "blade": 27.604,
+      "full_sword": 27.759,
+      "kink_deg": 0.628
+    },
+    "sword_length_px": 114.512,
+    "blade_length_px": 86.326,
+    "bevel_audit": {
+      "stations_checked": 138,
+      "upper_bevel_present_pct": 100.0,
+      "lower_bevel_present_pct": 100.0,
+      "upper_bevel_mean_px": 2.24,
+      "lower_bevel_mean_px": 1.861,
+      "bevel_width_diff_px": 0.379,
+      "blade_width_mean_px": 17.619
+    },
+    "asymmetry_anchors": {
+      "character_center_x": 152.0,
+      "right_hand_behind_crossguard": true,
+      "sword_points_right": true
+    }
+  },
+  "master_left": {
+    "file": "Documentation/DoomKnightBoss/Masters/master_left_256x192.png",
+    "width": 256,
+    "height_canvas": 192,
+    "mode": "RGBA",
+    "alpha_values": [
+      0,
+      255
+    ],
+    "binary_alpha": true,
+    "off_palette_count": 0,
+    "off_palette_hex": [],
+    "bbox": {
+      "x_min": 23,
+      "y_min": 36,
+      "x_max": 232,
+      "y_max": 167
+    },
+    "character_height_px": 132,
+    "grounded_y": 167,
+    "boot_grounded_y": 167,
+    "margins_px": {
+      "left": 23,
+      "right": 23,
+      "top": 36,
+      "bottom": 24
+    },
+    "min_margin_px": 23,
+    "edge_touch_px": 0,
+    "orphan_1px_count": 0,
+    "landmarks": {
+      "pommel_centroid": [
+        124.333,
+        110.667
+      ],
+      "grip_centroid": [
+        111.64,
+        117.72
+      ],
+      "crossguard_gem_centroid": [
+        99.5,
+        124.0
+      ],
+      "mid_blade_centroid": [
+        61.182,
+        144.057
+      ],
+      "blade_tip": [
+        23.0,
+        164.0
+      ]
+    },
+    "ortho_dev_tls_px": {
+      "pommel_centroid": 0.1964,
+      "grip_centroid": 0.1514,
+      "crossguard_gem_centroid": 0.0716,
+      "mid_blade_centroid": 0.0272,
+      "blade_tip": 0.0538
+    },
+    "max_ortho_dev_tls_px": 0.1964,
+    "ortho_dev_pommel_to_tip_px": {
+      "pommel_centroid": 0.0,
+      "grip_centroid": 0.3297,
+      "crossguard_gem_centroid": 0.2329,
+      "mid_blade_centroid": 0.1346,
+      "blade_tip": 0.0
+    },
+    "max_ortho_dev_pommel_to_tip_px": 0.3297,
+    "angles_deg": {
+      "handle": 28.232,
+      "blade": 27.604,
+      "full_sword": 27.759,
+      "kink_deg": 0.628
+    },
+    "sword_length_px": 114.512,
+    "blade_length_px": 86.326,
+    "bevel_audit": {
+      "stations_checked": 138,
+      "upper_bevel_present_pct": 100.0,
+      "lower_bevel_present_pct": 100.0,
+      "upper_bevel_mean_px": 2.198,
+      "lower_bevel_mean_px": 1.928,
+      "bevel_width_diff_px": 0.27,
+      "blade_width_mean_px": 17.619
+    },
+    "asymmetry_anchors": {
+      "character_center_x": 132.0,
+      "right_hand_behind_crossguard": true,
+      "sword_points_right": false
+    }
+  }
+}
