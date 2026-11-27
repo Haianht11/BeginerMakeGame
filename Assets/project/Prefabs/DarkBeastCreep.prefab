@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4395488383782346745}
   - component: {fileID: -5621655275087312223}
   - component: {fileID: -5714095977160632492}
+  - component: {fileID: 657492810345761234}
   m_Layer: 0
   m_Name: DarkBeastCreep
   m_TagString: Untagged
@@ -189,3 +190,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &657492810345761234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119151197866987404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bdb7d31a7a9490e9d8d86524e87756a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  player: {fileID: 0}
+  maxHealth: 100
+  damagePerHit: 25
+  moveSpeed: 1.8
+  aggroRange: 8
+  attackRange: 1.4
+  attackCooldown: 1.2
+  attackDamage: 10
+  attackHitRange: 1.8
+  hitVerticalTolerance: 1
+  hitReceiveRange: 2
+  hitReceiveVerticalTolerance: 1.2
+  healthBarOffset: {x: 0, y: 1.45}

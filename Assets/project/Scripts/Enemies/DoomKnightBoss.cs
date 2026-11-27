@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
-public sealed class DoomKnightBoss : MonoBehaviour
+public sealed class DoomKnightBoss : MonoBehaviour, IDamageable
 {
     private enum BossState
     {
@@ -48,9 +48,6 @@ public sealed class DoomKnightBoss : MonoBehaviour
     [SerializeField] private float attackCooldown = 1.35f;
     [SerializeField] private float bossAttackReach = 2.35f;
     [SerializeField] private float bossAttackVerticalTolerance = 1.45f;
-    [SerializeField] private float playerHitReach = 1.85f;
-    [SerializeField] private float playerHitVerticalTolerance = 1.35f;
-    [SerializeField] private Vector2 hitCenterOffset = new Vector2(0f, 0.8f);
 
     [Header("Arena Bounds & Respawn")]
     [SerializeField] private float minArenaX = -6.8f;
@@ -88,16 +85,8 @@ public sealed class DoomKnightBoss : MonoBehaviour
             hitSpark.enabled = false;
     }
 
-    private void OnEnable()
-    {
-        if (player != null)
-            player.AttackContact += ReceivePlayerAttack;
-    }
-
     private void OnDisable()
     {
-        if (player != null)
-            player.AttackContact -= ReceivePlayerAttack;
         if (respawnCoroutine != null)
         {
             StopCoroutine(respawnCoroutine);
@@ -183,18 +172,16 @@ public sealed class DoomKnightBoss : MonoBehaviour
             player.TakeDamage(attackDamage);
     }
 
-    private void ReceivePlayerAttack(Vector2 origin, float attackDirection)
+    public void TakeHit(float damage, Vector2 hitDirection)
     {
-        if (state == BossState.Dead)
+        if (state == BossState.Dead || damage <= 0f)
             return;
 
-        Vector2 hitCenter = (Vector2)transform.position + hitCenterOffset;
-        Vector2 offset = hitCenter - origin;
-        float distanceInFront = offset.x * attackDirection;
-        if (distanceInFront < -0.3f || distanceInFront > playerHitReach || Mathf.Abs(offset.y) > playerHitVerticalTolerance)
+        float attackDirection = Mathf.Sign(hitDirection.x);
+        if (Mathf.Approximately(attackDirection, 0f))
             return;
 
-        currentHealth = Mathf.Max(0f, currentHealth - damageTakenPerHit);
+        currentHealth = Mathf.Max(0f, currentHealth - Mathf.Min(damage, damageTakenPerHit));
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
 

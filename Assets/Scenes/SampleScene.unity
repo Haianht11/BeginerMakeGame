@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 300000004}
   - component: {fileID: 489896382}
   - component: {fileID: 489896381}
+  - component: {fileID: 657492810345761234}
   m_Layer: 0
   m_Name: DarkBeastCreep
   m_TagString: Untagged
@@ -227,7 +228,7 @@ Transform:
   m_GameObject: {fileID: 300000001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19, y: -2.03, z: 0}
+  m_LocalPosition: {x: -0.05, y: -2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -343,7 +344,7 @@ Transform:
   m_GameObject: {fileID: 300000005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.04, y: -2, z: 0}
+  m_LocalPosition: {x: 4.58, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -781,8 +782,8 @@ Canvas:
   m_GameObject: {fileID: 534432471}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1162,6 +1163,9 @@ MonoBehaviour:
   respawnHeight: -6
   maxHealth: 100
   healthBar: {fileID: 2018577082}
+  attackHitboxSize: {x: 1.5, y: 1.25}
+  attackHitboxOffset: {x: 0.9, y: 0.15}
+  attackDamage: 25
 --- !u!95 &1041456374
 Animator:
   serializedVersion: 7
@@ -1739,8 +1743,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375.73, y: -204.57}
-  m_SizeDelta: {x: 5.5618, y: 0.7811}
+  m_AnchoredPosition: {x: -219.5, y: 169}
+  m_SizeDelta: {x: 195.86, y: 23.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018577082
 MonoBehaviour:
@@ -1793,6 +1797,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018577080}
   m_CullTransparentMesh: 1
+--- !u!114 &657492810345761234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bdb7d31a7a9490e9d8d86524e87756a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  maxHealth: 100
+  damagePerHit: 25
+  moveSpeed: 1.8
+  aggroRange: 8
+  attackRange: 1.4
+  attackCooldown: 1.2
+  attackDamage: 10
+  attackHitRange: 1.8
+  hitVerticalTolerance: 1
+  healthBarOffset: {x: 0, y: 1.45}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

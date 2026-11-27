@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public interface IDamageable
+{
+    void TakeHit(float damage, Vector2 hitDirection);
+}
+
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour
@@ -22,6 +27,8 @@ public class Player : MonoBehaviour
         Animator.StringToHash("Base Layer.attack2"),
         Animator.StringToHash("Base Layer.attack3")
     };
+    private static readonly int HurtState = Animator.StringToHash("Base Layer.Hurt");
+    private static readonly int DeadState = Animator.StringToHash("Base Layer.Dead");
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 6f;
@@ -32,8 +39,15 @@ public class Player : MonoBehaviour
     [Header("Health")]
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private HealthBar healthBar;
+
+    [Header("Attack Hitbox")]
+    [SerializeField] private Vector2 attackHitboxSize = new Vector2(1.5f, 1.25f);
+    [SerializeField] private Vector2 attackHitboxOffset = new Vector2(0.9f, 0.15f);
+    [SerializeField] private float attackDamage = 25f;
     private float currentHealth;
     private bool isRespawning;
+    private bool isDead;
+    private float hurtTimer;
 
     private readonly List<ContactPoint2D> groundContacts = new List<ContactPoint2D>();
     private ContactFilter2D groundFilter;
@@ -48,6 +62,7 @@ public class Player : MonoBehaviour
     private bool airJumpAvailable = true;
     private int comboStep;
     private bool attackBuffered;
+    private readonly HashSet<IDamageable> hitTargets = new HashSet<IDamageable>();
 
     private void Awake()
     {
@@ -65,7 +80,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (isRespawning)
+        if (isRespawning || isDead)
             return;
 
         Keyboard keyboard = Keyboard.current;
@@ -85,6 +100,12 @@ public class Player : MonoBehaviour
             spriteRenderer.flipX = moveDirection < 0f;
 
         UpdateAnimationParameters();
+        if (hurtTimer > 0f)
+        {
+            hurtTimer -= Time.deltaTime;
+            if (hurtTimer <= 0f && animator.GetCurrentAnimatorStateInfo(0).fullPathHash == HurtState)
+                PlayLocomotionState();
+        }
         FinishAttackIfReady();
 
         Mouse mouse = Mouse.current;
@@ -101,7 +122,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isRespawning)
+        if (isRespawning || isDead)
             return;
 
         if (body.position.y < respawnHeight)
@@ -154,12 +175,35 @@ public class Player : MonoBehaviour
     {
         comboStep = step;
         attackBuffered = false;
+        hitTargets.Clear();
         animator.Play(AttackStates[step - 1], 0, 0f);
     }
 
     private void OnAttackContact()
     {
-        AttackContact?.Invoke(bodyCollider.bounds.center, spriteRenderer.flipX ? -1f : 1f);
+        float direction = spriteRenderer.flipX ? -1f : 1f;
+        Vector2 center = bodyCollider.bounds.center
+            + new Vector3(attackHitboxOffset.x * direction, attackHitboxOffset.y);
+
+        foreach (Collider2D hit in Physics2D.OverlapBoxAll(center, attackHitboxSize, 0f))
+        {
+            IDamageable target = hit.GetComponentInParent<IDamageable>();
+            if (target != null && hitTargets.Add(target))
+                target.TakeHit(attackDamage, new Vector2(direction, 0f));
+        }
+
+        AttackContact?.Invoke(bodyCollider.bounds.center, direction);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        float direction = spriteRenderer != null && spriteRenderer.flipX ? -1f : 1f;
+        Vector2 center = Application.isPlaying && bodyCollider != null
+            ? bodyCollider.bounds.center
+            : (Vector2)transform.position;
+        center += new Vector2(attackHitboxOffset.x * direction, attackHitboxOffset.y);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(center, attackHitboxSize);
     }
 
     private void FinishAttackIfReady()
@@ -178,10 +222,14 @@ public class Player : MonoBehaviour
         }
 
         comboStep = 0;
+        PlayLocomotionState();
+    }
+
+    private void PlayLocomotionState()
+    {
         int locomotionState = body.linearVelocity.y > 0f ? JumpStartState : JumpFallState;
         if (isGrounded)
             locomotionState = moveDirection == 0f ? IdleState : RunState;
-
         animator.Play(locomotionState, 0, 0f);
     }
 
@@ -195,25 +243,38 @@ public class Player : MonoBehaviour
             healthBar.UpdateHealth(currentHealth, maxHealth);
 
         if (currentHealth <= 0f)
-            StartRespawn();
+        {
+            StartRespawn(true);
+            return;
+        }
+
+        // Play Hurt animation (no loop — Hurt.anim loopTime = 0)
+        comboStep = 0;
+        attackBuffered = false;
+        hurtTimer = 0.35f;
+        animator.Play(HurtState, 0, 0f);
     }
 
-    private void StartRespawn()
+    private void StartRespawn(bool playDeathAnimation = false)
     {
         if (isRespawning)
             return;
 
-        StartCoroutine(RespawnRoutine());
+        StartCoroutine(RespawnRoutine(playDeathAnimation));
     }
 
-    private System.Collections.IEnumerator RespawnRoutine()
+    private System.Collections.IEnumerator RespawnRoutine(bool playDeathAnimation)
     {
         isRespawning = true;
+        isDead = playDeathAnimation;
         currentHealth = 0f;
         if (healthBar != null)
             healthBar.UpdateHealth(0f, maxHealth);
 
         body.linearVelocity = Vector2.zero;
+
+        if (playDeathAnimation)
+            animator.Play(DeadState, 0, 0f);
 
         // Chờ 0.5 giây để người chơi thấy thanh máu về 0
         yield return new WaitForSeconds(0.5f);
@@ -234,5 +295,6 @@ public class Player : MonoBehaviour
         animator.Play(IdleState, 0, 0f);
 
         isRespawning = false;
+        isDead = false;
     }
 }
