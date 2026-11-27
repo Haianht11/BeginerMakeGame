@@ -21,7 +21,7 @@ public static class GothicUISetupEditor
     private const string DungeonDemoScenePath = "Assets/Scenes/DungeonDemo.unity";
     private const string SampleScenePath = "Assets/Scenes/SampleScene.unity";
 
-    private const string DefaultOutputDir = @"C:\Users\Admin\.gemini\antigravity\brain\0985a74f-0a95-403a-b42c-5f96c6792073";
+    private const string DefaultOutputDir = @"C:\Users\Admin\.gemini\antigravity\brain\a62b6a23-fe7a-4edb-9814-0ab6e4a40848\showcase_sample1";
 
     private static readonly Color GoldColor = Hex("#f3b689");
     private static readonly Color MintColor = Hex("#98e8c8");
@@ -48,16 +48,23 @@ public static class GothicUISetupEditor
         new SpriteImportSpec { FileName = "PlayerBarFrame.png", Border = new Vector4(5, 5, 5, 5) },
         new SpriteImportSpec { FileName = "StaminaBarFrame.png", Border = new Vector4(3, 3, 3, 3) },
         new SpriteImportSpec { FileName = "RoseSlatePanel.png", Border = new Vector4(4, 4, 4, 4) },
+        new SpriteImportSpec { FileName = "GoldSlatePanel.png", Border = new Vector4(6, 6, 6, 6) },
         new SpriteImportSpec { FileName = "PillarMenuPanel.png", Border = new Vector4(3, 10, 12, 10) },
         new SpriteImportSpec { FileName = "HpFillCrimson.png", Border = Vector4.zero, CropOnePxBorder = true },
         new SpriteImportSpec { FileName = "BossFillRose.png", Border = Vector4.zero, CropOnePxBorder = true },
+        new SpriteImportSpec { FileName = "BossFillGoldCrimson.png", Border = Vector4.zero, CropOnePxBorder = true },
         new SpriteImportSpec { FileName = "FlatFillBlock.png", Border = Vector4.zero, CropOnePxBorder = true },
         new SpriteImportSpec { FileName = "CornerLGold.png", Border = Vector4.zero },
         new SpriteImportSpec { FileName = "SkullCrest.png", Border = Vector4.zero },
+        new SpriteImportSpec { FileName = "ArchCrownGold.png", Border = Vector4.zero },
+        new SpriteImportSpec { FileName = "WingGold.png", Border = Vector4.zero },
+        new SpriteImportSpec { FileName = "DiamondSlate.png", Border = Vector4.zero },
+        new SpriteImportSpec { FileName = "DiamondGold.png", Border = Vector4.zero },
         new SpriteImportSpec { FileName = "ComboPipOff.png", Border = new Vector4(3, 3, 3, 3) },
         new SpriteImportSpec { FileName = "ComboPipOn.png", Border = new Vector4(3, 3, 3, 3) },
         new SpriteImportSpec { FileName = "DiamondGem.png", Border = Vector4.zero },
         new SpriteImportSpec { FileName = "MenuButtonHover.png", Border = new Vector4(4, 4, 4, 4) },
+        new SpriteImportSpec { FileName = "MenuButtonHoverGold.png", Border = new Vector4(4, 4, 4, 4) },
         new SpriteImportSpec { FileName = "LowHpVignette.png", Border = new Vector4(14, 14, 14, 14) }
     };
 
@@ -229,17 +236,17 @@ public static class GothicUISetupEditor
         Sprite playerPortrait = LoadArt("PlayerPortrait.png");
         Sprite playerBarFrame = LoadArt("PlayerBarFrame.png");
         Sprite staminaBarFrame = LoadArt("StaminaBarFrame.png");
-        Sprite roseSlatePanel = LoadArt("RoseSlatePanel.png");
-        Sprite pillarMenuPanel = LoadArt("PillarMenuPanel.png");
+        Sprite goldSlatePanel = LoadArt("GoldSlatePanel.png");
         Sprite hpFillCrimson = LoadArt("HpFillCrimson.png");
-        Sprite bossFillRose = LoadArt("BossFillRose.png");
+        Sprite bossFillGoldCrimson = LoadArt("BossFillGoldCrimson.png");
         Sprite flatFillBlock = LoadArt("FlatFillBlock.png");
         Sprite cornerLGold = LoadArt("CornerLGold.png");
         Sprite skullCrest = LoadArt("SkullCrest.png");
-        Sprite comboPipOff = LoadArt("ComboPipOff.png");
-        Sprite comboPipOn = LoadArt("ComboPipOn.png");
-        Sprite diamondGem = LoadArt("DiamondGem.png");
-        Sprite menuButtonHover = LoadArt("MenuButtonHover.png");
+        Sprite archCrownGold = LoadArt("ArchCrownGold.png");
+        Sprite wingGold = LoadArt("WingGold.png");
+        Sprite diamondSlate = LoadArt("DiamondSlate.png");
+        Sprite diamondGold = LoadArt("DiamondGold.png");
+        Sprite menuButtonHoverGold = LoadArt("MenuButtonHoverGold.png");
         Sprite lowHpVignetteSprite = LoadArt("LowHpVignette.png");
 
         var root = new GameObject("GothicGameUI", typeof(RectTransform), typeof(GothicUIController));
@@ -256,12 +263,12 @@ public static class GothicUISetupEditor
         vignetteImg.raycastTarget = false;
         vignetteGo.SetActive(false);
 
-        // 2. HUDRoot
+        // 2. HUDRoot (Sample 1: Hoàng Kim Cổ Điển)
         GameObject hudRoot = CreateUIObject("HUDRoot", rootRect);
         RectTransform hudRect = hudRoot.GetComponent<RectTransform>();
         StretchFull(hudRect);
 
-        // 2a. Top-Left PlayerStatusCluster (Sample 1)
+        // 2a. Top-Left PlayerStatusCluster (Circular Portrait Medallion + Tapered HP/Stamina)
         GameObject playerCluster = CreateUIObject("PlayerStatusCluster", hudRect);
         RectTransform clusterRect = playerCluster.GetComponent<RectTransform>();
         clusterRect.anchorMin = new Vector2(0f, 1f);
@@ -297,7 +304,6 @@ public static class GothicUISetupEditor
         UnityEngine.UI.Image portraitImg = AddImage(portraitGo, playerPortrait, UnityEngine.UI.Image.Type.Simple, Color.white, false);
         portraitImg.preserveAspect = true;
 
-        // Right stack beside medallion
         GameObject playerHeader = CreateUIObject("PlayerHeader", clusterRect);
         RectTransform playerHeaderRect = playerHeader.GetComponent<RectTransform>();
         playerHeaderRect.anchorMin = new Vector2(0f, 1f);
@@ -347,14 +353,14 @@ public static class GothicUISetupEditor
 
         ConfigureHealthBar(playerHealthBar, playerFillImg, playerGhostImg, playerHpValText);
 
-        // Stamina + Combo Row
+        // Pure Sample 1 Mint Stamina Bar (no combo pips)
         GameObject staminaTrackGo = CreateUIObject("StaminaTrack", clusterRect);
         RectTransform staminaTrackRect = staminaTrackGo.GetComponent<RectTransform>();
         staminaTrackRect.anchorMin = new Vector2(0f, 1f);
         staminaTrackRect.anchorMax = new Vector2(0f, 1f);
         staminaTrackRect.pivot = new Vector2(0f, 1f);
         staminaTrackRect.anchoredPosition = new Vector2(130f, -92f);
-        staminaTrackRect.sizeDelta = new Vector2(284f, 18f);
+        staminaTrackRect.sizeDelta = new Vector2(316f, 18f);
         AddImage(staminaTrackGo, staminaBarFrame, UnityEngine.UI.Image.Type.Sliced, Color.white, false);
 
         GameObject staminaBgGo = CreateUIObject("StaminaBg", staminaTrackRect);
@@ -367,139 +373,107 @@ public static class GothicUISetupEditor
         StretchWithPadding(staminaFillRect, 4f, 4f, 4f, 4f);
         UnityEngine.UI.Image staminaFillImg = AddFilledImage(staminaFillGo, flatFillBlock, MintColor);
 
-        GameObject comboRowGo = CreateUIObject("ComboRow", clusterRect);
-        RectTransform comboRowRect = comboRowGo.GetComponent<RectTransform>();
-        comboRowRect.anchorMin = new Vector2(0f, 1f);
-        comboRowRect.anchorMax = new Vector2(0f, 1f);
-        comboRowRect.pivot = new Vector2(0f, 1f);
-        comboRowRect.anchoredPosition = new Vector2(426f, -91f);
-        comboRowRect.sizeDelta = new Vector2(116f, 20f);
-        HorizontalLayoutGroup comboLayout = comboRowGo.AddComponent<HorizontalLayoutGroup>();
-        comboLayout.spacing = 7f;
-        comboLayout.childAlignment = TextAnchor.MiddleLeft;
-        comboLayout.childControlWidth = false;
-        comboLayout.childControlHeight = false;
-        comboLayout.childForceExpandWidth = false;
-        comboLayout.childForceExpandHeight = false;
+        // 2b. Top-Right WeaponAreaCrest (Sample 1 Diamond Slate + Two-Line Label)
+        GameObject weaponCrestGo = CreateUIObject("WeaponAreaCrest", hudRect);
+        RectTransform weaponCrestRect = weaponCrestGo.GetComponent<RectTransform>();
+        weaponCrestRect.anchorMin = new Vector2(1f, 1f);
+        weaponCrestRect.anchorMax = new Vector2(1f, 1f);
+        weaponCrestRect.pivot = new Vector2(1f, 1f);
+        weaponCrestRect.anchoredPosition = new Vector2(-36f, -22f);
+        weaponCrestRect.sizeDelta = new Vector2(560f, 132f);
 
-        var comboPips = new UnityEngine.UI.Image[3];
-        for (int i = 0; i < 3; i++)
-        {
-            GameObject pipGo = CreateUIObject($"ComboPip_{i + 1}", comboRowRect);
-            pipGo.GetComponent<RectTransform>().sizeDelta = new Vector2(34f, 20f);
-            comboPips[i] = AddImage(pipGo, comboPipOff, UnityEngine.UI.Image.Type.Sliced, Color.white, false);
-        }
+        GameObject diamondCrestGo = CreateUIObject("DiamondSlate", weaponCrestRect);
+        RectTransform diamondCrestRect = diamondCrestGo.GetComponent<RectTransform>();
+        diamondCrestRect.anchorMin = new Vector2(1f, 0.5f);
+        diamondCrestRect.anchorMax = new Vector2(1f, 0.5f);
+        diamondCrestRect.pivot = new Vector2(1f, 0.5f);
+        diamondCrestRect.anchoredPosition = Vector2.zero;
+        diamondCrestRect.sizeDelta = new Vector2(132f, 132f);
+        UnityEngine.UI.Image diamondCrestImg = AddImage(diamondCrestGo, diamondSlate, UnityEngine.UI.Image.Type.Simple, Color.white, false);
+        diamondCrestImg.preserveAspect = true;
 
-        // 2b. Top-Right AreaPlate (Sample 2)
-        GameObject areaPlateGo = CreateUIObject("AreaPlate", hudRect);
-        RectTransform areaPlateRect = areaPlateGo.GetComponent<RectTransform>();
-        areaPlateRect.anchorMin = new Vector2(1f, 1f);
-        areaPlateRect.anchorMax = new Vector2(1f, 1f);
-        areaPlateRect.pivot = new Vector2(1f, 1f);
-        areaPlateRect.anchoredPosition = new Vector2(-36f, -28f);
-        areaPlateRect.sizeDelta = new Vector2(280f, 54f);
-        AddImage(areaPlateGo, roseSlatePanel, UnityEngine.UI.Image.Type.Sliced, Color.white, false);
+        GameObject weaponTitleGo = CreateUIObject("WeaponTitleText", weaponCrestRect);
+        RectTransform weaponTitleRect = weaponTitleGo.GetComponent<RectTransform>();
+        weaponTitleRect.anchorMin = new Vector2(1f, 0.5f);
+        weaponTitleRect.anchorMax = new Vector2(1f, 0.5f);
+        weaponTitleRect.pivot = new Vector2(1f, 0.5f);
+        weaponTitleRect.anchoredPosition = new Vector2(-146f, 18f);
+        weaponTitleRect.sizeDelta = new Vector2(400f, 36f);
+        CreateText(weaponTitleGo, font, "ĐẠI KIẾM", 32, MintColor, TextAnchor.MiddleRight, true);
 
-        HorizontalLayoutGroup areaLayout = areaPlateGo.AddComponent<HorizontalLayoutGroup>();
-        areaLayout.padding = new RectOffset(16, 16, 8, 8);
-        areaLayout.spacing = 10f;
-        areaLayout.childAlignment = TextAnchor.MiddleCenter;
-        areaLayout.childControlWidth = true;
-        areaLayout.childControlHeight = false;
-        areaLayout.childForceExpandWidth = false;
-        areaLayout.childForceExpandHeight = false;
+        GameObject areaTitleGo = CreateUIObject("AreaTitleText", weaponCrestRect);
+        RectTransform areaTitleRect = areaTitleGo.GetComponent<RectTransform>();
+        areaTitleRect.anchorMin = new Vector2(1f, 0.5f);
+        areaTitleRect.anchorMax = new Vector2(1f, 0.5f);
+        areaTitleRect.pivot = new Vector2(1f, 0.5f);
+        areaTitleRect.anchoredPosition = new Vector2(-146f, -18f);
+        areaTitleRect.sizeDelta = new Vector2(400f, 34f);
+        UnityEngine.UI.Text areaTitleText = CreateText(areaTitleGo, font, "HẦM NGỤC TỐI", 28, GoldColor, TextAnchor.MiddleRight, true);
 
-        ContentSizeFitter areaFitter = areaPlateGo.AddComponent<ContentSizeFitter>();
-        areaFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
-        areaFitter.verticalFit = ContentSizeFitter.FitMode.Unconstrained;
+        // 2c. Bottom-Center CrownedArchBossBar (Sample 1: Crown + Side Wings + Gold-Slate Box + Crimson-Gold Fill)
+        GameObject bossRootGo = CreateUIObject("CrownedArchBossBar", hudRect);
+        RectTransform bossRootRect = bossRootGo.GetComponent<RectTransform>();
+        bossRootRect.anchorMin = new Vector2(0.5f, 0f);
+        bossRootRect.anchorMax = new Vector2(0.5f, 0f);
+        bossRootRect.pivot = new Vector2(0.5f, 0f);
+        bossRootRect.anchoredPosition = new Vector2(0f, 20f);
+        bossRootRect.sizeDelta = new Vector2(860f, 144f);
 
-        GameObject areaGemGo = CreateUIObject("AreaGem", areaPlateRect);
-        areaGemGo.GetComponent<RectTransform>().sizeDelta = new Vector2(22f, 22f);
-        LayoutElement areaGemLe = areaGemGo.AddComponent<LayoutElement>();
-        areaGemLe.preferredWidth = 22f;
-        areaGemLe.preferredHeight = 22f;
-        areaGemLe.minWidth = 22f;
-        areaGemLe.minHeight = 22f;
-        UnityEngine.UI.Image areaGemImg = AddImage(areaGemGo, diamondGem, UnityEngine.UI.Image.Type.Simple, Color.white, false);
-        areaGemImg.preserveAspect = true;
+        GameObject wingLeftGo = CreateUIObject("WingLeft", bossRootRect);
+        RectTransform wingLeftRect = wingLeftGo.GetComponent<RectTransform>();
+        wingLeftRect.anchorMin = new Vector2(0.5f, 0f);
+        wingLeftRect.anchorMax = new Vector2(0.5f, 0f);
+        wingLeftRect.pivot = new Vector2(1f, 0f);
+        wingLeftRect.anchoredPosition = new Vector2(-304f, 0f);
+        wingLeftRect.sizeDelta = new Vector2(96f, 52f);
+        UnityEngine.UI.Image wingLeftImg = AddImage(wingLeftGo, wingGold, UnityEngine.UI.Image.Type.Simple, Color.white, false);
+        wingLeftImg.preserveAspect = true;
 
-        GameObject areaTitleGo = CreateUIObject("AreaTitleText", areaPlateRect);
-        areaTitleGo.GetComponent<RectTransform>().sizeDelta = new Vector2(200f, 38f);
-        UnityEngine.UI.Text areaTitleText = CreateText(areaTitleGo, font, "HẦM NGỤC TỐI", 30, GoldColor, TextAnchor.MiddleLeft, true);
-        areaTitleText.horizontalOverflow = HorizontalWrapMode.Overflow;
+        GameObject wingRightGo = CreateUIObject("WingRight", bossRootRect);
+        RectTransform wingRightRect = wingRightGo.GetComponent<RectTransform>();
+        wingRightRect.anchorMin = new Vector2(0.5f, 0f);
+        wingRightRect.anchorMax = new Vector2(0.5f, 0f);
+        wingRightRect.pivot = new Vector2(1f, 0f);
+        wingRightRect.anchoredPosition = new Vector2(304f, 0f);
+        wingRightRect.sizeDelta = new Vector2(96f, 52f);
+        wingRightRect.localScale = new Vector3(-1f, 1f, 1f);
+        UnityEngine.UI.Image wingRightImg = AddImage(wingRightGo, wingGold, UnityEngine.UI.Image.Type.Simple, Color.white, false);
+        wingRightImg.preserveAspect = true;
 
-        // 2c. Bottom-Left ControlsStrip (Sample 2, swapped to Bottom-Left)
-        GameObject controlsGo = CreateUIObject("ControlsStrip", hudRect);
-        RectTransform controlsRect = controlsGo.GetComponent<RectTransform>();
-        controlsRect.anchorMin = new Vector2(0f, 0f);
-        controlsRect.anchorMax = new Vector2(0f, 0f);
-        controlsRect.pivot = new Vector2(0f, 0f);
-        controlsRect.anchoredPosition = new Vector2(36f, 26f);
-        controlsRect.sizeDelta = new Vector2(560f, 50f);
-        AddImage(controlsGo, roseSlatePanel, UnityEngine.UI.Image.Type.Sliced, Color.white, false);
+        GameObject bossBoxGo = CreateUIObject("BossBox", bossRootRect);
+        RectTransform bossBoxRect = bossBoxGo.GetComponent<RectTransform>();
+        bossBoxRect.anchorMin = new Vector2(0.5f, 0f);
+        bossBoxRect.anchorMax = new Vector2(0.5f, 0f);
+        bossBoxRect.pivot = new Vector2(0.5f, 0f);
+        bossBoxRect.anchoredPosition = Vector2.zero;
+        bossBoxRect.sizeDelta = new Vector2(620f, 82f);
+        AddImage(bossBoxGo, goldSlatePanel, UnityEngine.UI.Image.Type.Sliced, Color.white, false);
 
-        HorizontalLayoutGroup controlsLayout = controlsGo.AddComponent<HorizontalLayoutGroup>();
-        controlsLayout.padding = new RectOffset(18, 18, 8, 8);
-        controlsLayout.childAlignment = TextAnchor.MiddleCenter;
-        controlsLayout.childControlWidth = true;
-        controlsLayout.childControlHeight = true;
-        controlsLayout.childForceExpandWidth = false;
-        controlsLayout.childForceExpandHeight = false;
-
-        ContentSizeFitter controlsFitter = controlsGo.AddComponent<ContentSizeFitter>();
-        controlsFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
-        controlsFitter.verticalFit = ContentSizeFitter.FitMode.Unconstrained;
-
-        GameObject controlsTextGo = CreateUIObject("ControlsText", controlsRect);
-        UnityEngine.UI.Text controlsText = CreateText(
-            controlsTextGo,
-            font,
-            "<color=#f3b689>A/D</color> Chạy  <color=#8f3c52>·</color>  <color=#f3b689>Space</color> Nhảy  <color=#8f3c52>·</color>  <color=#98e8c8>Click / Z</color> Chém  <color=#8f3c52>·</color>  <color=#c96b78>Esc</color> Dừng",
-            28,
-            BoneColor,
-            TextAnchor.MiddleCenter,
-            true);
-        controlsText.supportRichText = true;
-        controlsText.horizontalOverflow = HorizontalWrapMode.Overflow;
-
-        // 2d. Bottom-Right BossHealthCard (Sample 4, swapped to Bottom-Right)
-        GameObject bossCardGo = CreateUIObject("BossHealthCard", hudRect);
-        RectTransform bossCardRect = bossCardGo.GetComponent<RectTransform>();
-        bossCardRect.anchorMin = new Vector2(1f, 0f);
-        bossCardRect.anchorMax = new Vector2(1f, 0f);
-        bossCardRect.pivot = new Vector2(1f, 0f);
-        bossCardRect.anchoredPosition = new Vector2(-36f, 26f);
-        bossCardRect.sizeDelta = new Vector2(468f, 92f);
-        AddImage(bossCardGo, roseSlatePanel, UnityEngine.UI.Image.Type.Sliced, Color.white, false);
-
-        CreateCornerOrnament("CornerTopLeft", bossCardRect, cornerLGold, new Vector2(0f, 1f), new Vector2(-14f, 14f), Vector3.one);
-        CreateCornerOrnament("CornerBottomRight", bossCardRect, cornerLGold, new Vector2(1f, 0f), new Vector2(14f, -14f), new Vector3(-1f, -1f, 1f));
-
-        GameObject bossNameGo = CreateUIObject("BossNameText", bossCardRect);
+        GameObject bossNameGo = CreateUIObject("BossNameText", bossBoxRect);
         RectTransform bossNameRect = bossNameGo.GetComponent<RectTransform>();
         bossNameRect.anchorMin = new Vector2(0f, 1f);
         bossNameRect.anchorMax = new Vector2(0f, 1f);
         bossNameRect.pivot = new Vector2(0f, 1f);
-        bossNameRect.anchoredPosition = new Vector2(20f, -14f);
-        bossNameRect.sizeDelta = new Vector2(315f, 34f);
-        UnityEngine.UI.Text bossNameText = CreateText(bossNameGo, font, "BOSS · HẮC THÚ", 30, GoldColor, TextAnchor.MiddleLeft, true);
+        bossNameRect.anchoredPosition = new Vector2(22f, -12f);
+        bossNameRect.sizeDelta = new Vector2(430f, 32f);
+        UnityEngine.UI.Text bossNameText = CreateText(bossNameGo, font, "HẮC THÚ GIÁP VẢY", 30, GoldColor, TextAnchor.MiddleLeft, true);
 
-        GameObject bossHpValGo = CreateUIObject("BossHpValue", bossCardRect);
+        GameObject bossHpValGo = CreateUIObject("BossHpValue", bossBoxRect);
         RectTransform bossHpValRect = bossHpValGo.GetComponent<RectTransform>();
         bossHpValRect.anchorMin = new Vector2(1f, 1f);
         bossHpValRect.anchorMax = new Vector2(1f, 1f);
         bossHpValRect.pivot = new Vector2(1f, 1f);
-        bossHpValRect.anchoredPosition = new Vector2(-20f, -14f);
-        bossHpValRect.sizeDelta = new Vector2(115f, 34f);
+        bossHpValRect.anchoredPosition = new Vector2(-22f, -12f);
+        bossHpValRect.sizeDelta = new Vector2(140f, 32f);
         UnityEngine.UI.Text bossHpValText = CreateText(bossHpValGo, font, "140/140", 28, RoseColor, TextAnchor.MiddleRight, true);
 
-        GameObject bossBarGo = CreateUIObject("BossHealthBar", bossCardRect);
+        GameObject bossBarGo = CreateUIObject("BossHealthBar", bossBoxRect);
         RectTransform bossBarRect = bossBarGo.GetComponent<RectTransform>();
-        bossBarRect.anchorMin = new Vector2(0f, 0f);
-        bossBarRect.anchorMax = new Vector2(0f, 0f);
-        bossBarRect.pivot = new Vector2(0f, 0f);
-        bossBarRect.anchoredPosition = new Vector2(20f, 16f);
-        bossBarRect.sizeDelta = new Vector2(428f, 24f);
+        bossBarRect.anchorMin = new Vector2(0.5f, 0f);
+        bossBarRect.anchorMax = new Vector2(0.5f, 0f);
+        bossBarRect.pivot = new Vector2(0.5f, 0f);
+        bossBarRect.anchoredPosition = new Vector2(0f, 14f);
+        bossBarRect.sizeDelta = new Vector2(576f, 24f);
         AddImage(bossBarGo, flatFillBlock, UnityEngine.UI.Image.Type.Simple, TrackRimColor, false);
         HealthBar bossHealthBar = bossBarGo.AddComponent<HealthBar>();
 
@@ -514,109 +488,61 @@ public static class GothicUISetupEditor
 
         GameObject bossFillGo = CreateUIObject("HealthFill", bossTrackBgRect);
         StretchFull(bossFillGo.GetComponent<RectTransform>());
-        UnityEngine.UI.Image bossFillImg = AddFilledImage(bossFillGo, bossFillRose, Color.white);
+        UnityEngine.UI.Image bossFillImg = AddFilledImage(bossFillGo, bossFillGoldCrimson, Color.white);
 
         ConfigureHealthBar(bossHealthBar, bossFillImg, bossGhostImg, bossHpValText);
 
-        // 3. MainMenuPanel (Sample 2 Left-Aligned Gothic Pillar)
-        GameObject mainMenuGo = CreateUIObject("MainMenuPanel", rootRect);
-        RectTransform mainMenuRect = mainMenuGo.GetComponent<RectTransform>();
-        mainMenuRect.anchorMin = new Vector2(0f, 0f);
-        mainMenuRect.anchorMax = new Vector2(0f, 1f);
-        mainMenuRect.pivot = new Vector2(0f, 0.5f);
-        mainMenuRect.anchoredPosition = Vector2.zero;
-        mainMenuRect.offsetMin = new Vector2(0f, 0f);
-        mainMenuRect.offsetMax = new Vector2(540f, 0f);
-        AddImage(mainMenuGo, pillarMenuPanel, UnityEngine.UI.Image.Type.Sliced, Color.white, true);
+        GameObject crownGo = CreateUIObject("ArchCrownGold", bossRootRect);
+        RectTransform crownRect = crownGo.GetComponent<RectTransform>();
+        crownRect.anchorMin = new Vector2(0.5f, 0f);
+        crownRect.anchorMax = new Vector2(0.5f, 0f);
+        crownRect.pivot = new Vector2(0.5f, 0f);
+        crownRect.anchoredPosition = new Vector2(0f, 74f);
+        crownRect.sizeDelta = new Vector2(360f, 70f);
+        UnityEngine.UI.Image crownImg = AddImage(crownGo, archCrownGold, UnityEngine.UI.Image.Type.Simple, Color.white, false);
+        crownImg.preserveAspect = true;
 
-        GameObject menuStackGo = CreateUIObject("PillarContent", mainMenuRect);
-        RectTransform menuStackRect = menuStackGo.GetComponent<RectTransform>();
-        menuStackRect.anchorMin = new Vector2(0.5f, 0.5f);
-        menuStackRect.anchorMax = new Vector2(0.5f, 0.5f);
-        menuStackRect.pivot = new Vector2(0.5f, 0.5f);
-        menuStackRect.anchoredPosition = new Vector2(-6f, 20f);
-        menuStackRect.sizeDelta = new Vector2(440f, 520f);
-
-        GameObject menuCrestGo = CreateUIObject("SkullCrest", menuStackRect);
-        RectTransform menuCrestRect = menuCrestGo.GetComponent<RectTransform>();
-        menuCrestRect.anchorMin = new Vector2(0.5f, 1f);
-        menuCrestRect.anchorMax = new Vector2(0.5f, 1f);
-        menuCrestRect.pivot = new Vector2(0.5f, 1f);
-        menuCrestRect.anchoredPosition = new Vector2(0f, -8f);
-        menuCrestRect.sizeDelta = new Vector2(130f, 45f);
-        UnityEngine.UI.Image menuCrestImg = AddImage(menuCrestGo, skullCrest, UnityEngine.UI.Image.Type.Simple, Color.white, false);
-        menuCrestImg.preserveAspect = true;
-
-        GameObject menuTitleGo = CreateUIObject("MenuTitle", menuStackRect);
-        RectTransform menuTitleRect = menuTitleGo.GetComponent<RectTransform>();
-        menuTitleRect.anchorMin = new Vector2(0.5f, 1f);
-        menuTitleRect.anchorMax = new Vector2(0.5f, 1f);
-        menuTitleRect.pivot = new Vector2(0.5f, 1f);
-        menuTitleRect.anchoredPosition = new Vector2(0f, -66f);
-        menuTitleRect.sizeDelta = new Vector2(420f, 58f);
-        CreateText(menuTitleGo, font, "BIÊN NIÊN", 52, MintColor, TextAnchor.MiddleCenter, true);
-
-        GameObject menuSubGo = CreateUIObject("MenuSubtitle", menuStackRect);
-        RectTransform menuSubRect = menuSubGo.GetComponent<RectTransform>();
-        menuSubRect.anchorMin = new Vector2(0.5f, 1f);
-        menuSubRect.anchorMax = new Vector2(0.5f, 1f);
-        menuSubRect.pivot = new Vector2(0.5f, 1f);
-        menuSubRect.anchoredPosition = new Vector2(0f, -124f);
-        menuSubRect.sizeDelta = new Vector2(420f, 44f);
-        CreateText(menuSubGo, font, "KIẾM SĨ ĐỘC THỦ", 36, GoldColor, TextAnchor.MiddleCenter, true);
-
-        GameObject menuRuleGo = CreateUIObject("DividerRule", menuStackRect);
-        RectTransform menuRuleRect = menuRuleGo.GetComponent<RectTransform>();
-        menuRuleRect.anchorMin = new Vector2(0.5f, 1f);
-        menuRuleRect.anchorMax = new Vector2(0.5f, 1f);
-        menuRuleRect.pivot = new Vector2(0.5f, 1f);
-        menuRuleRect.anchoredPosition = new Vector2(0f, -182f);
-        menuRuleRect.sizeDelta = new Vector2(420f, 3f);
-        AddImage(menuRuleGo, flatFillBlock, UnityEngine.UI.Image.Type.Simple, DividerColor, false);
-
-        string[] mainMenuLabelsText = { "BẮT ĐẦU", "ĐỔI MÀN", "CHƠI LẠI", "THOÁT" };
-        BuildButtonGroup(
-            menuStackRect,
-            mainMenuLabelsText,
-            startY: -214f,
-            rowWidth: 420f,
-            rowHeight: 52f,
-            spacing: 12f,
-            fontSize: 34,
-            font: font,
-            hoverSprite: menuButtonHover,
-            diamondGem: diamondGem,
+        // 3. MainMenuPanel (Sample 1 Centered Gold-Slate Ornate Modal)
+        BuildModalPanel(
+            "MainMenuPanel",
+            rootRect,
+            font,
+            flatFillBlock,
+            goldSlatePanel,
+            cornerLGold,
+            skullCrest,
+            menuButtonHoverGold,
+            diamondGold,
+            title: "HẮC KIẾM TRUYỀN KỲ",
+            titleColor: MintColor,
+            subtitle: "HẦM NGỤC BÓNG TỐI",
+            buttonLabels: new[] { "BẮT ĐẦU", "ĐỔI MÀN", "CHƠI LẠI", "THOÁT" },
+            footerHint: "W/S hoặc Chuột · Enter chọn   |   A/D Chạy · Space Nhảy · Click/Z Chém",
+            out GameObject mainMenuGo,
+            out _,
+            out _,
             out UnityEngine.UI.Button[] mainMenuButtons,
             out UnityEngine.UI.Image[] mainMenuBackgrounds,
             out UnityEngine.UI.Image[] mainMenuCursors,
             out UnityEngine.UI.Text[] mainMenuButtonLabels);
-
-        GameObject menuHintGo = CreateUIObject("MenuHint", mainMenuRect);
-        RectTransform menuHintRect = menuHintGo.GetComponent<RectTransform>();
-        menuHintRect.anchorMin = new Vector2(0.5f, 0f);
-        menuHintRect.anchorMax = new Vector2(0.5f, 0f);
-        menuHintRect.pivot = new Vector2(0.5f, 0f);
-        menuHintRect.anchoredPosition = new Vector2(-6f, 34f);
-        menuHintRect.sizeDelta = new Vector2(460f, 34f);
-        CreateText(menuHintGo, font, "W/S hoặc Chuột · Enter để chọn", 26, SubtitleColor, TextAnchor.MiddleCenter, true);
-
         mainMenuGo.SetActive(false);
 
-        // 4. PauseModal
+        // 4. PauseModal (Sample 1 Gold-Slate Ornate Modal)
         BuildModalPanel(
             "PauseModal",
             rootRect,
             font,
             flatFillBlock,
-            roseSlatePanel,
+            goldSlatePanel,
             cornerLGold,
             skullCrest,
-            menuButtonHover,
-            diamondGem,
+            menuButtonHoverGold,
+            diamondGold,
             title: "TẠM DỪNG",
             titleColor: MintColor,
             subtitle: "NHẤN ESC ĐỂ TIẾP TỤC",
             buttonLabels: new[] { "TIẾP TỤC", "CHƠI LẠI", "ĐỔI MÀN", "VỀ MENU" },
+            footerHint: null,
             out GameObject pauseModalGo,
             out _,
             out _,
@@ -626,21 +552,22 @@ public static class GothicUISetupEditor
             out UnityEngine.UI.Text[] pauseButtonLabels);
         pauseModalGo.SetActive(false);
 
-        // 5. EndModal
+        // 5. EndModal (Sample 1 Gold-Slate Ornate Modal)
         BuildModalPanel(
             "EndModal",
             rootRect,
             font,
             flatFillBlock,
-            roseSlatePanel,
+            goldSlatePanel,
             cornerLGold,
             skullCrest,
-            menuButtonHover,
-            diamondGem,
+            menuButtonHoverGold,
+            diamondGold,
             title: "NGÃ GỤC",
             titleColor: GoldColor,
             subtitle: "HỒI SINH TẠI ĐIỂM KHỞI ĐẦU",
             buttonLabels: new[] { "HỒI SINH", "CHƠI LẠI", "VỀ MENU" },
+            footerHint: null,
             out GameObject endModalGo,
             out UnityEngine.UI.Text endTitleText,
             out UnityEngine.UI.Text endSubtitleText,
@@ -657,12 +584,12 @@ public static class GothicUISetupEditor
         so.FindProperty("hudRoot").objectReferenceValue = hudRoot;
         so.FindProperty("playerHealthBar").objectReferenceValue = playerHealthBar;
         so.FindProperty("staminaFillImage").objectReferenceValue = staminaFillImg;
-        SetObjectArray(so.FindProperty("comboPips"), comboPips);
-        so.FindProperty("comboPipOffSprite").objectReferenceValue = comboPipOff;
-        so.FindProperty("comboPipOnSprite").objectReferenceValue = comboPipOn;
+        SetObjectArray(so.FindProperty("comboPips"), Array.Empty<UnityEngine.UI.Image>());
+        so.FindProperty("comboPipOffSprite").objectReferenceValue = null;
+        so.FindProperty("comboPipOnSprite").objectReferenceValue = null;
         so.FindProperty("areaTitleText").objectReferenceValue = areaTitleText;
 
-        so.FindProperty("bossCardRoot").objectReferenceValue = bossCardGo;
+        so.FindProperty("bossCardRoot").objectReferenceValue = bossRootGo;
         so.FindProperty("bossNameText").objectReferenceValue = bossNameText;
         so.FindProperty("bossHealthBar").objectReferenceValue = bossHealthBar;
 
@@ -688,7 +615,7 @@ public static class GothicUISetupEditor
         SetObjectArray(so.FindProperty("endButtonLabels"), endButtonLabels);
 
         so.FindProperty("buttonNormalSprite").objectReferenceValue = null;
-        so.FindProperty("buttonHoverSprite").objectReferenceValue = menuButtonHover;
+        so.FindProperty("buttonHoverSprite").objectReferenceValue = menuButtonHoverGold;
         so.FindProperty("buttonNormalTextColor").colorValue = BoneColor;
         so.FindProperty("buttonHoverTextColor").colorValue = MintColor;
         so.ApplyModifiedPropertiesWithoutUndo();
@@ -697,7 +624,7 @@ public static class GothicUISetupEditor
         UnityEngine.Object.DestroyImmediate(root);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-        Debug.Log($"[GothicUISetupEditor] Saved prefab: {PrefabPath}");
+        Debug.Log($"[GothicUISetupEditor] Saved Sample 1 prefab: {PrefabPath}");
     }
 
     private static void BuildModalPanel(
@@ -705,15 +632,16 @@ public static class GothicUISetupEditor
         RectTransform parent,
         Font font,
         Sprite flatFillBlock,
-        Sprite roseSlatePanel,
+        Sprite boxPanelSprite,
         Sprite cornerLGold,
         Sprite skullCrest,
         Sprite hoverSprite,
-        Sprite diamondGem,
+        Sprite diamondCursor,
         string title,
         Color titleColor,
         string subtitle,
         string[] buttonLabels,
+        string footerHint,
         out GameObject modalGo,
         out UnityEngine.UI.Text titleText,
         out UnityEngine.UI.Text subtitleText,
@@ -799,7 +727,7 @@ public static class GothicUISetupEditor
         subRect.pivot = new Vector2(0.5f, 1f);
         subRect.anchoredPosition = new Vector2(0f, -112f);
         subRect.sizeDelta = new Vector2(640f, 36f);
-        subtitleText = CreateText(subGo, font, subtitle, 30, SubtitleColor, TextAnchor.MiddleCenter, true);
+        subtitleText = CreateText(subGo, font, subtitle, 30, GoldColor, TextAnchor.MiddleCenter, true);
 
         // ModalBox
         GameObject boxGo = CreateUIObject("ModalBox", centerRect);
@@ -809,7 +737,7 @@ public static class GothicUISetupEditor
         boxRect.pivot = new Vector2(0.5f, 1f);
         boxRect.anchoredPosition = new Vector2(0f, -(headerHeight + gapBetweenHeaderAndBox));
         boxRect.sizeDelta = new Vector2(boxWidth, boxHeight);
-        AddImage(boxGo, roseSlatePanel, UnityEngine.UI.Image.Type.Sliced, Color.white, true);
+        AddImage(boxGo, boxPanelSprite, UnityEngine.UI.Image.Type.Sliced, Color.white, true);
 
         CreateCornerOrnament("CornerTopLeft", boxRect, cornerLGold, new Vector2(0f, 1f), new Vector2(-14f, 14f), Vector3.one);
         CreateCornerOrnament("CornerTopRight", boxRect, cornerLGold, new Vector2(1f, 1f), new Vector2(14f, 14f), new Vector3(-1f, 1f, 1f));
@@ -826,11 +754,23 @@ public static class GothicUISetupEditor
             fontSize: 34,
             font: font,
             hoverSprite: hoverSprite,
-            diamondGem: diamondGem,
+            diamondGem: diamondCursor,
             out buttons,
             out backgrounds,
             out cursors,
             out labels);
+
+        if (!string.IsNullOrEmpty(footerHint))
+        {
+            GameObject hintGo = CreateUIObject("ModalFooterHint", modalRect);
+            RectTransform hintRect = hintGo.GetComponent<RectTransform>();
+            hintRect.anchorMin = new Vector2(0.5f, 0f);
+            hintRect.anchorMax = new Vector2(0.5f, 0f);
+            hintRect.pivot = new Vector2(0.5f, 0f);
+            hintRect.anchoredPosition = new Vector2(0f, 26f);
+            hintRect.sizeDelta = new Vector2(1100f, 34f);
+            CreateText(hintGo, font, footerHint, 26, SubtitleColor, TextAnchor.MiddleCenter, true);
+        }
     }
 
     private static void BuildButtonGroup(
@@ -919,7 +859,7 @@ public static class GothicUISetupEditor
             BossArenaScenePath,
             prefab,
             areaTitle: "ĐẤU TRƯỜNG HẮC KỴ",
-            bossDisplayName: "BOSS · HẮC KỴ SĨ",
+            bossDisplayName: "HẮC KỴ SĨ GIÁP MÁU",
             startAtMainMenu: false,
             legacyObjectsToDelete: new[] { "PlayerHeartIcon", "PlayerHealthBar", "BossHealthBar" });
 
@@ -927,7 +867,7 @@ public static class GothicUISetupEditor
             DungeonDemoScenePath,
             prefab,
             areaTitle: "HẦM NGỤC TỐI",
-            bossDisplayName: "BOSS · HẮC THÚ",
+            bossDisplayName: "HẮC THÚ GIÁP VẢY",
             startAtMainMenu: false,
             legacyObjectsToDelete: Array.Empty<string>());
 
@@ -1105,10 +1045,10 @@ public static class GothicUISetupEditor
             Path.Combine(outputDir, "02_dungeon_demo_hud.png"),
             ctrl => ctrl.ApplyPreviewState(75f, 95f, 70f, 2, 112f, false, false, false, false));
 
-        // 3. Main Menu Pillar over DungeonDemo idle scene
+        // 3. Main Menu Modal (Sample 1 Centered Gold-Slate) over DungeonDemo idle scene
         RenderStateToPng(
             DungeonDemoScenePath,
-            Path.Combine(outputDir, "03_main_menu_pillar.png"),
+            Path.Combine(outputDir, "03_main_menu_modal.png"),
             ctrl => ctrl.ApplyPreviewState(100f, 100f, 100f, 0, 140f, true, false, false, false));
 
         // 4. Pause Modal over BossArenaDemo

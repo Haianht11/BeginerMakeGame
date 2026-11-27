@@ -57,6 +57,8 @@ public sealed class GothicUIController : MonoBehaviour
     [SerializeField] private Sprite buttonHoverSprite;
     [SerializeField] private Color buttonNormalTextColor = new Color(0.890f, 0.871f, 0.839f, 1f);
     [SerializeField] private Color buttonHoverTextColor = new Color(0.596f, 0.910f, 0.784f, 1f);
+    [SerializeField] private Color defeatTitleColor = new Color(0.894f, 0.361f, 0.431f, 1f);
+    [SerializeField] private Color victoryTitleColor = new Color(0.596f, 0.910f, 0.784f, 1f);
 
     [Header("Scene References")]
     [SerializeField] private Player player;
@@ -230,12 +232,13 @@ public sealed class GothicUIController : MonoBehaviour
             endModal.SetActive(showEndDefeat || showEndVictory);
 
         if (showEndDefeat)
-            ApplyEndCopy("NGÃ GỤC", "HỒI SINH TẠI ĐIỂM KHỞI ĐẦU", "HỒI SINH");
+            ApplyEndCopy("NGÃ GỤC", "HỒI SINH TẠI ĐIỂM KHỞI ĐẦU", "HỒI SINH", false);
         else if (showEndVictory)
             ApplyEndCopy(
                 "VƯỢT ẢI THÀNH CÔNG",
                 (boss != null || trainingDummy != null) ? "KẺ THÙ ĐÃ BỊ TIÊU DIỆT" : "ĐÃ ĐẾN CỔNG KẾT THÚC",
-                "MÀN TIẾP THEO");
+                "MÀN TIẾP THEO",
+                true);
 
         if (lowHpVignette != null)
         {
@@ -477,7 +480,7 @@ public sealed class GothicUIController : MonoBehaviour
         if (currentState != UIState.Playing)
             return;
 
-        ApplyEndCopy("NGÃ GỤC", "HỒI SINH TẠI ĐIỂM KHỞI ĐẦU", "HỒI SINH");
+        ApplyEndCopy("NGÃ GỤC", "HỒI SINH TẠI ĐIỂM KHỞI ĐẦU", "HỒI SINH", false);
         SetState(UIState.EndDefeat);
     }
 
@@ -486,7 +489,7 @@ public sealed class GothicUIController : MonoBehaviour
         if (currentState != UIState.Playing)
             return;
 
-        ApplyEndCopy("VƯỢT ẢI THÀNH CÔNG", "KẺ THÙ ĐÃ BỊ TIÊU DIỆT", "MÀN TIẾP THEO");
+        ApplyEndCopy("VƯỢT ẢI THÀNH CÔNG", "KẺ THÙ ĐÃ BỊ TIÊU DIỆT", "MÀN TIẾP THEO", true);
         SetState(UIState.EndVictory);
     }
 
@@ -495,7 +498,7 @@ public sealed class GothicUIController : MonoBehaviour
         if (currentState != UIState.Playing)
             return;
 
-        ApplyEndCopy("VƯỢT ẢI THÀNH CÔNG", "KẺ THÙ ĐÃ BỊ TIÊU DIỆT", "MÀN TIẾP THEO");
+        ApplyEndCopy("VƯỢT ẢI THÀNH CÔNG", "KẺ THÙ ĐÃ BỊ TIÊU DIỆT", "MÀN TIẾP THEO", true);
         SetState(UIState.EndVictory);
     }
 
@@ -504,14 +507,17 @@ public sealed class GothicUIController : MonoBehaviour
         if (currentState != UIState.Playing)
             return;
 
-        ApplyEndCopy("VƯỢT ẢI THÀNH CÔNG", "ĐÃ ĐẾN CỔNG KẾT THÚC", "MÀN TIẾP THEO");
+        ApplyEndCopy("VƯỢT ẢI THÀNH CÔNG", "ĐÃ ĐẾN CỔNG KẾT THÚC", "MÀN TIẾP THEO", true);
         SetState(UIState.EndVictory);
     }
 
-    private void ApplyEndCopy(string title, string subtitle, string primaryButtonLabel)
+    private void ApplyEndCopy(string title, string subtitle, string primaryButtonLabel, bool isVictory)
     {
         if (endTitleText != null)
+        {
             endTitleText.text = title;
+            endTitleText.color = isVictory ? victoryTitleColor : defeatTitleColor;
+        }
         if (endSubtitleText != null)
             endSubtitleText.text = subtitle;
 
