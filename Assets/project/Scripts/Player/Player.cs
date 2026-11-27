@@ -8,6 +8,15 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     public event Action<Vector2, float> AttackContact;
+    public event Action<float, float> HealthChanged;
+    public event Action Jumped;
+    public event Action<int> AttackStarted;
+    public event Action PlayerDefeated;
+
+    public bool GameplayInputBlocked { get; set; }
+    public bool SuppressAutoRespawn { get; set; }
+    public float CurrentHealth => currentHealth;
+    public float MaxHealth => maxHealth;
 
     private static readonly int Run = Animator.StringToHash("run");
     private static readonly int VelocityY = Animator.StringToHash("velocityY");
@@ -33,6 +42,7 @@ public class Player : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     private float currentHealth;
     private bool isRespawning;
+    private Coroutine respawnCoroutine;
 
     private readonly List<ContactPoint2D> groundContacts = new List<ContactPoint2D>();
     private ContactFilter2D groundFilter;
@@ -63,12 +73,23 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
+        HealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
     private void Update()
     {
         if (isRespawning)
             return;
+
+        if (GameplayInputBlocked)
+        {
+            moveDirection = 0f;
+            jumpRequested = false;
+            attackBuffered = false;
+            UpdateAnimationParameters();
+            FinishAttackIfReady();
+            return;
+        }
 
         Keyboard keyboard = Keyboard.current;
         moveDirection = 0f;
@@ -127,6 +148,7 @@ public class Player : MonoBehaviour
             isGrounded = false;
             if (comboStep == 0)
                 animator.Play(facingDirection < 0f ? JumpLeftState : JumpRightState, 0, 0f);
+            Jumped?.Invoke();
         }
 
         jumpRequested = false;
@@ -166,6 +188,7 @@ public class Player : MonoBehaviour
         attackBuffered = false;
         activeAttackStateHash = facingDirection < 0f ? AttackLeftState : AttackRightState;
         animator.Play(activeAttackStateHash, 0, 0f);
+        AttackStarted?.Invoke(step);
     }
 
     private void OnAttackContact()
@@ -212,11 +235,15 @@ public class Player : MonoBehaviour
             return;
 
         currentHealth = Mathf.Max(0f, currentHealth - damage);
+        if (currentHealth <= 0f)
+        {
+            StartRespawn();
+            return;
+        }
+
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
-
-        if (currentHealth <= 0f)
-            StartRespawn();
+        HealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
     private void StartRespawn()
@@ -224,7 +251,25 @@ public class Player : MonoBehaviour
         if (isRespawning)
             return;
 
-        StartCoroutine(RespawnRoutine());
+        if (SuppressAutoRespawn)
+        {
+            isRespawning = true;
+            currentHealth = 0f;
+            if (healthBar != null)
+                healthBar.UpdateHealth(0f, maxHealth);
+            HealthChanged?.Invoke(0f, maxHealth);
+            body.linearVelocity = Vector2.zero;
+            moveDirection = 0f;
+            jumpRequested = false;
+            attackBuffered = false;
+            UpdateAnimationParameters();
+            PlayerDefeated?.Invoke();
+            return;
+        }
+
+        if (respawnCoroutine != null)
+            StopCoroutine(respawnCoroutine);
+        respawnCoroutine = StartCoroutine(RespawnRoutine());
     }
 
     private System.Collections.IEnumerator RespawnRoutine()
@@ -233,11 +278,25 @@ public class Player : MonoBehaviour
         currentHealth = 0f;
         if (healthBar != null)
             healthBar.UpdateHealth(0f, maxHealth);
+        HealthChanged?.Invoke(0f, maxHealth);
 
         body.linearVelocity = Vector2.zero;
+        PlayerDefeated?.Invoke();
 
         // Chờ 0.5 giây để người chơi thấy thanh máu về 0
         yield return new WaitForSeconds(0.5f);
+
+        respawnCoroutine = null;
+        RespawnNow();
+    }
+
+    public void RespawnNow()
+    {
+        if (respawnCoroutine != null)
+        {
+            StopCoroutine(respawnCoroutine);
+            respawnCoroutine = null;
+        }
 
         body.position = spawnPosition;
         body.linearVelocity = Vector2.zero;
@@ -253,6 +312,7 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
+        HealthChanged?.Invoke(currentHealth, maxHealth);
         UpdateAnimationParameters();
         animator.Play(IdleRightState, 0, 0f);
 

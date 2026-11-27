@@ -1,9 +1,17 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
 public sealed class DoomKnightBoss : MonoBehaviour
 {
+    public event Action<float, float> HealthChanged;
+    public event Action BossDefeated;
+
+    public bool GameplayPaused { get; set; }
+    public bool SuppressAutoRespawn { get; set; }
+    public float CurrentHealth => currentHealth;
+    public float MaxHealth => maxHealth;
     private enum BossState
     {
         Idle,
@@ -78,12 +86,13 @@ public sealed class DoomKnightBoss : MonoBehaviour
         baseColor = spriteRenderer.color;
         spawnPosition = transform.position;
         if (player == null)
-            player = FindAnyObjectByType<Player>();
+            player = UnityEngine.Object.FindAnyObjectByType<Player>();
 
         spriteRenderer.flipX = false;
         currentHealth = maxHealth;
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
+        HealthChanged?.Invoke(currentHealth, maxHealth);
         if (hitSpark != null)
             hitSpark.enabled = false;
     }
@@ -108,13 +117,22 @@ public sealed class DoomKnightBoss : MonoBehaviour
 
     private void Update()
     {
+        if (state == BossState.Dead)
+        {
+            UpdateHitFeedback();
+            return;
+        }
+
+        if (GameplayPaused)
+        {
+            SetState(BossState.Idle, facingDirection);
+            return;
+        }
+
         if (cooldownTimer > 0f)
             cooldownTimer -= Time.deltaTime;
 
         UpdateHitFeedback();
-
-        if (state == BossState.Dead)
-            return;
 
         if (state == BossState.Attack || state == BossState.Hurt)
         {
@@ -185,7 +203,7 @@ public sealed class DoomKnightBoss : MonoBehaviour
 
     private void ReceivePlayerAttack(Vector2 origin, float attackDirection)
     {
-        if (state == BossState.Dead)
+        if (state == BossState.Dead || GameplayPaused)
             return;
 
         Vector2 hitCenter = (Vector2)transform.position + hitCenterOffset;
@@ -197,6 +215,7 @@ public sealed class DoomKnightBoss : MonoBehaviour
         currentHealth = Mathf.Max(0f, currentHealth - damageTakenPerHit);
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
+        HealthChanged?.Invoke(currentHealth, maxHealth);
 
         TriggerHitSpark(attackDirection);
 
@@ -259,14 +278,23 @@ public sealed class DoomKnightBoss : MonoBehaviour
         hitsSinceStagger = 0;
         int hash = facingDirection < 0f ? DeathLeftState : DeathRightState;
         PlayState(hash, false, true);
+        BossDefeated?.Invoke();
         if (respawnCoroutine != null)
+        {
             StopCoroutine(respawnCoroutine);
-        respawnCoroutine = StartCoroutine(RespawnRoutine());
+            respawnCoroutine = null;
+        }
+        if (!SuppressAutoRespawn)
+            respawnCoroutine = StartCoroutine(RespawnRoutine());
     }
 
-    private IEnumerator RespawnRoutine()
+    public void ResetBoss()
     {
-        yield return new WaitForSeconds(respawnDelay);
+        if (respawnCoroutine != null)
+        {
+            StopCoroutine(respawnCoroutine);
+            respawnCoroutine = null;
+        }
 
         transform.position = spawnPosition;
         facingDirection = -1f;
@@ -275,10 +303,17 @@ public sealed class DoomKnightBoss : MonoBehaviour
         hitsSinceStagger = 0;
         if (healthBar != null)
             healthBar.UpdateHealth(currentHealth, maxHealth);
+        HealthChanged?.Invoke(currentHealth, maxHealth);
         ResetVisualEffects();
         state = BossState.Idle;
         PlayState(IdleLeftState, false, false);
+    }
+
+    private IEnumerator RespawnRoutine()
+    {
+        yield return new WaitForSeconds(respawnDelay);
         respawnCoroutine = null;
+        ResetBoss();
     }
 
     private void PlayState(int stateHash, bool isWalking, bool isDead)
